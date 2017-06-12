@@ -1,0 +1,10 @@
+.title {
+  font-size: $font-size + 20px;
+  font-weight: 800;
+  border-bottom: 3px solid #111;
+  text-align: center;
+}
+
+@media (width: $screen-sm) {
+  font-size: $font-size + 24px;
+}
