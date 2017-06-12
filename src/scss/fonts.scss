@@ -16,7 +16,7 @@
   src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
     url('../fonts/ProximaNova-Regular.woff') format('woff'),
     url('../fonts/ProximaNova-Regular.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -25,6 +25,23 @@
   src: url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
     url('../fonts/ProximaNova-Bold.woff') format('woff'),
     url('../fonts/ProximaNova-Bold.ttf') format('truetype');
-  font-weight: bold;
+  font-weight: 800;
   font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans.woff2') format('woff2'),
+		url('../fonts/OpenSans.woff') format('woff'),
+		url('../fonts/OpenSans.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans.woff2') format('woff2'),
+		url('../fonts/OpenSans.woff') format('woff'),
+		url('../fonts/OpenSans.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
 }

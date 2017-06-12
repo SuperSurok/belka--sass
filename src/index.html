@@ -2,6 +2,7 @@
 <html lang="ru" class="no-js">
 <head>
   @@include('_include/page-head.html')
+  <link rel="stylesheet" href="css/style.css">
   <title>belka</title>
 </head>
 <body>
@@ -37,8 +38,6 @@
         <img src="" alt="" class="logo__img">
       </a>
 
-      <button class="page-header__order-btn btn"></button>
-
       <nav class="page-header-nav main-nav">
         <ul class="__list">
           <li class="main-nav__item main-nav__item--acttive">
@@ -53,19 +52,142 @@
       </nav>
     </div>
   </div>
-
+<!--
     <section class="rocks">
-      <div class="bunner__container">
+
         <div class="h1 title"></div>
-        <p class="roks__text"></p>
+          <p class="roks__text"></p>
+        </div>
       </div>
-    </div>
 
     <div class="route">
       <h2 class="title title--white"></h2>
       <div class="trace"></div>
+    </section> -->
+  <section class="mountains">
+  <div class="bunner__container">
+    <container class="container mountains__container">
+      <h1 class="title">Скалодром</h1>
+      <p class="mountains__description">
+        Заберись на вершину не уезжая в горы!
+      </p>
+      <p class="mountains__description mountains__description_tablet-desc">Заберись на вершину, не уезжая в горы!
+        Скалодром BELKA для всех, кто желает впервые попробовать себя в скалолазании, а так же для спортсменов разного уровня.
+        Bключает в себя 2 детские трассы и 3 взрослые.
+        Cкалолазы смогут найти подробную схему
+        всех подготовленных трасс, посмотреть категорию сложности.</p>
+      <button class="btn mountains__btn">Купить билет</button>
+    </container>
+  </section>
 
+  <section class="tracks">
+    <container class="container track_container">
+      <h2 class="title">Трассы</h2>
+      <div class="carousel">
+        <p class="carousel__title">
+          Трасса #1
+        </p>
+        <p class="carousel__height">
+          <i class="sprite-mountain"></i>
+          Высота 15 м.
+        </p>
+        <p class="carousel__age">
+          <i class="sprite-man"></i>
+          Возраст 13+</p>
+        <p class="carousel__text">
+          Трасса для опытных скалолазов. Требуется наличие хорошей физ. подготовки
+        </p>
+      </div>
+    </container>
+  </section>
 
-    </section>
+  <section class="actions">
+    <container class="container actions__container">
+      <h2 class="title">Акции</h2>
+      <div class="actions__friends">
+        <img src="#" alt="" class="">
+        <p class="">Компаниям от 5 чел. скидка 10%</p>
+      </div>
+      <div class="actions__family">
+        <img src="#" alt="" class="">
+        <p class="">Многодетным семьям скидка 20%</p>
+      </div>
+      <div class="actions__students">
+        <img src="#" alt="" class="">
+        <p class="">Студентам по карте isic 20%</p>
+      </div>
+    </container>
+  </section>
+
+  <section class="about">
+    <container class="container container__about">
+      <div class="we-have">
+        <img src="" alt="" class="we-have__img">
+        <h2 class="title">У нас</h2>
+        <p class="">Альпинистское снаряжение и страховочные устройства французской компании Petzl</p>
+        <p class="">Понятная маркировка трасс (ламинированные таблички и зацепки определнного цвета для каждой трассы)</p>
+        <p class="">У скалодрома всегда находится инструктор, который готов ответить на любой Ваш вопрос</p>
+        <div class="about__photo"></div>
+        <div class="caorusel"></div>
+      </div>
+    </container>
+  </section>
+
+  <section class="price">
+    <container class="container container__about">
+      <h2 class="title">Цены</h2>
+      <div class="price__age"></div>
+      <div class="price__place"></div>
+      <div class="price__time"></div>
+      <div class="price__total"></div>
+      <p class="price__trainer">Персональный опреатор парка 600 Р/час</p>
+      <p class="price__hour">Каждый дополнительный час 500 Р</p>
+      <button class="btn price__btn">Купить билет</button>
+      <a href="#" class="price__safety-link">Техника безопасности (PDF)</a>
+    </container>
+  </section>
+
+  <section class="feedback">
+    <container class="container container__feedback">
+      <h2 class="title">Отзывы</h2>
+      <div class="carousel"></div>
+    </container>
+  </section>
+
+  <footer class="footer">
+    <container class="container container__footer">
+      <iframe src="" frameborder="0"></iframe>
+      <p class="footer_address">
+        <i></i>
+        Выборгское ш.,220
+      </p>
+      <a href="tel:+78129997788" class="footer__phone">
+        <i></i>
+        8(812)999-77-88
+      </a>
+      <ul class="footer__nav">
+        <a href="#">
+          <li class="nav-item">Трассы</li>
+        </a>
+        <a href="#">
+          <li class="nav-item">Акции</li>
+        </a>
+        <a href="#">
+          <li class="nav-item">Цены</li>
+        </a>
+        <a href="#">
+          <li class="nav-item">Отзывы</li>
+        </a>
+        <a href="#">
+          <li class="nav-item">Контакты</li>
+        </a>
+      </ul>
+      <ul class="footer__socials">
+        <a href="#"><i></i></a>
+        <a href="#"><i></i></a>
+        <a href="#"><i></i></a>
+      </ul>
+    </container>
+  </footer>
 </body>
 </html>
