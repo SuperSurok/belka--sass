@@ -24,60 +24,67 @@
   -->
 
   <!-- Хедер -->
-
-  <div class="page-header">
+  <div class="wrapper">
+    <div class="page-header">
     <div class="page-header__contacts">
-      <div class="container page-header__container"></div>
       <div class="page-header__contacts-wrap contacts"></div>
-      <div class="contacts__time">24 часа</div>
-      <div class="contacts__phone">
-        <a href="tel:+78129997788" class="phone__link"></a>
+      <div class="container">
+        <div class="contacts">
+          <div class="contacts__time"><p class="contacts__item">24 часа</p></div>
+          <div class="contacts__phone">
+            <a href="tel:+78129997788" class="phone__link">8(812)999-77-99</a>
+          </div>
+          <div class="contacts__location">Выборгское ш.,220</div>
+        </div>
       </div>
-      <div class="contacts__location">Выборгское ш.,220</div>
     </div>
-
-    <button class="page-header__nav-toggle main-nav__toggle"></button>
-
     <div class="container page-header__container">
-      <a href="" class="page-header__logo logo">
-        <img src="" alt="" class="logo__img">
-      </a>
-      <nav class="page-header-nav main-nav">
-        <ul class="__list">
+      <div class="logo">
+        <a href="" class="page-header__logo logo">
+          <img src="img/logo.png" alt="" class="logo__img">
+        </a>
+      </div>
+      <button class="page-header__nav-toggle main-nav__toggle">Купить билет</button>
+        <nav class="page-header-nav">
+        <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--acttive">
-            <a href="" class="main-nav__link"></a></li>
+            <a href="" class="main-nav__link">Трассы</a></li>
           <li class="main-nav__item">
-            <a href="" class="main-nav__link"></a></li>
+            <a href="" class="main-nav__link">Акции</a></li>
           <li class="main-nav__item">
-            <a href="" class="main-nav__link"></a></li>
+            <a href="" class="main-nav__link">Цены</a></li>
           <li class="main-nav__item">
-            <a href="" class="main-nav__link"></a></li>
+            <a href="" class="main-nav__link">Отзывы</a></li>
+            <li class="main-nav__item">
+            <a href="" class="main-nav__link">Контакты</a></li>
         </ul>
       </nav>
-    </div>
   </div>
-
 
 <!-- Секция Скалодром -->
 
   <section class="mountains">
-  <div class="container bunner__container">
-    <img class="bunner__img" src="../src/img/header-img.jpg" alt="">
-    <div class="container mountains__container">
-      <h1 class="mountains__title title">Скалодром</h1>
-      <p class="mountains__description mountains__description_xs">
-        Заберись на вершину не уезжая в горы!
-      </p>
-      <p class="mountains__description mountains__description_tablet-desc">Заберись на вершину, не уезжая в горы!
-        Скалодром BELKA для всех, кто желает впервые попробовать себя в скалолазании, а так же для спортсменов разного уровня.
-        Bключает в себя 2 детские трассы и 3 взрослые.
-        Cкалолазы смогут найти подробную схему
-        всех подготовленных трасс, посмотреть категорию сложности.
-      </p>
-      <button class="btn mountains__btn">Купить билет</button>
+    <div class="mountains__banner"></div>
+    <div class="container bunner__container">
+      <!-- <div class="container mountains__container"> -->
+        <h1 class="mountains__title title">Скалодром</h1>
+        <div class="mountains__description">
+          <!-- <p class="mountains__description mountains__description_xs">
+            Заберись на вершину не уезжая в горы!
+          </p> -->
+          <p class="mountains__description_tablet-desc">Заберись на вершину, не уезжая в горы!</p>
+          <p class="mountains__description_tablet-desc">
+            Скалодром BELKA для всех, кто желает впервые попробовать себя в скалолазании, а так же для спортсменов разного уровня.
+            Bключает в себя 2 детские трассы и 3 взрослые.
+            Cкалолазы смогут найти подробную схему
+            всех подготовленных трасс, посмотреть категорию сложности.
+        </p>
+        </div>
+        <!-- <button class="btn mountains__btn">Купить билет</button> -->
+      <!-- </div> -->
     </div>
   </section>
-
+ </div>
 
 <!-- Секция Трассы -->
 
@@ -165,16 +172,16 @@
   <section class="actions">
     <div class="container actions__container">
       <h2 class="actions__title title">Акции</h2>
-      <div class="actions__friends">
-        <img src="#" alt="" class="">
+      <div class="actions__item">
+        <img class="actions__img" src="../img/actions1.jpg" alt="">
         <p class="">Компаниям от 5 чел. скидка 10%</p>
       </div>
-      <div class="actions__family">
-        <img src="#" alt="" class="">
+      <div class="actions__item">
+        <img class="actions__img" src="img/actions2.jpg" alt="">
         <p class="">Многодетным семьям скидка 20%</p>
       </div>
-      <div class="actions__students">
-        <img src="#" alt="" class="">
+      <div class="actions__item">
+        <img class="actions__img" src="img/actions3.jpg" alt="">
         <p class="">Студентам по карте isic 20%</p>
       </div>
     </div>
@@ -357,5 +364,7 @@
       <a href="" class="link-toheader"></a>
     </div>
   </footer>
+  </div>
+
 </body>
 </html>

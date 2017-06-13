@@ -1,10 +1,26 @@
-.title {
-  font-size: $font-size + 20px;
-  font-weight: 800;
-  border-bottom: 3px solid #111;
-  text-align: center;
+// .page-header {
+//   background-color: #ff0;
+
+  // @media (min-width: $screen-sm) and (max-width: ($screen-md - 1)) {
+  //   background-color: #f00;
+  // }
+
+  // @media (min-width: $screen-md) {
+  //   background-color: #00f;
+  // }
+
+//
+
+.mountains__banner {
+    min-height: 810px;
+    margin: 0 auto ;
+    background-image: url("../img/header-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-@media (width: $screen-sm) {
-  font-size: $font-size + 24px;
+.mountains__description {
+  width: 50%;
+  margin-top: 0;
 }
