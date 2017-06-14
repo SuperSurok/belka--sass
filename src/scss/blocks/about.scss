@@ -1,0 +1,94 @@
+.we-have {
+  margin-top: 100px;
+  background: url("../img/aboutfone.jpg") center center no-repeat;
+  background-size: cover;
+  min-height: 385px;
+
+
+}
+
+.about__title {
+  padding-top: 32px;
+  color: $white
+}
+
+.we-have__block {
+  font-size: $font-size;
+  position: relative;
+  color: $white;
+  width: 20%;
+  vertical-align: top;
+  margin-top: 42px;
+  display: flex;
+  justify-content: center;
+}
+
+.we-have__block:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.block-equip:before {
+  background: url("../img/about1.png") center center no-repeat;
+  width: 76px;
+  height: 76px;
+}
+
+.block-tracks:before {
+  background: url("../img/about2.png") center center no-repeat;
+  width: 76px;
+  height: 76px;
+}
+
+.block-trainers:before {
+  background: url("../img/about3.png") center center no-repeat;
+  width: 76px;
+  height: 76px;
+}
+
+.we-have__text {
+  margin-top: 90px;
+}
+
+.about-foto {
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+.about-foto__item {
+  float: left;
+  width: 29%;
+  margin-left: 6%;
+  position: relative;
+
+    &:first-child {
+    margin-left: 0;
+  }
+
+    &:hover {
+      filter: brightness(60%);
+      transition: linear 200ms;
+    }
+
+    &:hover {
+      .we-have__magnifier {
+        display: block;
+      }
+    }
+}
+
+.about-foto__img {
+  width: 100%;
+  height: 100%;
+}
+
+.we-have__magnifier{
+      position: absolute;
+      top: 39%;
+      left: 38%;
+      display: none;
+    }
