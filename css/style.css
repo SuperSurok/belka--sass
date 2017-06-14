@@ -389,40 +389,181 @@ template {
 [hidden] {
   display: none; }
 
-body {
-  min-width: 320px;
-  margin: 0;
-  font-family: "Open Sans_my", sans-serif;
-  color: #000; }
-
 @font-face {
-  font-family: 'Proxima Nova Lt';
-  src: url("../fonts/ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Proxima Nova Rg';
-  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-family: 'ProximaNova-Regular';
+  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Proxima Nova Rg';
-  src: url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-family: 'ProximaNova-Semibold';
+  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("ttf");
   font-weight: 800;
   font-style: normal; }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url("../fonts/OpenSans.woff2") format("woff2"), url("../fonts/OpenSans.woff") format("woff"), url("../fonts/OpenSans.ttf") format("truetype");
+  src: url("../fonts/OpenSans.woff2") format("woff2"), url("../fonts/OpenSans.woff") format("woff"), url("../fonts/OpenSans.ttf") format("ttf");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url("../fonts/OpenSans.woff2") format("woff2"), url("../fonts/OpenSans.woff") format("woff"), url("../fonts/OpenSans.ttf") format("truetype");
+  src: url("../fonts/OpenSans.woff2") format("woff2"), url("../fonts/OpenSans.woff") format("woff"), url("../fonts/OpenSans.ttf") format("ttf");
   font-weight: 600;
   font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans.woff2") format("woff2"), url("../fonts/OpenSans.woff") format("woff"), url("../fonts/OpenSans.ttf") format("ttf");
+  font-weight: 800;
+  font-style: normal; }
+
+body {
+  margin: 0 auto;
+  font-family: "ProximaNova-Bold", "Open Sans", sans-serif;
+  color: #000;
+  font-size: 16px; }
+
+.wrapper {
+  width: 1280px;
+  margin: 0 auto; }
+
+.container {
+  width: 1200px;
+  margin: 0 auto; }
+
+.title {
+  font-family: 'ProximaNova-Bold';
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style-type: none; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ProximaNova-Semibold';
+  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("ttf");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans.woff2") format("woff2"), url("../fonts/OpenSans.woff") format("woff"), url("../fonts/OpenSans.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans.woff2") format("woff2"), url("../fonts/OpenSans.woff") format("woff"), url("../fonts/OpenSans.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans.woff2") format("woff2"), url("../fonts/OpenSans.woff") format("woff"), url("../fonts/OpenSans.ttf") format("ttf");
+  font-weight: 800;
+  font-style: normal; }
+
+.page-header__contacts {
+  width: 100%;
+  float: right;
+  position: relative;
+  margin: 0 auto;
+  background-color: #e6e6ef; }
+
+.page-header__contacts-wrap {
+  float: right;
+  background-color: #e6e6ef; }
+
+.contacts {
+  float: right; }
+
+.contacts__time, .contacts__phone, .contacts__location {
+  display: inline-block; }
+
+.logo {
+  width: 10%;
+  float: left;
+  position: absolute; }
+
+.page-header-nav {
+  width: 40%;
+  float: right; }
+
+.main-nav__item {
+  display: inline-block; }
+
+.page-header__logo {
+  border: 2px solid #111;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%; }
+
+.logo__img {
+  background: center center no-repeat;
+  position: relative;
+  left: -15%;
+  top: 15%; }
+
+.mountains__banner {
+  min-height: 810px;
+  margin: 0 auto;
+  background-image: url("../img/header-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.mountains__description {
+  width: 50%;
+  margin-top: 0; }
+
+.actions {
+  overflow: hidden; }
+
+.row {
+  margin: 0 auto; }
+
+.actions__item {
+  width: 30%;
+  margin-left: 3.3%;
+  float: left;
+  position: relative; }
+
+.actions__item:first-child {
+  margin-left: 0; }
+
+.actions__text {
+  color: #ffffff;
+  font-family: "ProximaNova-Bold", "Open Sans", sans-serif;
+  font-weight: 800;
+  position: absolute;
+  bottom: 5%; }
 
 /*# sourceMappingURL=style.css.map */
