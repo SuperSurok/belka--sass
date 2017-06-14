@@ -1,9 +1,60 @@
+.actions__container {
+  overflow: hidden;
+}
+
+.actions__foto {
+  overflow: hidden;
+  margin-top: 80px;
+}
+
 .actions__item {
-  width: 30%;
-  margin-left: 3.3%;
-  float: left;
+  width: 29%;
+  margin-left: 6%;
+  position: relative;
+  display: inline-block;
+
+  &:hover {
+    filter: brightness(60%);
+    transition: linear 200ms;
+  }
+
+  &:hover {
+    .link__text {
+      display: block;
+    }
+  }
 }
 
 .actions__item:first-child {
   margin-left: 0;
+}
+
+.actions__img {
+  background-position: center;
+  background-size: cover;
+}
+
+.actions__text {
+  text-align: left;
+  color: $white;
+  font-size: $font-size + 14px;
+  font-family: 'ProximaNova-Bold';
+  font-weight: 800;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+
+.actions__link {
+  color: $white;
+  position: absolute;
+  left: 40%;
+  top: 50%;
+}
+
+.link__text {
+  color: $white;
+  font-family: 'Open Sans';
+  text-decoration: underline;
+  display: none;
 }
