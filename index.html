@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru" class="no-js">
 <head>
@@ -12,94 +13,66 @@
   </script>
 
 
-  <link rel="stylesheet" href="css/style.css">
   <title>belka</title>
 </head>
 <body>
-  <!-- Это включение в разметку SVG-спрайта и пример его использования -->
-  
-  <!-- <svg width="24" height="24"><use xlink:href="#loupe"></use></svg> -->
-  <!-- <svg width="24" height="24"><use xlink:href="#rgb"></use></svg> -->
-  <!-- <svg width="24" height="24"><use xlink:href="#tea-cup"></use></svg> -->
-
-
-  <!-- Это примеры использования растрового спрайта -->
-  <!--
-  <div class="chrome"></div>
-  <div class="github-logo"></div>
-  <div class="kraken"></div>
-  <div class="male-and-female"></div>
-  <div class="musica-searcher"></div>
-  <div class="placeholder"></div>
-  -->
 
   <!-- Хедер -->
-  <div class="wrapper">
-    <div class="page-header">
-    <div class="page-header__contacts">
-      <div class="page-header__contacts-wrap contacts"></div>
-      <div class="container">
-        <div class="contacts">
-          <div class="contacts__time"><p class="contacts__item">24 часа</p></div>
-          <div class="contacts__phone">
-            <a href="tel:+78129997788" class="phone__link">8(812)999-77-99</a>
+  <div class="header">
+    <div class="container">
+      <div class="header__contacts">
+      <div class="header__contacts-wrap contacts"></div>
+      <div class="contacts">
+        <p class="contacts__item">24 часа</p>
+        <a href="tel:+78129997788" class="phone__link">8(812)999-77-99</a>
+        <p class="contacts__location">Выборгское ш.,220</p>
+      </div>
+    </div>
+    <div class="header__line">
+       <a href="" class="logo">
+      <img src="img/logo.png" alt="" class="logo__img">
+    </a>
+    <button class="btn header__btn">Купить билет</button>
+      <nav class="header-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--acttive">
+          <a href="" class="main-nav__link">Трассы</a></li>
+        <li class="main-nav__item">
+          <a href="" class="main-nav__link">Акции</a></li>
+        <li class="main-nav__item">
+          <a href="" class="main-nav__link">Цены</a></li>
+        <li class="main-nav__item">
+          <a href="" class="main-nav__link">Отзывы</a></li>
+          <li class="main-nav__item">
+          <a href="" class="main-nav__link">Контакты</a></li>
+      </ul>
+    </nav>
+    </div>
+  <!-- Секция Скалодром -->
+    <section class="mountains">
+          <h1 class="mountains__title title">Скалодром</h1>
+          <div class="mountains__description">
+            <p class="mountains__description_xs">
+              Заберись на вершину не уезжая в горы!
+            </p>
+            <p class="mountains__description_tablet-desc">Заберись на вершину, не уезжая в горы!</p>
+            <p class="mountains__description_tablet-desc">
+              Скалодром BELKA для всех, кто желает впервые попробовать себя в скалолазании, а так же для спортсменов разного уровня.
+              Bключает в себя 2 детские трассы и 3 взрослые.
+              Cкалолазы смогут найти подробную схему
+              всех подготовленных трасс, посмотреть категорию сложности.
+          </p>
           </div>
-          <div class="contacts__location">Выборгское ш.,220</div>
-        </div>
-      </div>
-    </div>
-    <div class="container page-header__container">
-      <div class="logo">
-        <a href="" class="page-header__logo logo">
-          <img src="img/logo.png" alt="" class="logo__img">
-        </a>
-      </div>
-      <button class="page-header__nav-toggle main-nav__toggle">Купить билет</button>
-        <nav class="page-header-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--acttive">
-            <a href="" class="main-nav__link">Трассы</a></li>
-          <li class="main-nav__item">
-            <a href="" class="main-nav__link">Акции</a></li>
-          <li class="main-nav__item">
-            <a href="" class="main-nav__link">Цены</a></li>
-          <li class="main-nav__item">
-            <a href="" class="main-nav__link">Отзывы</a></li>
-            <li class="main-nav__item">
-            <a href="" class="main-nav__link">Контакты</a></li>
-        </ul>
-      </nav>
-  </div>
-
-<!-- Секция Скалодром -->
-
-  <section class="mountains">
-    <div class="mountains__banner"></div>
-    <div class="container bunner__container">
-      <!-- <div class="container mountains__container"> -->
-        <h1 class="mountains__title title">Скалодром</h1>
-        <div class="mountains__description">
-          <!-- <p class="mountains__description mountains__description_xs">
-            Заберись на вершину не уезжая в горы!
-          </p> -->
-          <p class="mountains__description_tablet-desc">Заберись на вершину, не уезжая в горы!</p>
-          <p class="mountains__description_tablet-desc">
-            Скалодром BELKA для всех, кто желает впервые попробовать себя в скалолазании, а так же для спортсменов разного уровня.
-            Bключает в себя 2 детские трассы и 3 взрослые.
-            Cкалолазы смогут найти подробную схему
-            всех подготовленных трасс, посмотреть категорию сложности.
-        </p>
-        </div>
-        <!-- <button class="btn mountains__btn">Купить билет</button> -->
-      <!-- </div> -->
-    </div>
-  </section>
- </div>
+          <!-- <button class="btn mountains__btn">Купить билет</button> -->
+        <!-- </div> -->
+    </section>
+   </div>
+   </div>
 
 <!-- Секция Трассы -->
 
   <section class="tracks">
-    <div class="container track_container">
+    <div class="container">
       <h2 class="tracks__title title">Трассы</h2>
       <div class="track-card">
         <div class="track-card__title">
@@ -180,21 +153,30 @@
 <!-- Секция Акции -->
 
   <section class="actions">
-    <div class="container actions__container">
+    <div class="container">
       <h2 class="actions__title title">Акции</h2>
-      <div class="row">
+      <div class="actions__list">
         <div class="actions__item">
-        <img class="actions__img" src="../img/actions1.jpg" alt="">
-        <p class="actions__text">Компаниям от 5 чел. скидка 10%</p>
-      </div>
-      <div class="actions__item">
-        <img class="actions__img" src="img/actions2.jpg" alt="">
-        <p class="actions__text">Многодетным семьям скидка 20%</p>
-      </div>
-      <div class="actions__item">
-        <img class="actions__img" src="img/actions3.jpg" alt="">
-        <p class="actions__text">Студентам по карте isic 20%</p>
-      </div>
+          <img class="actions__img" src="img/actions1.jpg" alt="">
+          <div class="actions__link">
+            <a href="#" class="link__text">Подробнее</a>
+          </div>
+          <p class="actions__text">Компаниям от 5 чел. скидка 10%</p>
+        </div>
+        <div class="actions__item">
+          <img class="actions__img" src="img/actions2.jpg" alt="">
+          <div class="actions__link">
+            <a href="#" class="link__text">Подробнее</a>
+          </div>
+          <p class="actions__text">Многодетным семьям скидка 20%</p>
+        </div>
+        <div class="actions__item">
+          <img class="actions__img" src="img/actions3.jpg" alt="">
+          <div class="actions__link">
+            <a href="#" class="link__text">Подробнее</a>
+          </div>
+          <p class="actions__text">Студентам <br>по карте isic 20%</p>
+        </div>
       </div>
     </div>
   </section>
@@ -203,29 +185,33 @@
 <!-- Секция У нас -->
 
   <section class="about">
-    <div class="container container__about">
+    <div class="container">
       <div class="we-have">
-        <img src="" alt="" class="we-have__img">
         <h2 class="about__title title">У нас</h2>
-        <div class="we-have__block">
+        <div class="we-have__block block-equip">
           <p class="we-have__text">Альпинистское снаряжение и страховочные устройства французской компании Petzl</p>
         </div>
-        <div class="we-have__block">
+        <div class="we-have__block block-tracks">
+          <div class="we-have__img"></div>
           <p class="we-have__text">Понятная маркировка трасс (ламинированные таблички и зацепки определнного цвета для каждой трассы)</p>
         </div>
-        <div class="we-have__block">
-          <p class="we-have__text">У скалодрома всегда находится инструктор, который готов ответить на любой Ваш вопрос</p>
+        <div class="we-have__block block-trainers">
+          <div class="we-have__img"></div>
+          <p class="we-have__text">На территории скалодрома всегда находится инструктор, который готов ответить на любой Ваш вопрос</p>
         </div>
       </div>
       <div class="about-foto">
         <div class="about-foto__item">
-          <img class="about-foto__img" src="" alt="">
+          <img class="we-have__magnifier" src="img/magnifier.png" alt="">
+          <img class="about-foto__img" src="img/aboutfoto1.jpg" alt="">
         </div>
         <div class="about-foto__item">
-          <img class="about-foto__img" src="" alt="">
+          <img class="we-have__magnifier" src="img/magnifier.png" alt="">
+          <img class="about-foto__img" src="img/aboutfoto2.jpg" alt="">
         </div>
         <div class="about-foto__item">
-          <img class="about-foto__img" src="" alt="">
+          <img class="we-have__magnifier" src="img/magnifier.png" alt="">
+          <img class="about-foto__img" src="img/aboutfoto3.jpg" alt="">
         </div>
       </div>
         <div class="caorusel">
@@ -238,7 +224,7 @@
 <!-- Секция Цены -->
 
   <section class="price">
-    <div class="container container__about">
+    <div class="container">
       <h2 class="price__title title">Цены</h2>
       <table class="table">
         <tr>
@@ -307,30 +293,30 @@
   <!-- Секция Отзывы -->
 
   <section class="feedback">
-    <div class="container container__feedback">
+    <div class="carousel">
       <h2 class="feedback__title title">Отзывы</h2>
       <div class="feedback__item">
         <img src="" alt="" class="feedback__img">
         <p class="feedback__name">Алексей.</p>
         <p class="feedback__prof">Скалолаз-любитель.</p>
-        <a href="" class="sprite sprite-tw-logo"></a>
-        <a href="" class="sprite sprite-vk-logo"></a>
+        <a href="" class="sprite sprite-tw"></a>
+        <a href="" class="sprite sprite-vk"></a>
         <p class="feedback__text">Интересные трассы, вкусная еда и самые приветливые тренера!</p>
       </div>
       <div class="feedback__item">
         <img src="" alt="" class="feedback__img">
         <p class="feedback__name">Мария.</p>
         <p class="feedback__prof">Студентка.</p>
-        <a href="" class="sprite sprite-tw-logo"></a>
-        <a href="" class="sprite sprite-vk-logo"></a>
+        <a href="" class="sprite sprite-tw"></a>
+        <a href="" class="sprite sprite-vk"></a>
         <p class="feedback__text">Лучший скалодром в городе!</p>
       </div>
       <div class="feedback__item">
         <img src="" alt="" class="feedback__img">
         <p class="feedback__name">Екатерина.</p>
         <p class="feedback__prof">Мама троих детей.</p>
-        <a href="" class="sprite sprite-tw-logo"></a>
-        <a href="" class="sprite sprite-vk-logo"></a>
+        <a href="" class="sprite sprite-tw"></a>
+        <a href="" class="sprite sprite-vk"></a>
         <p class="feedback__text">Парк "BELKA" - отличная альтернатива наскучившим походам в кино и кафе.</p>
       </div>
 
@@ -343,7 +329,7 @@
 <!-- Футер -->
 
   <footer class="footer">
-    <div class="container container__footer">
+    <div class="container">
       <iframe src="" frameborder="1"></iframe>
       <p class="footer_address">
         Выборгское ш.,220
@@ -352,26 +338,26 @@
         8(812)999-77-88
       </a>
       <ul class="footer__nav">
-        <a href="#">
-          <li class="nav-item">Трассы</li>
+        <li>
+          <a href="#" class="nav-item">Трассы</a>
+        </li>
+        <li>
+          <a href="#" class="nav-item">Акции</a>
+        </li>
+        <li>
+          <a href="#" class="nav-item">Цены</a>
+        </li>
+        <li>
+          <a href="#" class="nav-item">Отзывы</a>
         </a>
-        <a href="#">
-          <li class="nav-item">Акции</li>
-        </a>
-        <a href="#">
-          <li class="nav-item">Цены</li>
-        </a>
-        <a href="#">
-          <li class="nav-item">Отзывы</li>
-        </a>
-        <a href="#">
-          <li class="nav-item">Контакты</li>
-        </a>
+        <li>
+          <a href="#" class="nav-item">Контакты</a>
+        </li>
       </ul>
       <ul class="footer__socials">
-        <a href="#" class="sprite sprite-tw-logo"></a>
-        <a href="#" class="sprite sprite-vk-logo"></a>
-        <a href="#" class="sprite sprite-inst-logo"></a>
+        <li class="socials__item"><a href="#" class="sprite sprite-tw" href=""></a></li>
+        <li class="socials__item"><a href="#" class="sprite sprite-vk" href=""></a></li>
+        <li class="socials__item"><a href="#" lass="sprite sprite-inst" href=""></a></li>
       </ul>
       <a href="" class="link-toheader"></a>
     </div>

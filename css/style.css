@@ -390,63 +390,60 @@ template {
   display: none; }
 
 @font-face {
-  font-family: 'ProximaNova-Regular';
+  font-family: 'ProximaNova';
   src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
-  font-family: 'ProximaNova-Semibold';
-  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("ttf");
+  font-family: 'ProximaNova';
+  src: url("../fonts/ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("ttf");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
-  font-family: 'ProximaNova-Bold';
-  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("ttf");
+  font-family: 'ProximaNova';
+  src: url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("ttf");
   font-weight: 800;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'OpenSans';
   src: url("../fonts/OpenSans.woff2") format("woff2"), url("../fonts/OpenSans.woff") format("woff"), url("../fonts/OpenSans.ttf") format("ttf");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'OpenSans';
   src: url("../fonts/OpenSans.woff2") format("woff2"), url("../fonts/OpenSans.woff") format("woff"), url("../fonts/OpenSans.ttf") format("ttf");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'OpenSans';
   src: url("../fonts/OpenSans.woff2") format("woff2"), url("../fonts/OpenSans.woff") format("woff"), url("../fonts/OpenSans.ttf") format("ttf");
   font-weight: 800;
   font-style: normal; }
 
 body {
   margin: 0 auto;
-  font-family: "ProximaNova-Bold", "Open Sans", sans-serif;
-  color: #000;
+  font-family: "ProximaNova", "Open Sans", sans-serif;
+  color: #111;
   font-size: 16px; }
 
-.wrapper {
-  width: 1280px;
-  margin: 0 auto; }
-
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto; }
 
 .title {
-  font-family: 'ProximaNova-Bold';
+  font-family: 'ProximaNova';
   font-size: 40px;
-  font-weight: bold;
-  text-align: center; }
+  text-align: center;
+  font-weight: 800; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #111; }
 
 li {
   list-style-type: none; }
@@ -456,83 +453,42 @@ li {
   padding: 0; }
 
 @font-face {
-  font-family: 'ProximaNova-Regular';
+  font-family: 'ProximaNova';
   src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
-  font-family: 'ProximaNova-Semibold';
-  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("ttf");
+  font-family: 'ProximaNova';
+  src: url("../fonts/ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("ttf");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
-  font-family: 'ProximaNova-Bold';
-  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("ttf");
+  font-family: 'ProximaNova';
+  src: url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("ttf");
   font-weight: 800;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'OpenSans';
   src: url("../fonts/OpenSans.woff2") format("woff2"), url("../fonts/OpenSans.woff") format("woff"), url("../fonts/OpenSans.ttf") format("ttf");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'OpenSans';
   src: url("../fonts/OpenSans.woff2") format("woff2"), url("../fonts/OpenSans.woff") format("woff"), url("../fonts/OpenSans.ttf") format("ttf");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'OpenSans';
   src: url("../fonts/OpenSans.woff2") format("woff2"), url("../fonts/OpenSans.woff") format("woff"), url("../fonts/OpenSans.ttf") format("ttf");
   font-weight: 800;
   font-style: normal; }
 
-.page-header__contacts {
-  width: 100%;
-  float: right;
-  position: relative;
-  margin: 0 auto;
-  background-color: #e6e6ef; }
-
-.page-header__contacts-wrap {
-  float: right;
-  background-color: #e6e6ef; }
-
-.contacts {
-  float: right; }
-
-.contacts__time, .contacts__phone, .contacts__location {
-  display: inline-block; }
-
-.logo {
-  width: 10%;
-  float: left;
-  position: absolute; }
-
-.page-header-nav {
-  width: 40%;
-  float: right; }
-
-.main-nav__item {
-  display: inline-block; }
-
-.page-header__logo {
-  border: 2px solid #111;
-  width: 65px;
-  height: 65px;
-  border-radius: 50%; }
-
-.logo__img {
-  background: center center no-repeat;
-  position: relative;
-  left: -15%;
-  top: 15%; }
-
-.mountains__banner {
+.header {
   min-height: 810px;
   margin: 0 auto;
   background-image: url("../img/header-img.jpg");
@@ -540,30 +496,191 @@ li {
   background-repeat: no-repeat;
   background-position: center center; }
 
+.header__contacts {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: #e6e6ef; }
+
+.header__contacts-wrap {
+  float: right;
+  background-color: #e6e6ef; }
+
+.contacts {
+  margin-left: auto;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.header__line {
+  display: none; }
+
+.header-nav {
+  margin-left: auto; }
+
+.main-nav__item {
+  display: inline-block;
+  margin-right: 20px;
+  font-family: "ProximaNova", "Open Sans", sans-serif;
+  font-size: 18px; }
+
+.main-nav__item:last-child {
+  margin-right: 0; }
+
+.header__btn {
+  margin-top: 10px;
+  padding: 12px 25px;
+  border: 2px solid #111;
+  background-color: #eeeef4;
+  margin-left: 25px; }
+
+.logo__img {
+  background: center center no-repeat; }
+
 .mountains__description {
   width: 50%;
   margin-top: 0; }
 
-.actions {
+.actions__container {
   overflow: hidden; }
 
-.row {
-  margin: 0 auto; }
+.actions__foto {
+  overflow: hidden;
+  margin-top: 80px; }
 
 .actions__item {
-  width: 30%;
-  margin-left: 3.3%;
-  float: left;
-  position: relative; }
+  width: 100%;
+  position: relative;
+  display: block; }
+  .actions__item:hover {
+    filter: brightness(60%);
+    transition: linear 200ms; }
+  .actions__item:hover .link__text {
+    display: block; }
 
-.actions__item:first-child {
-  margin-left: 0; }
+.actions__img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover; }
 
 .actions__text {
+  text-align: left;
   color: #ffffff;
-  font-family: "ProximaNova-Bold", "Open Sans", sans-serif;
-  font-weight: 800;
+  font-size: 30px;
+  font-family: 'ProximaNova-Bold';
   position: absolute;
-  bottom: 5%; }
+  bottom: 5%;
+  left: 5%; }
+
+.actions__link {
+  color: #ffffff;
+  position: absolute;
+  left: 40%;
+  top: 50%; }
+
+.link__text {
+  color: #ffffff;
+  font-family: 'Open Sans';
+  text-decoration: underline;
+  display: none; }
+
+.we-have {
+  background: url("../img/aboutfone.jpg") center center no-repeat;
+  background-size: cover;
+  min-height: 385px; }
+
+.about__title {
+  padding-top: 32px;
+  color: #ffffff; }
+
+.we-have__block {
+  font-size: 16px;
+  position: relative;
+  color: #ffffff;
+  width: 100%;
+  display: block; }
+
+.we-have__block:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+.block-equip:before {
+  background: url("../img/about1.png") center center no-repeat;
+  width: 76px;
+  height: 76px; }
+
+.block-tracks:before {
+  background: url("../img/about2.png") center center no-repeat;
+  width: 76px;
+  height: 76px; }
+
+.block-trainers:before {
+  background: url("../img/about3.png") center center no-repeat;
+  width: 76px;
+  height: 76px; }
+
+.we-have__text {
+  margin-top: 90px; }
+
+.about-foto {
+  margin-top: 100px;
+  overflow: hidden; }
+
+.about-foto__item {
+  float: left;
+  width: 29%;
+  margin-left: 6%;
+  position: relative; }
+  .about-foto__item:first-child {
+    margin-left: 0; }
+  .about-foto__item:hover {
+    filter: brightness(60%);
+    transition: linear 200ms; }
+  .about-foto__item:hover .we-have__magnifier {
+    display: block; }
+
+.about-foto__img {
+  width: 100%;
+  height: 100%; }
+
+.we-have__magnifier {
+  position: absolute;
+  top: 39%;
+  left: 38%;
+  display: none; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px; }
+  .header__line {
+    margin-top: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-align: center;
+    align-items: center; }
+  .we-have {
+    margin-top: 55px; } }
+
+@media (min-width: 992px) {
+  .mountains__description .mountains__description_xs {
+    display: none; } }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px; }
+  .actions__list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .actions__item {
+    width: 360px; }
+  .we-have {
+    margin-top: 100px; } }
 
 /*# sourceMappingURL=style.css.map */
