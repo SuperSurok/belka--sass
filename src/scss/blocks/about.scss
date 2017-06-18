@@ -1,9 +1,13 @@
 .we-have {
-  margin-top: 100px;
   background: url("../img/aboutfone.jpg") center center no-repeat;
   background-size: cover;
   min-height: 385px;
-
+  @media (min-width: $screen-sm) {
+    margin-top: 55px;
+  }
+  @media (min-width: $screen-lg) {
+    margin-top: 100px;
+  }
 
 }
 
@@ -16,11 +20,12 @@
   font-size: $font-size;
   position: relative;
   color: $white;
-  width: 20%;
-  vertical-align: top;
-  margin-top: 42px;
-  display: flex;
-  justify-content: center;
+  width: 100%;
+  display: block;
+  // vertical-align: top;
+  // margin-top: 42px;
+  // display: flex;
+  // justify-content: center;
 }
 
 .we-have__block:before {

@@ -4,7 +4,7 @@
 // }
 
 @font-face {
-  font-family: 'ProximaNova-Regular';
+  font-family: 'ProximaNova';
   src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
     url('../fonts/ProximaNova-Regular.woff') format('woff'),
     url('../fonts/ProximaNova-Regular.ttf') format('ttf');
@@ -12,21 +12,23 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'ProximaNova-Semibold';
-  src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
-    url('../fonts/ProximaNova-Regular.woff') format('woff'),
-    url('../fonts/ProximaNova-Regular.ttf') format('ttf');
+  font-family: 'ProximaNova';
+  src: url('../fonts/ProximaNova-Semibold.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Semibold.woff') format('woff'),
+    url('../fonts/ProximaNova-Semibold.ttf') format('ttf');
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
-  font-family: 'ProximaNova-Bold';
-  src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
-    url('../fonts/ProximaNova-Regular.woff') format('woff'),
-    url('../fonts/ProximaNova-Regular.ttf') format('ttf');
+  font-family: 'ProximaNova';
+  src: url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Bold.woff') format('woff'),
+    url('../fonts/ProximaNova-Bold.ttf') format('ttf');
   font-weight: 800;
   font-style: normal;
 }
+
+
 @font-face {
 	font-family: 'OpenSans';
 	src: url('../fonts/OpenSans.woff2') format('woff2'),

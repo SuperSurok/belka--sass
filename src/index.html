@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru" class="no-js">
 <head>
@@ -5,80 +6,58 @@
   <title>belka</title>
 </head>
 <body>
-  <!-- Это включение в разметку SVG-спрайта и пример его использования -->
-  <!-- @@include('img/sprite-svg.svg') -->
-  <!-- <svg width="24" height="24"><use xlink:href="#loupe"></use></svg> -->
-  <!-- <svg width="24" height="24"><use xlink:href="#rgb"></use></svg> -->
-  <!-- <svg width="24" height="24"><use xlink:href="#tea-cup"></use></svg> -->
-
-
-  <!-- Это примеры использования растрового спрайта -->
-  <!--
-  <div class="chrome"></div>
-  <div class="github-logo"></div>
-  <div class="kraken"></div>
-  <div class="male-and-female"></div>
-  <div class="musica-searcher"></div>
-  <div class="placeholder"></div>
-  -->
 
   <!-- Хедер -->
-  <div class="wrapper">
-    <div class="page-header">
-    <div class="page-header__contacts">
-      <div class="page-header__contacts-wrap contacts"></div>
-      <div class="container">
-        <div class="contacts">
-          <p class="contacts__item">24 часа</p>
-          <a href="tel:+78129997788" class="phone__link">8(812)999-77-99</a>
-          <p class="contacts__location">Выборгское ш.,220</p>
-        </div>
+  <div class="header">
+    <div class="container">
+      <div class="header__contacts">
+      <div class="header__contacts-wrap contacts"></div>
+      <div class="contacts">
+        <p class="contacts__item">24 часа</p>
+        <a href="tel:+78129997788" class="phone__link">8(812)999-77-99</a>
+        <p class="contacts__location">Выборгское ш.,220</p>
       </div>
     </div>
-      <a href="" class="logo">
-        <img src="img/logo.png" alt="" class="logo__img">
-      </a>
-      <button class="page-header__nav-toggle main-nav__toggle">Купить билет</button>
-        <nav class="page-header-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--acttive">
-            <a href="" class="main-nav__link">Трассы</a></li>
+    <div class="header__line">
+       <a href="" class="logo">
+      <img src="img/logo.png" alt="" class="logo__img">
+    </a>
+    <button class="btn header__btn">Купить билет</button>
+      <nav class="header-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--acttive">
+          <a href="" class="main-nav__link">Трассы</a></li>
+        <li class="main-nav__item">
+          <a href="" class="main-nav__link">Акции</a></li>
+        <li class="main-nav__item">
+          <a href="" class="main-nav__link">Цены</a></li>
+        <li class="main-nav__item">
+          <a href="" class="main-nav__link">Отзывы</a></li>
           <li class="main-nav__item">
-            <a href="" class="main-nav__link">Акции</a></li>
-          <li class="main-nav__item">
-            <a href="" class="main-nav__link">Цены</a></li>
-          <li class="main-nav__item">
-            <a href="" class="main-nav__link">Отзывы</a></li>
-            <li class="main-nav__item">
-            <a href="" class="main-nav__link">Контакты</a></li>
-        </ul>
-      </nav>
-  </div>
-
-<!-- Секция Скалодром -->
-
-  <section class="mountains">
-    <div class="mountains__banner"></div>
-    <div class="container">
-      <!-- <div class="container mountains__container"> -->
-        <h1 class="mountains__title title">Скалодром</h1>
-        <div class="mountains__description">
-          <!-- <p class="mountains__description mountains__description_xs">
-            Заберись на вершину не уезжая в горы!
-          </p> -->
-          <p class="mountains__description_tablet-desc">Заберись на вершину, не уезжая в горы!</p>
-          <p class="mountains__description_tablet-desc">
-            Скалодром BELKA для всех, кто желает впервые попробовать себя в скалолазании, а так же для спортсменов разного уровня.
-            Bключает в себя 2 детские трассы и 3 взрослые.
-            Cкалолазы смогут найти подробную схему
-            всех подготовленных трасс, посмотреть категорию сложности.
-        </p>
-        </div>
-        <!-- <button class="btn mountains__btn">Купить билет</button> -->
-      <!-- </div> -->
+          <a href="" class="main-nav__link">Контакты</a></li>
+      </ul>
+    </nav>
     </div>
-  </section>
- </div>
+  <!-- Секция Скалодром -->
+    <section class="mountains">
+          <h1 class="mountains__title title">Скалодром</h1>
+          <div class="mountains__description">
+            <p class="mountains__description_xs">
+              Заберись на вершину не уезжая в горы!
+            </p>
+            <p class="mountains__description_tablet-desc">Заберись на вершину, не уезжая в горы!</p>
+            <p class="mountains__description_tablet-desc">
+              Скалодром BELKA для всех, кто желает впервые попробовать себя в скалолазании, а так же для спортсменов разного уровня.
+              Bключает в себя 2 детские трассы и 3 взрослые.
+              Cкалолазы смогут найти подробную схему
+              всех подготовленных трасс, посмотреть категорию сложности.
+          </p>
+          </div>
+          <!-- <button class="btn mountains__btn">Купить билет</button> -->
+        <!-- </div> -->
+    </section>
+   </div>
+   </div>
 
 <!-- Секция Трассы -->
 
@@ -166,8 +145,9 @@
   <section class="actions">
     <div class="container">
       <h2 class="actions__title title">Акции</h2>
+      <div class="actions__list">
         <div class="actions__item">
-          <img class="actions__img" src="../img/actions1.jpg" alt="">
+          <img class="actions__img" src="img/actions1.jpg" alt="">
           <div class="actions__link">
             <a href="#" class="link__text">Подробнее</a>
           </div>
@@ -187,6 +167,7 @@
           </div>
           <p class="actions__text">Студентам <br>по карте isic 20%</p>
         </div>
+      </div>
     </div>
   </section>
 
@@ -198,7 +179,6 @@
       <div class="we-have">
         <h2 class="about__title title">У нас</h2>
         <div class="we-have__block block-equip">
-
           <p class="we-have__text">Альпинистское снаряжение и страховочные устройства французской компании Petzl</p>
         </div>
         <div class="we-have__block block-tracks">

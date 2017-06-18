@@ -1,30 +1,31 @@
 body {
-  // min-width: 320px;
-  // max-width: 1280px;
   margin: 0 auto;
   font-family: $font-family;
   color: $text-color;
   font-size: $font-size;
 }
 
-.wrapper {
-  width: 1280px;
-  margin: 0 auto;
-}
-
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
+  @media (min-width: $screen-sm) {
+    width: 768px;
+  }
+  @media (min-width: $screen-lg) {
+    width: 1200px;
+  }
 }
 
 .title {
-  font-family: 'ProximaNova-Bold';
-  font-size: $font-size +24px;
+  font-family: 'ProximaNova';
+  font-size: $font-size + 24px;
   text-align: center;
+  font-weight: 800;
 }
 
 a {
   text-decoration: none;
+  color: $text-color;
 }
 
 li {
