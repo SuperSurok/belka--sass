@@ -5,6 +5,11 @@
   font-weight: 400;
 }
 
+iframe {
+  width: 100%;
+  height: 230px;
+}
+
 .footer__contacts {
   color: $footer-text-gray;
   display: flex;
@@ -32,4 +37,25 @@
 
 .nav__link {
   color: $footer-text-gray;
+}
+
+.footer__line {
+  display: flex;
+  align-items:center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer__socials {
+  display: flex;
+
+}
+
+.socials__item {
+  margin-right: 10px;
+}
+
+.link-toheader {
+  margin-left: auto;
+  margin-bottom: 5px;
 }
