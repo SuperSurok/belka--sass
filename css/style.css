@@ -432,7 +432,7 @@ body {
   font-size: 16px; }
 
 .container {
-  width: 100%;
+  width: 92%;
   margin: 0 auto; }
 
 .title {
@@ -488,6 +488,71 @@ li {
   font-weight: 800;
   font-style: normal; }
 
+.sprite {
+  background-image: url(spritesheet.png);
+  background-repeat: no-repeat;
+  display: block; }
+
+.sprite-avatar {
+  width: 24px;
+  height: 27px;
+  background-position: -5px -5px; }
+
+.sprite-buttonup {
+  width: 33px;
+  height: 33px;
+  background-position: -39px -5px; }
+
+.sprite-instagram {
+  width: 19px;
+  height: 19px;
+  background-position: -82px -5px; }
+
+.sprite-mountain {
+  width: 35px;
+  height: 22px;
+  background-position: -111px -5px; }
+
+.sprite-phonecall {
+  width: 14px;
+  height: 14px;
+  background-position: -82px -37px; }
+
+.sprite-placeholder-_4_ {
+  width: 11px;
+  height: 16px;
+  background-position: -106px -37px; }
+
+.sprite-question- {
+  width: 57px;
+  height: 58px;
+  background-position: -5px -63px; }
+
+.sprite-rope {
+  width: 57px;
+  height: 58px;
+  background-position: -72px -63px; }
+
+.sprite-sign {
+  width: 57px;
+  height: 58px;
+  background-position: -156px -5px; }
+
+.sprite-time {
+  width: 19px;
+  height: 19px;
+  background-position: -139px -73px; }
+
+.sprite-twitter {
+  width: 22px;
+  height: 18px;
+  background-position: -168px -73px; }
+
+.sprite-vk {
+  width: 25px;
+  height: 15px;
+  background-position: -168px -101px; }
+
 .header {
   min-height: 810px;
   margin: 0 auto;
@@ -537,6 +602,7 @@ li {
   background: center center no-repeat; }
 
 .mountains__description {
+  display: none;
   width: 50%;
   margin-top: 0; }
 
@@ -567,7 +633,8 @@ li {
   text-align: left;
   color: #ffffff;
   font-size: 30px;
-  font-family: 'ProximaNova-Bold';
+  font-family: "ProximaNova", "Open Sans", sans-serif;
+  font-weight: 600;
   position: absolute;
   bottom: 5%;
   left: 5%; }
@@ -584,74 +651,61 @@ li {
   text-decoration: underline;
   display: none; }
 
-.we-have {
-  background: url("../img/aboutfone.jpg") center center no-repeat;
-  background-size: cover;
-  min-height: 385px; }
+.footer {
+  background-color: #22313f;
+  font-size: 14px;
+  font-family: 'OpenSans';
+  font-weight: 400; }
 
-.about__title {
-  padding-top: 32px;
-  color: #ffffff; }
-
-.we-have__block {
-  font-size: 16px;
-  position: relative;
-  color: #ffffff;
+iframe {
   width: 100%;
-  display: block; }
+  height: 230px; }
 
-.we-have__block:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: auto; }
+.footer__contacts {
+  color: #9096a4;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
 
-.block-equip:before {
-  background: url("../img/about1.png") center center no-repeat;
-  width: 76px;
-  height: 76px; }
+.footer__phone {
+  color: #9096a4;
+  margin-top: 10px; }
 
-.block-tracks:before {
-  background: url("../img/about2.png") center center no-repeat;
-  width: 76px;
-  height: 76px; }
+.footer__nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  color: #9096a4; }
 
-.block-trainers:before {
-  background: url("../img/about3.png") center center no-repeat;
-  width: 76px;
-  height: 76px; }
+.nav {
+  margin-top: 15px; }
 
-.we-have__text {
-  margin-top: 90px; }
+.nav__item {
+  margin-bottom: 10px; }
 
-.about-foto {
-  margin-top: 100px;
-  overflow: hidden; }
+.nav__link {
+  color: #9096a4; }
 
-.about-foto__item {
-  float: left;
-  width: 29%;
-  margin-left: 6%;
-  position: relative; }
-  .about-foto__item:first-child {
-    margin-left: 0; }
-  .about-foto__item:hover {
-    filter: brightness(60%);
-    transition: linear 200ms; }
-  .about-foto__item:hover .we-have__magnifier {
-    display: block; }
+.footer__line {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
-.about-foto__img {
-  width: 100%;
-  height: 100%; }
+.footer__socials {
+  display: -ms-flexbox;
+  display: flex; }
 
-.we-have__magnifier {
-  position: absolute;
-  top: 39%;
-  left: 38%;
-  display: none; }
+.socials__item {
+  margin-right: 10px; }
+
+.link-toheader {
+  margin-left: auto;
+  margin-bottom: 5px; }
 
 @media (min-width: 768px) {
   .container {
@@ -662,13 +716,11 @@ li {
     display: flex;
     width: 100%;
     -ms-flex-align: center;
-    align-items: center; }
-  .we-have {
-    margin-top: 55px; } }
+    align-items: center; } }
 
 @media (min-width: 992px) {
-  .mountains__description .mountains__description_xs {
-    display: none; } }
+  .mountains__description .mountains__description {
+    display: block; } }
 
 @media (min-width: 1200px) {
   .container {
@@ -679,8 +731,6 @@ li {
     -ms-flex-pack: justify;
     justify-content: space-between; }
   .actions__item {
-    width: 360px; }
-  .we-have {
-    margin-top: 100px; } }
+    width: 360px; } }
 
 /*# sourceMappingURL=style.css.map */
