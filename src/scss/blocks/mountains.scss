@@ -13,14 +13,13 @@
 
 
 .mountains__description {
-  // display: none;
+  display: none;
   width: 50%;
   margin-top: 0;
 
   @media (min-width: $screen-md) {
-    .mountains__description_xs {
-      display: none;
+    .mountains__description {
+      display: block;
     }
-
   }
 }
