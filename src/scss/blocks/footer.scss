@@ -10,7 +10,7 @@ iframe {
   height: 230px;
 }
 
-.footer__contacts {
+.contacts__item {
   color: $footer-text-gray;
   display: flex;
   flex-direction: column;
@@ -53,6 +53,26 @@ iframe {
 
 .socials__item {
   margin-right: 10px;
+}
+
+.contacts__item:before {
+  position: relative;
+}
+
+.contacts__item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.footer__address:before {
+  background: url("../img/sprite/placeholder.png") 0 0 no-repeat;
+  width: 11px;
+  height: 16px;
+
 }
 
 .link-toheader {
