@@ -426,7 +426,6 @@ template {
   font-style: normal; }
 
 body {
-  margin: 0 auto;
   font-family: "ProximaNova", "Open Sans", sans-serif;
   color: #111;
   font-size: 16px; }
@@ -659,28 +658,42 @@ li {
 
 iframe {
   width: 100%;
-  height: 230px; }
+  height: 230px;
+  border: none; }
 
-.contacts__item {
+.contacts__list {
   color: #9096a4;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column; }
+  margin-top: 20px; }
 
-.footer__phone {
-  color: #9096a4;
-  margin-top: 10px; }
+.list__item {
+  margin-bottom: 15px; }
 
-.footer__nav {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
+.list__item:before {
+  content: ''; }
+
+.footer__addres:before {
+  content: '';
+  display: inline-block;
+  background: url("../img/spritesheet.png") 0 0 no-repeat;
+  width: 11px;
+  height: 16px;
+  background-position: -106px -37px;
+  margin-right: 1%; }
+
+.phone--link {
   color: #9096a4; }
 
+.footer__phone:before {
+  content: '';
+  display: inline-block;
+  background: url("../img/spritesheet.png") 0 0 no-repeat;
+  width: 14px;
+  height: 14px;
+  background-position: -82px -37px; }
+
 .nav {
-  margin-top: 15px; }
+  color: #9096a4;
+  margin-top: 20px; }
 
 .nav__item {
   margin-bottom: 10px; }
@@ -703,22 +716,6 @@ iframe {
 .socials__item {
   margin-right: 10px; }
 
-.contacts__item:before {
-  position: relative; }
-
-.contacts__item:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: auto; }
-
-.footer__address:before {
-  background: url("../img/sprite/placeholder.png") 0 0 no-repeat;
-  width: 11px;
-  height: 16px; }
-
 .link-toheader {
   margin-left: auto;
   margin-bottom: 5px; }
@@ -732,7 +729,9 @@ iframe {
     display: flex;
     width: 100%;
     -ms-flex-align: center;
-    align-items: center; } }
+    align-items: center; }
+  .footer {
+    display: inline-block; } }
 
 @media (min-width: 992px) {
   .mountains__description .mountains__description {
@@ -747,6 +746,8 @@ iframe {
     -ms-flex-pack: justify;
     justify-content: space-between; }
   .actions__item {
-    width: 360px; } }
+    width: 360px; }
+  .footer {
+    width: 1200px; } }
 
 /*# sourceMappingURL=style.css.map */
