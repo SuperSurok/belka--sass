@@ -9,16 +9,34 @@
 
 .actions__list {
   margin-top: 20px;
-
   @media (min-width: $screen-sm) {
-    display: flex;
-    flex-direction: column;
+    display: none;
   }
+  @media (min-width: $screen-lg) {
+    display: none;
+  }
+}
 
+.actions__list_sm {
+  display: none;
+  @media (min-width: $screen-sm) {
+    display: block;
+  }
+  @media (min-width: $screen-lg) {
+    display: none;
+  }
+}
+
+.actions__list_lg {
+  @media (min-width: $screen-phone) {
+    display: none;
+  }
+  @media (min-width: $screen-sm) {
+    display: none;
+  }
   @media (min-width: $screen-lg) {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
   }
 }
 
@@ -33,9 +51,6 @@
   }
 
   @media (min-width: $screen-lg) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     width: 29%;
   }
 
@@ -58,7 +73,7 @@
   background-size: cover;
 
   @media (min-width: $screen-sm) {
-    background-size: cover;
+   object-fit: cover;
   }
 }
 
