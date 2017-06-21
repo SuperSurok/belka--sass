@@ -60,13 +60,12 @@
 }
 
 .about-foto {
-  margin-top: 100px;
-  overflow: hidden;
+  width: 100%;
 }
 
 .about-foto__item {
   float: left;
-  width: 29%;
+  width: 100%;
   margin-left: 6%;
   position: relative;
 
@@ -82,12 +81,13 @@
     &:hover {
       .we-have__magnifier {
         display: block;
+        position: absolute;
       }
     }
 }
 
 .about-foto__img {
-  background-size: cover;
+  width: 60%;
 }
 
 .we-have__magnifier{

@@ -1,0 +1,79 @@
+
+.tracks {
+    background-image: url("../img/track-fone.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.track-card {
+  width: 67%;
+  margin: 0 auto;
+  font-family: 'OpenSans';
+  font-size: $font-size;
+  color: $font-color-tracks;
+  position: relative;
+  @media (min-width: $screen-lg) {
+    width: 18%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+
+.track-card__item {
+  width: 100%;
+  @media (min-width: $screen-lg) {
+    width: 100%;
+    display: block;
+    justify-content: space-between;
+  }
+
+}
+
+.track-card__title {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  @media (min-width: $screen-sm) {
+
+  }
+}
+
+.title__item_number {
+  font-family: $font-family;
+  font-size: ($font-size + 14);
+  font-weight: 600;
+}
+
+.track-card__img {
+  width: 100%;
+
+}
+
+.title__item {
+  text-align: center;
+}
+
+.track-card__text {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  @media (min-width: $screen-sm) {
+    bottom: -5%;
+  }
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #3a424a;
+  opacity: 0.6;
+}
