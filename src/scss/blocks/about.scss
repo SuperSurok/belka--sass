@@ -21,19 +21,19 @@
   position: relative;
   color: $white;
   width: 100%;
-  display: block;
-  // vertical-align: top;
-  // margin-top: 42px;
-  // display: flex;
-  // justify-content: center;
+  display: flex;
+}
+
+.we-have__text {
+  width: 67%;
+  justify-content: center;
 }
 
 .we-have__block:before {
     content: '';
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
-    right: 0;
     margin: auto;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .we-have__text {
-  margin-top: 90px;
+
 }
 
 .about-foto {
@@ -64,14 +64,10 @@
 }
 
 .about-foto__item {
-  float: left;
-  width: 100%;
-  margin-left: 6%;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 72%;
   position: relative;
-
-    &:first-child {
-    margin-left: 0;
-  }
 
     &:hover {
       filter: brightness(60%);
@@ -87,7 +83,7 @@
 }
 
 .about-foto__img {
-  width: 60%;
+  width: 100%;
 }
 
 .we-have__magnifier{
