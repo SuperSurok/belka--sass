@@ -17,20 +17,30 @@ body {
 
 .title {
   font-family: 'ProximaNova';
-  font-size: $font-size + 24px;
+  font-size: $font-size + 20px;
   text-align: center;
   font-weight: 800;
+  letter-spacing: 1px;
+  @media (min-width: $screen-lg) {
+    font-size: $font-size + 24px;
+  }
 }
 
 .title:after {
+  content: '';
   display: block;
 }
 
 .title:after {
   content: '';
   border: 1px solid #000;
-  width: 20px;
+  width: 90px;
+  margin: 0 auto;
+  margin-top: 5px;
+
 }
+
+
 
 a {
   text-decoration: none;
