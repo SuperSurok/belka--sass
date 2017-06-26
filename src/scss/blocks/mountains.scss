@@ -10,23 +10,26 @@
   // }
 //}
 
-.mountains__title {
-  margin-top: 40px;
+.mountains__description {
+  width: 60%;
+  margin-top: 0;
 }
 
-.mountains__description {
-  line-height: 1.9;
-}
+
 
 @media (min-width: $screen-phone) {
     .description__lg {
       display: none;
+      width: 50%;
       margin-top: 0;
     }
 }
 
+
+
   @media (min-width: $screen-lg) {
     .description__lg {
+      display: inline;
       width: 50%;
       margin-top: 0;
       line-height: 1,5;
