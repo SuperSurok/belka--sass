@@ -43,7 +43,6 @@
 .actions__item {
   width: 100%;
   position: relative;
-  display: block;
 
    @media (min-width: $screen-sm) {
     height: 250px;
@@ -52,6 +51,7 @@
 
   @media (min-width: $screen-lg) {
     width: 29%;
+    height: 340px;
   }
 
   &:hover {

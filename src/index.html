@@ -2,24 +2,27 @@
 <html class="no-js" lang="ru">
 <head>
   <title>belka</title>
+   @@include('_include/page-head.html')
 </head>
 <body>
-  @@include('_include/page-head.html')
   <!-- Хедер -->
   <div class="header">
     <div class="container">
+      <div class="header__color"></div>
       <div class="header__contacts">
         <div class="header__contacts-wrap contacts"></div>
         <div class="contacts">
-          <p class="contacts__item">24 часа</p><a class="phone__link" href="tel:+78129997788">8(812)999-77-99</a>
-          <p class="contacts__location">Выборгское ш.,220</p>
+          <p class="contacts__item">24 часа</p>
+          <a class="contacts__item" href="tel:+78129997788">8(812)999-77-99</a>
+          <p class="contacts__item">Выборгское ш.,220</p>
         </div>
       </div>
       <div class="header__line">
-        <a class="logo" href=""><img alt="" class="logo__img" src="img/logo.png"></a> <button class="btn header__btn">Купить билет</button>
+        <a class="logo" href=""><img alt="" class="logo__img" src="img/logo.png"></a>
+        <button class="btn header__btn">Купить билет</button>
         <nav class="header-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--acttive">
+            <li class="main-nav__item main-nav__item--active">
               <a class="main-nav__link" href="">Трассы</a>
             </li>
             <li class="main-nav__item">
@@ -40,12 +43,13 @@
       <!-- Секция Скалодром -->
       <section class="mountains">
         <h1 class="mountains__title title">Скалодром</h1>
+        <p class="description__xs">Заберись на вершину, не уезжая в горы!</p>
         <div class="mountains__description">
-          <p class="description__xs">Заберись на вершину, не уезжая в горы!</p>
-          <p class="description__lg">Скалодром BELKA для всех, кто желает впервые попробовать себя в скалолазании, а так же для спортсменов разного уровня. Bключает в себя 2 детские трассы и 3 взрослые. Cкалолазы смогут найти подробную схему всех подготовленных трасс, посмотреть категорию сложности.</p>
+          <p class="description__lg">Скалодром BELKA для всех, кто желает впервые попробовать себя в скалолазании, а так же для спортсменов разного уровня.</p>
+          <p class="description__lg">Bключает в себя 2 детские трассы и 3 взрослые.</p>
+          <p class="description__lg">Cкалолазы смогут найти подробную схему всех подготовленных <br>трасс, посмотреть категорию сложности.</p>
         </div>
-        <!-- <button class="btn mountains__btn">Купить билет</button> -->
-        <!-- </div> -->
+        <button class="btn header__btn-sm">Купить билет</button>
       </section>
     </div>
   </div>
@@ -54,65 +58,69 @@
   <section class="tracks">
     <div class="tracks_main-fon"></div>
     <div class="container">
-      <h2 class="tracks__title title">Трассы</h2>
-      <div class="track-card">
-        <div class="track-card__title">
-          <p class="title__item title__item_number">Трасса #1</p>
-          <p class="title__item title__item_height">Высота 15 м</p>
-          <p class="title__item title__item_age">Возраст 13+</p>
-        </div>
-        <div class="track-card__item"><img class="track-card__img" alt="" src="img/track1.jpg">
-          <div class="img-overlay"></div>
-        </div>
-        <div class="track-card__text">
-            Трасса для опытных скалолазов. Требуется наличие хорошей физ. подготовки.
-        </div>
+      <div class="tracks__title">
+        <h2 class="title">Трассы</h2>
       </div>
-      <div class="track-card">
-        <div class="track-card__title">
-          <p class="title__item title__item_number">Трасса #2</p>
-          <p class="title__item title__item_height">Высота 4 м</p>
-          <p class="title__item title__item_age">Возраст 4+</p>
+      <div class="tracks__list">
+        <div class="track-card track-card__odd">
+          <div class="track-card__title">
+            <p class="title__item title__item_number">Трасса #1</p>
+            <p class="title__item title__item_height">Высота 15 м</p>
+            <p class="title__item title__item_age">Возраст 13+</p>
+          </div>
+          <div class="track-card__item"><img class="track-card__img" alt="" src="img/track1.jpg">
+            <div class="img-overlay"></div>
+          </div>
+          <div class="track-card__text">
+              Трасса для опытных скалолазов. Требуется наличие хорошей физ. подготовки.
+          </div>
         </div>
-        <div class="track-card__item"><img class="track-card__img" alt="" src="img/track2.jpg">
-          <div class="img-overlay"></div>
+        <div class="track-card">
+          <div class="track-card__title">
+            <p class="title__item title__item_number">Трасса #2</p>
+            <p class="title__item title__item_height">Высота 4 м</p>
+            <p class="title__item title__item_age">Возраст 4+</p>
+          </div>
+          <div class="track-card__item"><img class="track-card__img" alt="" src="img/track2.jpg">
+            <div class="img-overlay"></div>
+          </div>
+          <div class="track-card__text">
+              Для людей с разной физ. подготовкой. Различные зацепы и рельефы стены.
+          </div>
         </div>
-        <div class="track-card__text">
-            Для людей с разной физ. подготовкой. Различные зацепы и рельефы стены.
-        </div>
-      </div>
-      <div class="track-card">
-        <div class="track-card__title">
-          <p class="title__item title__item_number">Трасса #3</p>
-          <p class="title__item title__item_height">Высота 10 м</p>
-          <p class="title__item title__item_age">Возраст 13+</p>
-        </div>
+        <div class="track-card track-card__odd">
+          <div class="track-card__title">
+            <p class="title__item title__item_number">Трасса #3</p>
+            <p class="title__item title__item_height">Высота 10 м</p>
+            <p class="title__item title__item_age">Возраст 13+</p>
+          </div>
           <div class="track-card__item"><img class="track-card__img" alt="" src="img/track3.jpg"></div>
-        <div class="track-card__text">
-            Трасса подойтет как для профессионалов,так и для любителей. Необходима хорошая физ. подготовка.
+          <div class="track-card__text">
+              Трасса подойтет как для профессионалов,так и для любителей. Необходима хорошая физ. подготовка.
+          </div>
         </div>
-      </div>
-      <div class="track-card">
-        <div class="track-card__title">
-          <p class="title__item title__item_number">Трасса #4</p>
-          <p class="title__item title__item_height">Высота 3 м</p>
-          <p class="title__item title__item_age">Возраст 4+</p>
+        <div class="track-card">
+          <div class="track-card__title">
+            <p class="title__item title__item_number">Трасса #4</p>
+            <p class="title__item title__item_height">Высота 3 м</p>
+            <p class="title__item title__item_age">Возраст 4+</p>
+          </div>
+          <div class="track-card__item"><img class="track-card__img" alt="" src="img/track4.jpg"></div>
+          <div class="track-card__text">
+              Самая невысокая трасса. Специальные зацепы для детей.
+          </div>
         </div>
-        <div class="track-card__item"><img class="track-card__img" alt="" src="img/track4.jpg"></div>
-        <div class="track-card__text">
-            Самая невысокая трасса. Специальные зацепы для детей.
-        </div>
-      </div>
-      <div class="track-card">
-        <div class="track-card__title">
-          <p class="title__item title__item_number">Трасса #5</p>
-          <p class="title__item title__item_height">Высота 8 м</p>
-          <p class="title__item title__item_age">Возраст 13+</p>
-        </div>
+        <div class="track-card track-card__odd">
+          <div class="track-card__title">
+            <p class="title__item title__item_number">Трасса #5</p>
+            <p class="title__item title__item_height">Высота 8 м</p>
+            <p class="title__item title__item_age">Возраст 13+</p>
+          </div>
           <div class="track-card__item"><img class="track-card__img" alt="" src="img/track5.jpg"></div>
           <div class="track-card__text">
             Средняя высота и сложность.Физ. подготовка не обязательна.
           </div>
+        </div>
       </div>
 
 
@@ -371,5 +379,6 @@
       </div>
     </div>
   </footer>
+  <script type="text/javascript" src="js/script.min.js"></script>
 </body>
 </html>
