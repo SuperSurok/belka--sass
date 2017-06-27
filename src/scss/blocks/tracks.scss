@@ -9,20 +9,20 @@
 
 .tracks__title {
   color: $white;
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
 }
 
 .tracks__list {
+  width: 70%;
+  margin: 0 auto;
   @media (min-width: $screen-sm) {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
   }
 }
 
 .track-card {
-  margin: 0 auto;
-  width: 67%;
   font-family: 'OpenSans';
   font-size: $font-size;
   color: $font-color-tracks;
@@ -62,9 +62,9 @@
   position: static;
   background-color: $blue;
   min-height: 145px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-around;
   }
 }
 
@@ -92,8 +92,8 @@
   @media (min-width: $screen-sm) {
     position: static;
     min-height: 155px;
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     background-color: $blue;
   }
 }
