@@ -2,6 +2,7 @@
   overflow: hidden;
 }
 .we-have {
+  margin-top: 30px;
   background: url("../img/aboutfone.jpg") center center no-repeat;
   background-size: cover;
   min-height: 450px;
@@ -63,7 +64,7 @@
 .we-have__block:before {
     content: '';
     position: absolute;
-    left: 6%;
+    left: 4%;
     @media (min-width: $screen-sm) {
     content: '';
     position: absolute;
@@ -94,6 +95,7 @@
 
 .about-foto {
   width: 100%;
+  min-height: 400px;
   @media (min-width: $screen-sm) {
     margin-top: 55px;
     min-height: 400px;
@@ -105,10 +107,12 @@
 }
 
 .about-foto__item {
+    min-height: 400px;
+    width: 70%;
     margin: 0 auto;
     margin-top: 30px;
-    width: 70%;
   @media (min-width: $screen-sm) {
+    min-height: 400px;
     margin-left: 3%;
     width: 31.3%;
     float: left;
@@ -118,7 +122,6 @@
   }
   @media (min-width: $screen-lg) {
     min-height: 485px;
-    min-height: 400px;
     width: 32.3%;
     margin-left: 1.5%;
   }
@@ -137,10 +140,8 @@
 
 .about-foto__img {
   width: 100%;
+  min-height: 400px;
   object-fit: cover;
-  @media (min-width: $screen-sm) {
-    min-height: 400px;
-  }
   @media (min-width: $screen-lg) {
     min-height: 485px;
   }

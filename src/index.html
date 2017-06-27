@@ -245,7 +245,7 @@
   <section class="price">
     <div class="container">
       <h2 class="price__title title">Цены</h2>
-      <table class="table">
+<!--       <table class="table">
         <tr>
           <th>Детский</th>
           <th></th>
@@ -296,13 +296,37 @@
           <td>Персональный оператор парка</td>
           <td>600 ₶/час</td>
         </tr>
-      </table><!-- Для смартфона -->
+      </table> -->
+      <!-- Для смартфона -->
       <div class="price__age"></div>
       <div class="price__place"></div>
       <div class="price__time"></div>
-      <div class="price__total"></div>
-      <p class="price__trainer">Персональный оператор парка 600 ₶/час</p>
-      <p class="price__hour">Каждый дополнительный час 500 ₶</p><button class="btn price__btn">Купить билет</button> <a class="price__safety-link" href="#">Техника безопасности (PDF)</a>
+      <div class="price__total row">
+        <div class="total-item col"><p class="total-text">Стоимость абонмента</p></div>
+        <div class="total-item col"><p class="total-sum">0 Р</p></div>
+      </div>
+      <div class="price__trainer row">
+        <div class="trainer-item col">
+          <p>Персональный оператор парка</p>
+        </div>
+        <div class="trainer-item col">
+          <p>600 ₶/час</p>
+        </div>
+      </div>
+      <div class="price__hour row">
+        <div class="col">
+          <p class="hour-item">Каждый дополнительный час</p>
+        </div>
+        <div class="col">
+          <p class="hour-item">500 ₶</p>
+        </div>
+      </div>
+      <button class="btn price__btn">
+        <p class="btn__text">Купить билет</p>
+      </button>
+      <div class="price__safety">
+        <a class="safety-link" href="#">Техника безопасности (PDF)</a>
+      </div>
     </div>
   </section>
   <!-- Секция Отзывы -->

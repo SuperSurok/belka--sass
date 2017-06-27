@@ -1,3 +1,54 @@
 .price__title {
   margin-top: 30px;
 }
+
+.price__age {
+  margin-top: 55px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col {
+  flex: 1 1 auto;
+}
+
+.total-sum {
+  text-align: center;
+}
+
+.price__trainer, .price__hour {
+  font-size: $font-size - 6px;
+}
+
+.price__trainer {
+  letter-spacing: 1.05px
+}
+
+.price__hour {
+  letter-spacing: 1.2px;
+}
+
+.price__btn {
+  color: $white;
+  background-color: $red-button;
+  padding: 16px 39px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.btn__text {
+  font-family: $font-family;
+  font-size: 300;
+  letter-spacing: 1.1px;
+}
+
+.price__safety {
+  margin-top: 10px;
+  text-decoration: underline;
+  text-align: center;
+}
