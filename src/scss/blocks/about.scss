@@ -1,3 +1,6 @@
+.about {
+  overflow: hidden;
+}
 .we-have {
   background: url("../img/aboutfone.jpg") center center no-repeat;
   background-size: cover;
@@ -64,11 +67,14 @@
 }
 
 .about-foto__item {
-  margin: 0 auto;
   margin-top: 30px;
-  width: 72%;
-  position: relative;
+  margin-left: 3%;
+  width: 31.3%;
+  float: left;
 
+  &:first-child {
+    margin-left: 0;
+  }
     &:hover {
       filter: brightness(60%);
       transition: linear 200ms;
@@ -84,6 +90,7 @@
 
 .about-foto__img {
   width: 100%;
+  object-fit: cover;
 }
 
 .we-have__magnifier{
