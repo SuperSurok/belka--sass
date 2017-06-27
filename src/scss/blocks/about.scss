@@ -4,9 +4,11 @@
 .we-have {
   background: url("../img/aboutfone.jpg") center center no-repeat;
   background-size: cover;
-  min-height: 385px;
+  min-height: 450px;
   @media (min-width: $screen-sm) {
+    min-height: 385px;
     margin-top: 55px;
+    display: flex;
   }
   @media (min-width: $screen-lg) {
     margin-top: 100px;
@@ -16,28 +18,60 @@
 
 .about__title {
   padding-top: 32px;
-  color: $white
+  color: $white;
+  position: relative;
+}
+
+.about__title:after {
+  content: '';
+  border: 1px solid #fff;
+  width: 20px;
+  margin: 0 auto;
+  width: 95px;
+  margin-bottom: 39px;
 }
 
 .we-have__block {
-  font-size: $font-size;
-  position: relative;
+  font-size: $font-size - 2px;
   color: $white;
-  width: 100%;
-  display: flex;
+  line-height: 1.4;
+  letter-spacing: 1.2;
+  min-height: 76px;
+  margin-top: 26px;
+  position: relative;
+  @media (min-width: $screen-sm) {
+    margin-top: 0;
+    display: flex;
+    // justify-content: space-between;
+  }
 }
 
 .we-have__text {
-  width: 67%;
-  justify-content: center;
+  width: 66%;
+  float: right;
+  margin-right: 10px;
+  @media (min-width: $screen-sm) {
+    float: none;
+    width: auto;
+    margin-right: 0;
+    // display: flex;
+    // align-items: center;
+  }
+
 }
 
 .we-have__block:before {
     content: '';
     position: absolute;
-    bottom: 0;
+    left: 6%;
+    @media (min-width: $screen-sm) {
+    content: '';
+    position: absolute;
+    top: 0;
     left: 0;
+    right: 0;
     margin: auto;
+  }
 }
 
 .block-equip:before {
@@ -58,22 +92,35 @@
   height: 76px;
 }
 
-.we-have__text {
-
-}
-
 .about-foto {
   width: 100%;
+  @media (min-width: $screen-sm) {
+    margin-top: 55px;
+    min-height: 400px;
+  }
+  @media (min-width: $screen-lg) {
+    margin-top: 115px;
+    min-height: 485px;
+  }
 }
 
 .about-foto__item {
-  margin-top: 30px;
-  margin-left: 3%;
-  width: 31.3%;
-  float: left;
-
-  &:first-child {
-    margin-left: 0;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 70%;
+  @media (min-width: $screen-sm) {
+    margin-left: 3%;
+    width: 31.3%;
+    float: left;
+      &:first-child {
+        margin-left: 0;
+  }
+  }
+  @media (min-width: $screen-lg) {
+    min-height: 485px;
+    min-height: 400px;
+    width: 32.3%;
+    margin-left: 1.5%;
   }
     &:hover {
       filter: brightness(60%);
@@ -91,6 +138,12 @@
 .about-foto__img {
   width: 100%;
   object-fit: cover;
+  @media (min-width: $screen-sm) {
+    min-height: 400px;
+  }
+  @media (min-width: $screen-lg) {
+    min-height: 485px;
+  }
 }
 
 .we-have__magnifier{

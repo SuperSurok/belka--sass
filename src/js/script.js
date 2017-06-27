@@ -27,7 +27,7 @@ $(document).ready(function(){
     // instead of a settings object
   ]
   });
-  $('.about-oto').slick({
+  $('.about-foto').slick({
   dots: false,
   infinite: false,
   speed: 300,
