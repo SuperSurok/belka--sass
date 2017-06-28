@@ -4,7 +4,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    min-height: 800px;
+    min-height: 550px;
+    @media (min-width: $screen-sm) {
+     min-height: 730px;
+  }
+  @media (min-width: $screen-lg) {
+     min-height: 800px;
+  }
 }
 
 .tracks__title {
@@ -14,26 +20,37 @@
 .tracks__list {
   width: 70%;
   margin: 0 auto;
-  overflow: hidden;
+  margin-bottom: 70px;
+  margin-top: 56px;
   @media (min-width: $screen-sm) {
+    width: 86%;
+  }
+  @media (min-width: $screen-lg) {
     width: 96%;
   }
 }
 
 .track-card {
-  float: left;
-  vertical-align: top;
-  margin-left: 10px;
+  position: relative;
   font-family: 'OpenSans';
   font-size: $font-size;
   color: $font-color-tracks;
   @media (min-width: $screen-sm) {
+    margin-left: 10px;
     width: 27%;
     margin-left: 2%;
   }
   @media (min-width: $screen-lg) {
-    width: 18%;
-    margin-left: 2.5%;
+    width: 10%;
+    margin-left: 2%;
+  }
+}
+
+.track-card {
+  @media (min-width: $screen-sm) {
+    margin-left: 10px;
+    width: 27%;
+    margin-left: 2%;
   }
 }
 
@@ -56,14 +73,17 @@
 
 .track-card__item {
   width: 100%;
-  margin-bottom: -3px;
+  @media (min-width: $screen-sm) {
+    margin-bottom: -3px;
+  }
 }
 
 .track-card__title {
   position: absolute;
-  top: 10%;
+  top: 0;
   left: 0;
   right: 0;
+  z-index: 10;
   @media (min-width: $screen-sm) {
   position: static;
   background-color: $blue;
@@ -98,22 +118,24 @@
   left: 0;
   right: 0;
   text-align: center;
+  z-index: 10;
   @media (min-width: $screen-sm) {
     position: static;
     min-height: 155px;
     background-color: $blue;
-    position: relative;
-    display: table;
     padding: 7px;
   }
 }
 
-.track-card__text:nth-child(2n){
+@media (min-width: $screen-sm) {
+  .track-card__text:nth-child(2n){
   display: table-cell;
   padding-top: 50px;
   text-align: center;
   line-height: 1.3;
 }
+  }
+
 
 .track-card__text {
   display: table-cell;
@@ -134,4 +156,9 @@
   @media (min-width: $screen-sm) {
     display: none;
   }
+}
+
+.slick-track {
+  width: 100%;
+  height: 100%;
 }

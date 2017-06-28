@@ -5,19 +5,22 @@ $(document).ready(function(){
   speed: 300,
   slidesToShow: 5,
   slidesToScroll: 5,
+  arrows: true,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 1200,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        dots: false,
         infinite: true,
-        dots: true
+        slidesToShow: 3,
+        slidesToScroll: 1
       }
     },
     {
-      breakpoint: 400,
+      breakpoint: 768,
       settings: {
+        dots: false,
+        infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1
       }

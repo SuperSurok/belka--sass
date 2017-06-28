@@ -15,6 +15,15 @@
   flex: 1 1 auto;
 }
 
+.price__total {
+  height: 53px;
+  background-color: $gray-price;
+  align-items: center;
+  @media (min-width: $screen-sm) {
+    display: none;
+  }
+}
+
 .total-sum {
   text-align: center;
 }
@@ -51,4 +60,14 @@
   margin-top: 10px;
   text-decoration: underline;
   text-align: center;
+}
+
+.Grid {
+  display: flex;
+  flex-grow: 2;
+
+}
+
+.Grid-cell {
+  flex: 1;
 }

@@ -10,28 +10,35 @@
   // }
 //}
 
+.mountains__title {
+  margin-top: 90px;
+}
+
+.description__xs {
+  line-height: 1.7;
+  width: 80%;
+  padding-top: 73px;
+  letter-spacing: 1.1;
+}
+
 .mountains__description {
-  width: 60%;
+  width: 70%;
   margin-top: 0;
+  line-height: 1.7;
 }
 
-
-
-@media (min-width: $screen-phone) {
-    .description__lg {
-      display: none;
-      width: 50%;
-      margin-top: 0;
-    }
-}
-
-
-
-  @media (min-width: $screen-lg) {
-    .description__lg {
-      display: inline;
-      width: 50%;
-      margin-top: 0;
-      line-height: 1,5;
-    }
+.description__lg {
+  @media (min-width: $screen-phone) {
+  display: none;
+  margin-top: 0;
   }
+  @media (min-width: $screen-sm) {
+  display: block;
+  margin-top: 0;
+  line-height: 1,5;
+  }
+  @media (min-width: $screen-lg) {
+  width: 50%;
+  }
+}
+

@@ -11,11 +11,11 @@
       <div class="header__color"></div>
       <div class="header__contacts">
         <div class="header__contacts-wrap contacts"></div>
-        <div class="contacts">
-          <p class="contacts__item">24 часа</p>
-          <a class="contacts__item" href="tel:+78129997788">8(812)999-77-99</a>
-          <p class="contacts__item">Выборгское ш.,220</p>
-        </div>
+        <ul class="contacts">
+          <li class="contacts__item contacts__time">24 часа</li>
+          <li class="contacts__item contacts__phone"><a href="tel:+78129997788">8(812)999-77-99</a></li>
+          <li class="contacts__item contacts__address">Выборгское ш.,220</li>
+        </ul>
       </div>
       <div class="header__line">
         <a class="logo" href=""><img alt="" class="logo__img" src="img/logo.png"></a>
@@ -68,9 +68,10 @@
             <p class="title__item title__item_height">Высота 15 м</p>
             <p class="title__item title__item_age">Возраст 13+</p>
           </div>
-          <div class="track-card__item"><img class="track-card__img" alt="" src="img/track1.jpg">
-            <div class="img-overlay"></div>
+          <div class="track-card__item">
+            <img class="track-card__img" alt="" src="img/track1.jpg">
           </div>
+          <div class="img-overlay"></div>
           <div class="track-card__description">
               <p class="track-card__text">Трасса для опытных скалолазов. Требуется наличие хорошей физ. подготовки.</p>
           </div>
@@ -81,9 +82,10 @@
             <p class="title__item title__item_height">Высота 4 м</p>
             <p class="title__item title__item_age">Возраст 4+</p>
           </div>
-          <div class="track-card__item"><img class="track-card__img" alt="" src="img/track2.jpg">
-            <div class="img-overlay"></div>
+          <div class="track-card__item">
+            <img class="track-card__img" alt="" src="img/track2.jpg">
           </div>
+          <div class="img-overlay"></div>
           <div class="track-card__description">
               <p class="track-card__text">Для людей с разной физ. подготовкой. Различные зацепы и рельефы стены.</p>
           </div>
@@ -94,7 +96,10 @@
             <p class="title__item title__item_height">Высота 10 м</p>
             <p class="title__item title__item_age">Возраст 13+</p>
           </div>
-          <div class="track-card__item"><img class="track-card__img" alt="" src="img/track3.jpg"></div>
+          <div class="track-card__item">
+            <img class="track-card__img" alt="" src="img/track3.jpg">
+          </div>
+          <div class="img-overlay"></div>
           <div class="track-card__description">
               <p class="track-card__text">Трасса подойтет как для профессионалов,так и для любителей. Необходима хорошая физ. подготовка.</p>
           </div>
@@ -105,7 +110,10 @@
             <p class="title__item title__item_height">Высота 3 м</p>
             <p class="title__item title__item_age">Возраст 4+</p>
           </div>
-          <div class="track-card__item"><img class="track-card__img" alt="" src="img/track4.jpg"></div>
+          <div class="track-card__item">
+            <img class="track-card__img" alt="" src="img/track4.jpg">
+          </div>
+          <div class="img-overlay"></div>
           <div class="track-card__description">
               <p class="track-card__text">Самая невысокая трасса. Специальные зацепы для детей.</p>
           </div>
@@ -116,13 +124,17 @@
             <p class="title__item title__item_height">Высота 8 м</p>
             <p class="title__item title__item_age">Возраст 13+</p>
           </div>
-          <div class="track-card__item"><img class="track-card__img" alt="" src="img/track5.jpg"></div>
+          <div class="track-card__item">
+            <img class="track-card__img" alt="" src="img/track5.jpg">
+          </div>
+          <div class="img-overlay"></div>
           <div class="track-card__description">
             <p class="track-card__text">Средняя высота и сложность.Физ. подготовка не обязательна.</p>
           </div>
         </div>
       </div>
     </div>
+    <h2 class="actions__title title">Акции</h2>
   </section>
 
 
@@ -130,7 +142,7 @@
 
   <section class="actions">
     <div class="container">
-      <h2 class="actions__title title">Акции</h2>
+      <!-- <h2 class="actions__title title">Акции</h2> -->
       <div class="actions__list">
         <div class="actions__item">
           <img alt="" class="actions__img" src="img/actions1.jpg">
@@ -297,12 +309,32 @@
           <td>600 ₶/час</td>
         </tr>
       </table> -->
+      <div class="Grid">
+        <div class="Grid-cell"></div>
+        <div class="Grid-cell">Детский от 4 лет</div>
+        <div class="Grid-cell">Взрослый от 7 лет</div>
+      </div>
+      <div class="Grid">
+        <div class="Grid-cell"></div>
+        <div class="Grid-cell">Прохождение препятствий парка <strong>3 часа</strong></div>
+      </div>
+      <div class="Grid">
+        <div class="Grid-cell">Все трассы Веревочный парк + скалодром</div>
+        <div class="Grid-cell">2200 Р</div>
+        <div class="Grid-cell">2500 Р</div>
+      </div>
+
       <!-- Для смартфона -->
       <div class="price__age"></div>
       <div class="price__place"></div>
-      <div class="price__time"></div>
+      <div class="price__time">
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
       <div class="price__total row">
-        <div class="total-item col"><p class="total-text">Стоимость абонмента</p></div>
+        <div class="total-item col"><p class="total-text">Стоимость абонемента</p></div>
         <div class="total-item col"><p class="total-sum">0 Р</p></div>
       </div>
       <div class="price__trainer row">
