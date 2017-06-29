@@ -7,15 +7,23 @@
 <body>
   <!-- Хедер -->
   <div class="header">
-    <div class="container">
-      <div class="header__color"></div>
+    <div class="header__container container">
       <div class="header__contacts">
+          <div class="contacts__item-xs header__sprite phone-call"></div>
+          <div class="contacts__item-xs contacts__phone item-xs">
+            <a href="tel:+78129997788">8(812)999-77-99</a>
+        </div>
         <div class="header__contacts-wrap contacts"></div>
-        <ul class="contacts">
-          <li class="contacts__item contacts__time">24 часа</li>
-          <li class="contacts__item contacts__phone"><a href="tel:+78129997788">8(812)999-77-99</a></li>
-          <li class="contacts__item contacts__address">Выборгское ш.,220</li>
-        </ul>
+        <div class="contacts">
+        <div class="header__sprite time"></div>
+          <div class="contacts__item contacts__time">24 часа</div>
+          <div class="header__sprite phone-call"></div>
+          <div class="contacts__item contacts__phone">
+            <a href="tel:+78129997788">8(812)999-77-99</a>
+          </div>
+          <div class="header__sprite placeholder"></div>
+          <div class="contacts__item contacts__address">Выборгское ш.,220</div>
+        </div>
       </div>
       <div class="header__line">
         <a class="logo" href=""><img alt="" class="logo__img" src="img/logo.png"></a>
@@ -57,7 +65,7 @@
   <!-- Секция Трассы -->
   <section class="tracks">
     <div class="tracks_main-fon"></div>
-    <div class="container">
+    <div class="tracks__container container">
       <div class="tracks__title">
         <h2 class="title">Трассы</h2>
       </div>
@@ -65,6 +73,7 @@
         <div class="track-card track-card__odd">
           <div class="track-card__title">
             <p class="title__item title__item_number">Трасса #1</p>
+            <div class="tracks__sprite mountain"></div>
             <p class="title__item title__item_height">Высота 15 м</p>
             <p class="title__item title__item_age">Возраст 13+</p>
           </div>

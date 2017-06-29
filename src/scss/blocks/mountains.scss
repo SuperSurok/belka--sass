@@ -11,20 +11,24 @@
 //}
 
 .mountains__title {
-  margin-top: 90px;
+  margin-top: 64px;
 }
 
 .description__xs {
   line-height: 1.7;
-  width: 80%;
-  padding-top: 73px;
-  letter-spacing: 1.1;
+  width: 58%;
+  margin-top: 73px;
 }
 
 .mountains__description {
+  display: none;
   width: 70%;
   margin-top: 0;
   line-height: 1.7;
+  letter-spacing: 1.1;
+  @media (min-width: $screen-sm) {
+    display: block;
+  }
 }
 
 .description__lg {
@@ -38,7 +42,8 @@
   line-height: 1,5;
   }
   @media (min-width: $screen-lg) {
-  width: 50%;
+  width: 58%;
+  display: block;
   }
 }
 

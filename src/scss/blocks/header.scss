@@ -1,31 +1,43 @@
 
 .header {
-    height: 400px;
-    margin: 0 auto ;
-    background-image: url("../img/header-img.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-color: $athens-gray;
-
-    @media (min-width: $screen-sm) {
-      height: 820px;
+  min-height: 420px;
+  margin: 0 auto;
+  background-image: url("../img/header-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 30px;
+  background-color: $athens-gray;
+  @media (min-width: $screen-sm) {
+    height: 820px;
   }
-
   @media (min-width: $screen-lg) {
-      height: 810px;
+    height: 810px;
   }
 }
 
 .header__contacts {
   display: flex;
   width: 100%;
+  min-height: 20px;
+  padding-top: 5px;
   background-color: $athens-gray;
 }
 
+.contacts__item-xs {
+  @media (min-width: $screen-sm) {
+  display: none;
+  }
+}
+
+.header__sprite {
+  margin-left: 0;
+  margin-right: 10px;
+  @media (min-width: $screen-sm) {
+  margin-left: 50px;
+  }
+}
+
 .contacts__item {
-  margin-right: 50px;
-  position: relative;
 }
 
 .header__contacts-wrap {
@@ -33,6 +45,7 @@
 }
 
 .contacts {
+  display: none;
   @media (min-width: $screen-sm) {
   display: flex;
   margin-left: auto;
@@ -59,30 +72,30 @@
   background-color: #eeeef4;
   margin-left: 25px;
   @media (min-width: $screen-sm) {
-  display: none;
+   display: none;
   }
   @media (min-width: $screen-lg) {
-  display: block;
+   display: block;
   }
 }
 
 .header__btn-sm {
   @media (min-width: $screen-phone) {
-  display: block;
-  margin-top: 102px;
-  border: 1px solid #111;
-  padding: 5px 22px;
-  background-color: inherit;
+    display: block;
+    margin-top: 33px;
+    border: 1px solid #111;
+    padding: 5px 22px;
+    background-color: inherit;
   }
   @media (min-width: $screen-sm) {
-  display: block;
-  margin-top: 40px;
-  border: 1px solid #111;
-  padding: 5px 25px;
-  background-color: inherit;
+    display: block;
+    margin-top: 40px;
+    border: 1px solid #111;
+    padding: 5px 25px;
+    background-color: inherit;
   }
   @media (min-width: $screen-lg) {
-  display: none;
+    display: none;
   }
 }
 
@@ -103,13 +116,13 @@
 
 .main-nav__item {
   @media (min-width: $screen-sm) {
-  display: inline-block;
-  margin-right: 32px;
-  font-family: $font-family;
-  font-size: ($font-size + 2);
+    display: inline-block;
+    margin-right: 32px;
+    font-family: $font-family;
+    font-size: ($font-size + 2);
   }
   @media (min-width: $screen-sm) {
-  margin-right: 50px;
+    margin-right: 50px;
   }
 }
 

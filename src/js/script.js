@@ -5,7 +5,7 @@ $(document).ready(function(){
   speed: 300,
   slidesToShow: 5,
   slidesToScroll: 5,
-  arrows: true,
+  arrows: false,
   responsive: [
     {
       breakpoint: 1200,
