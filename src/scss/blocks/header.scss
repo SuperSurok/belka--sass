@@ -6,6 +6,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 30px;
+  width: 100%;
   background-color: $athens-gray;
   @media (min-width: $screen-sm) {
     height: 820px;
@@ -49,7 +50,7 @@
   @media (min-width: $screen-sm) {
   display: flex;
   margin-left: auto;
-  justify-content: space-between;
+  justify-content: flex-end;
   }
 }
 
@@ -110,7 +111,7 @@
   }
 }
 
-.header-nav {
+.header__nav {
   margin-left: auto;
 }
 

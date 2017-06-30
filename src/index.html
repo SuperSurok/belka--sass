@@ -7,13 +7,41 @@
 <body>
   <!-- Хедер -->
   <div class="header">
+    <div class="header__contacts">
+      <div class="contacts__item-xs header__sprite phone-call"></div>
+      <div class="contacts__item-xs contsacts__phone">
+        <a href="tel:+78129997788">8(812)999-77-99</a>
+      </div>
+      <button class="burger__item"><div class="burger"></div></button>
+  <!-- <div class="header__contacts-wrap contacts"> -->
+    <div class="nav">
+      <nav class="header__nav-xs">
+      <ul class="main-nav__list-xs">
+        <li class="main-nav__item-xs">
+          <a class="main-nav__link-xs" href="">Трассы</a>
+        </li>
+        <li class="main-nav__item-xs">
+          <a class="main-nav__link-xs" href="">Акции</a>
+        </li>
+        <li class="main-nav__item-xs">
+          <a class="main-nav__link-xs" href="">Цены</a>
+        </li>
+        <li class="main-nav__item-xs">
+          <a class="main-nav__link-xs" href="">Отзывы</a>
+        </li>
+        <li class="main-nav__item-xs">
+          <a class="main-nav__link-xs" href="">Контакты</a>
+        </li>
+      </ul>
+      <div class="social-xs">
+        <a class="social-xs__link" href=""><div class="twitter"></div></a>
+        <a class="social-xs__link" href=""><div class="vk"></div></a>
+        <a class="social-xs__link" href=""><div class="instagram"></div></a>
+    </div>
+  </nav>
+    </div>
+  </div>
     <div class="header__container container">
-      <div class="header__contacts">
-          <div class="contacts__item-xs header__sprite phone-call"></div>
-          <div class="contacts__item-xs contacts__phone item-xs">
-            <a href="tel:+78129997788">8(812)999-77-99</a>
-        </div>
-        <div class="header__contacts-wrap contacts"></div>
         <div class="contacts">
         <div class="header__sprite time"></div>
           <div class="contacts__item contacts__time">24 часа</div>
@@ -24,11 +52,10 @@
           <div class="header__sprite placeholder"></div>
           <div class="contacts__item contacts__address">Выборгское ш.,220</div>
         </div>
-      </div>
-      <div class="header__line">
+        <div class="header__line">
         <a class="logo" href=""><img alt="" class="logo__img" src="img/logo.png"></a>
         <button class="btn header__btn">Купить билет</button>
-        <nav class="header-nav">
+        <nav class="header__nav">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
               <a class="main-nav__link" href="">Трассы</a>
@@ -47,6 +74,7 @@
             </li>
           </ul>
         </nav>
+      </div>
       </div>
       <!-- Секция Скалодром -->
       <section class="mountains">

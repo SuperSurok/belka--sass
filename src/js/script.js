@@ -49,4 +49,7 @@ $(document).ready(function(){
     // instead of a settings object
   ]
   });
+$('.header__nav-xs').slicknav({
+
+  });
 });
