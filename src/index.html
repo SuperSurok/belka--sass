@@ -12,7 +12,7 @@
       <div class="contacts__item-xs contsacts__phone">
         <a href="tel:+78129997788">8(812)999-77-99</a>
       </div>
-      <button class="burger__item"><div class="burger"></div></button>
+      <div class="burger"></div>
   <!-- <div class="header__contacts-wrap contacts"> -->
     <div class="nav">
       <nav class="header__nav-xs">
@@ -53,7 +53,7 @@
           <div class="contacts__item contacts__address">Выборгское ш.,220</div>
         </div>
         <div class="header__line">
-        <a class="logo" href=""><img alt="" class="logo__img" src="img/logo.png"></a>
+        <a class="logo" href=""></a>
         <button class="btn header__btn">Купить билет</button>
         <nav class="header__nav">
           <ul class="main-nav__list">
@@ -76,6 +76,7 @@
         </nav>
       </div>
       </div>
+
       <!-- Секция Скалодром -->
       <section class="mountains">
         <h1 class="mountains__title title">Скалодром</h1>
@@ -176,7 +177,6 @@
 
 
   <!-- Секция Акции -->
-
   <section class="actions">
     <div class="container">
       <!-- <h2 class="actions__title title">Акции</h2> -->
@@ -257,33 +257,35 @@
 
 
   <!-- Секция У нас -->
-
   <section class="about">
     <div class="container">
       <div class="we-have">
         <h2 class="about__title title">У нас</h2>
-        <div class="we-have__block block-equip">
-          <p class="we-have__text">Альпинистское снаряжение и страховочные устройства французской компании <br>Petzl</p>
-        </div>
-        <div class="we-have__block block-tracks">
-          <p class="we-have__text">Понятная маркировка трасс (ламинированные таблички и зацепки определнного цвета для каждой трассы)</p>
-        </div>
-        <div class="we-have__block block-trainers">
-          <p class="we-have__text">На территории скалодрома всегда находится инструктор, который готов ответить на любой Ваш вопрос</p>
-        </div>
+          <div class="we-have__block block-equip">
+            <div class="about__img about1"></div>
+            <p class="we-have__text">Альпинистское снаряжение и страховочные устройства французской компании <br>Petzl</p>
+          </div>
+          <div class="we-have__block block-tracks">
+            <div class="about__img about2"></div>
+            <p class="we-have__text">Понятная маркировка трасс (ламинированные таблички и зацепки определнного цвета для каждой трассы)</p>
+          </div>
+          <div class="we-have__block block-trainers">
+            <div class="about__img about3"></div>
+            <p class="we-have__text">У скалодрома всегда находится инструктор, который готов ответить на любой Ваш вопрос!</p>
+          </div>
       </div>
       <div class="about-foto">
         <div class="about-foto__item">
           <img alt="" class="we-have__magnifier" src="img/magnifier.png">
-          <img alt="" class="about-foto__img" src="img/aboutfoto1.jpg" width="100%">
+          <img alt="" class="about-foto__img" src="img/aboutfoto1.jpg">
         </div>
         <div class="about-foto__item">
           <img alt="" class="we-have__magnifier" src="img/magnifier.png">
-          <img alt="" class="about-foto__img" src="img/aboutfoto2.jpg" width="100%">
+          <img alt="" class="about-foto__img" src="img/aboutfoto2.jpg">
         </div>
         <div class="about-foto__item">
           <img alt="" class="we-have__magnifier" src="img/magnifier.png">
-          <img alt="" class="about-foto__img" src="img/aboutfoto3.jpg" width="100%">
+          <img alt="" class="about-foto__img" src="img/aboutfoto3.jpg">
         </div>
       </div>
     </div>
@@ -294,82 +296,102 @@
   <section class="price">
     <div class="container">
       <h2 class="price__title title">Цены</h2>
-<!--       <table class="table">
-        <tr>
-          <th>Детский</th>
-          <th></th>
+
+  </section>
+  <!-- Секция Отзывы -->
+  <section class="feedback">
+  <table class="table">
+        <tr class="table__row">
+          <th class="table__age"></th>
+          <th class="table__age">
+            <p class="age-description">Детский</p>
+            <p>от 4 лет</p>
+          </th>
+          <th class="table__age">
+            <p class="age-description">Взрослый/детский</p>
+            <p>от 7 лет</p>
+          </th>
         </tr>
-        <tr>
-          <td>Прохождение препятсвий парка <strong>3 часа</strong></td>
+        <tr class="table__row">
+          <td class="table__time table__time-3" colspan="3">Прохождение препятствий парка <strong>3 часа</strong></td>
         </tr>
-        <tr>
-          <td>Все трассы Веревочный парк + скалодром</td>
-          <td>2200 ₶</td>
-          <td>2500 ₶</td>
+        <tr class="table__row">
+          <td class="table__trace">
+            <p>Все трассы</p>
+            <p>Веревочный парк + скалодром</p>
+          </td>
+          <td class="table__price">2200 ₽</td>
+          <td class="table__price">2500 ₽</td>
         </tr>
-        <tr>
-          <td>Скалодром</td>
-          <td>1000 ₶</td>
-          <td>1300 ₶</td>
+        <tr class="table__row">
+          <td class="table__trace">Скалодром</td>
+          <td class="table__price">1000 ₽</td>
+          <td class="table__price">1300 ₽</td>
         </tr>
-        <tr>
-          <td>Веревочный парк</td>
-          <td>1200 ₶</td>
-          <td>1500 ₶</td>
+        <tr class="table__row">
+          <td class="table__trace">Веревочный парк</td>
+          <td class="table__price">1200 ₽</td>
+          <td class="table__price">1500 ₽</td>
         </tr>
-        <tr>
-          <td>Нужна ли здесть строка таблицы?</td>
+        <tr class="table__row">
+
         </tr>
-        <tr>
-          <td>Прохождение препятствий парка <strong>12 часов</strong></td>
+        <tr class="table__row">
+          <td class="table__time table__time-12" colspan="3">Прохождение препятствий парка <strong>12 часов</strong></td>
         </tr>
-        <tr>
-          <td>Все трассы Веревочный парк + скалодром</td>
-          <td>5500 ₶</td>
-          <td>6000 ₶</td>
+        <tr class="table__row">
+          <td class="table__trace">
+            <p>Все трассы</p>
+            <p>Веревочный парк + скалодром</p>
+          </td>
+          <td class="table__price">5500 ₽</td>
+          <td class="table__price">6000 ₽</td>
         </tr>
-        <tr>
-          <td>Скалодром</td>
-          <td>3000 ₶</td>
-          <td>3500 ₶</td>
+        <tr class="table__row">
+          <td class="table__trace">Скалодром</td>
+          <td class="table__price">3000 ₽</td>
+          <td class="table__price">3500 ₽</td>
         </tr>
-        <tr>
-          <td>Веревочный парк</td>
-          <td>4000 ₶</td>
-          <td>4500 ₶</td>
+        <tr class="table__row">
+          <td class="table__trace">Веревочный парк</td>
+          <td class="table__price">4000 ₽</td>
+          <td class="table__price">4500 ₽</td>
         </tr>
-        <tr>
-          <td>Каждый дополнительный час 500 ₶</td>
+        <tr class="table__row" colspan="3">
+          <td class="table__time" colspan="3">Каждый дополнительный час + 500 ₽</td>
         </tr>
-        <tr>
-          <td>Персональный оператор парка</td>
-          <td>600 ₶/час</td>
+        <tr class="table__row table__operator">
+          <td class="table__operator">Персональный оператор парка</td>
+          <td></td>
+          <td class="table__operator-cost">600 ₽/час</td>
         </tr>
-      </table> -->
-      <div class="Grid">
-        <div class="Grid-cell"></div>
-        <div class="Grid-cell">Детский от 4 лет</div>
-        <div class="Grid-cell">Взрослый от 7 лет</div>
-      </div>
-      <div class="Grid">
-        <div class="Grid-cell"></div>
-        <div class="Grid-cell">Прохождение препятствий парка <strong>3 часа</strong></div>
-      </div>
-      <div class="Grid">
-        <div class="Grid-cell">Все трассы Веревочный парк + скалодром</div>
-        <div class="Grid-cell">2200 Р</div>
-        <div class="Grid-cell">2500 Р</div>
-      </div>
+      </table>
 
       <!-- Для смартфона -->
-      <div class="price__age"></div>
-      <div class="price__place"></div>
-      <div class="price__time">
-        <ul>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
+      <ul class="price__list">
+        <li class="price__list-item"><a href="">Выберите возраст</a>
+          <ul class="grid grid-age">
+            <li class="grid-cell">Детский от 4 лет</li>
+            <li class="grid-cell">Взрослый от 7 лет</li>
+          </ul>
+        </li>
+        <li class="price__list-item"><a href="">Выберите место</a>
+          <ul class="grid grid-place">
+            <li class="grid-cell">
+              <p>Все трассы</p>
+              <p>Веревочный парк + скалодром</p>
+            </li>
+            <li class="grid-cell">Скалодром</li>
+            <li class="grid-cell">Веревочный парк</li>
+          </ul>
+        </li>
+        <li class="price__list-item"><a href="">Выберите длительность</a>
+          <ul class="grid grid-time">
+            <li class="grid-cell">Прохождение парка за 3 часа</li>
+            <li class="grid-cell">Прохождение парка за 12 часов</li>
+          </ul>
+        </li>
+      </ul>
       <div class="price__total row">
         <div class="total-item col"><p class="total-text">Стоимость абонемента</p></div>
         <div class="total-item col"><p class="total-sum">0 Р</p></div>
@@ -379,7 +401,7 @@
           <p>Персональный оператор парка</p>
         </div>
         <div class="trainer-item col">
-          <p>600 ₶/час</p>
+          <p>600 ₽/час</p>
         </div>
       </div>
       <div class="price__hour row">
@@ -387,19 +409,18 @@
           <p class="hour-item">Каждый дополнительный час</p>
         </div>
         <div class="col">
-          <p class="hour-item">500 ₶</p>
+          <p class="hour-item">500 ₽</p>
         </div>
       </div>
-      <button class="btn price__btn">
+      <div class="buttons">
+        <button class="btn price__btn">
         <p class="btn__text">Купить билет</p>
       </button>
       <div class="price__safety">
         <a class="safety-link" href="#">Техника безопасности (PDF)</a>
       </div>
+      </div>
     </div>
-  </section>
-  <!-- Секция Отзывы -->
-  <section class="feedback">
     <div class="carousel">
       <h2 class="feedback__title title">Отзывы</h2>
       <div class="feedback__item">
@@ -424,12 +445,13 @@
   </section>
   <!-- Футер -->
   <footer class="footer">
-    <div class="" id="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1990.2731670428054!2d30.268773315908195!3d60.07684465790428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963547d7977ee9%3A0x303e6d5c12d21ac8!2z0JLRi9Cx0L7RgNCz0YHQutC-0LUg0YguLCAyMjAsINCf0LDRgNCz0L7Qu9C-0LLQviwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5NDM2Mg!5e0!3m2!1sru!2sru!4v1497848566364" allowfullscreen>
-      </iframe>
-    </div>
-    <div class="container">
-      <ul class="contacts__list">
+      <div class="" id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1990.2731670428054!2d30.268773315908195!3d60.07684465790428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963547d7977ee9%3A0x303e6d5c12d21ac8!2z0JLRi9Cx0L7RgNCz0YHQutC-0LUg0YguLCAyMjAsINCf0LDRgNCz0L7Qu9C-0LLQviwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5NDM2Mg!5e0!3m2!1sru!2sru!4v1497848566364" allowfullscreen>
+        </iframe>
+      </div>
+      <div class="container">
+      <div class="anv-list">
+        <ul class="contacts__list">
         <li class="list__item footer__addres">Выборгское ш.,220</li>
         <li class="list__item footer__phone">
           <a class="phone__link" href="tel:+78129997788">8(812)999-77-88</a></li>
@@ -451,6 +473,8 @@
           <a class="nav__link" href="#">Контакты</a>
         </li>
       </ul>
+      </div>
+
       <div class="footer__line">
         <ul class="footer__socials">
         <li class="socials__item">

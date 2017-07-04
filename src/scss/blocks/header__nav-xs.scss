@@ -14,12 +14,27 @@
   left: 0;
   display: block;
   width: 100%;
-  margin-top: 30px;
+  padding-top: 30px;
   text-align: center;
   background-color: $header-menu-bgc-xs;
   color:$header-text-xs;
+  z-index: 10;
 }
 
+// .header__nav-xs:after {
+//   content: "";
+//   width: 20px;
+//   height: 30px;
+//   display: block;
+//   position: absolute;
+//   top: -20px;
+//   background: url("../img/Burger.png") 0 0 no-repeat;
+//   z-index: 10;
+// }
+
+.header__nav-xs:hover {
+  top: 0;
+}
 
 .burger__item {
   position: absolute;
@@ -50,3 +65,4 @@
   color:$header-text-xs;
   background-color: $header-menu-bgc-xs;
 }
+

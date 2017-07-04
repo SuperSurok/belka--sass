@@ -5,7 +5,8 @@ $(document).ready(function(){
   speed: 300,
   slidesToShow: 5,
   slidesToScroll: 5,
-  arrows: false,
+  arrows: true,
+  //prevArrow: ".arrowprev",
   responsive: [
     {
       breakpoint: 1200,
@@ -30,15 +31,16 @@ $(document).ready(function(){
     // instead of a settings object
   ]
   });
+
   $('.about-foto').slick({
   dots: false,
-  infinite: false,
+  infinite: true,
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 3,
   responsive: [
     {
-      breakpoint: 400,
+      breakpoint: 768,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
@@ -49,7 +51,6 @@ $(document).ready(function(){
     // instead of a settings object
   ]
   });
-$('.header__nav-xs').slicknav({
-
-  });
+// $('.header__nav-xs').slicknav({
+//   });
 });

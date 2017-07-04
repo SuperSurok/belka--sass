@@ -9,6 +9,9 @@
 .row {
   display: flex;
   justify-content: space-between;
+  @media (min-width: $screen-sm) {
+    display: none;
+  }
 }
 
 .col {
@@ -48,6 +51,9 @@
   display: block;
   margin: 0 auto;
   margin-top: 15px;
+  @media (min-width: $screen-sm) {
+    margin: 0;
+  }
 }
 
 .btn__text {
@@ -62,12 +68,128 @@
   text-align: center;
 }
 
-.Grid {
-  display: flex;
-  flex-grow: 2;
-
+.table {
+  display: none;
+  margin: 0 auto;
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Open Sans';
+  font-size: $font-size + 2px;
+  font-weight: 200;
+  // opacity: 0.8;
+  @media (min-width: $screen-sm) {
+    display: table;
+    margin-top: 55px;
+  }
+  @media (min-width: $screen-lg) {
+    display: table;
+    margin-top: 40px;
+  }
 }
 
-.Grid-cell {
-  flex: 1;
+.table__age {
+  width: 33.333%;
+  text-align: center;
+  color: $font-color-tracks;
+  background-color: $shuttle-gray;
+  font-weight: 200;
+}
+
+.table__time-3 {
+  background-color: $three-hours;
+}
+
+.table__time-12 {
+  background-color: $twelve-hours;
+}
+
+.table__operator {
+  background-color: #f1f1f1;
+}
+
+td {
+  text-align: center;
+}
+
+.table__row {
+  @media (min-width: $screen-sm) {
+    height: 60px;
+  }
+  @media (min-width: $screen-lg) {
+    height: 56px;
+  }
+}
+
+.age-description {
+  text-transform: uppercase;
+}
+
+.table__trace {
+  color: $font-color-tracks;
+  background-color: $blue;
+  opacity: 0.8;
+  text-transform: uppercase;
+  @media (min-width: $screen-sm) {
+    width: 50%;
+  }
+  @media (min-width: $screen-lg) {
+    width: 33.333%;
+  }
+}
+
+.table__price:hover {
+  border: 2px solid #000;
+}
+
+.table__price:active {
+  border: 2px solid $red-border;
+}
+
+.buttons {
+  @media (min-width: $screen-sm) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.price__list {
+  position: relative;
+  padding-top: 55px;
+  font-family: 'Open Sans';
+  font-weight: 100;
+  @media (min-width: $screen-sm) {
+    display: none;
+  }
+}
+
+.price__list ul {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.grid {
+  position: absolute;
+  width: 100%;
+  display: none;
+}
+
+.price__list > li:hover .grid{
+  display: block;
+}
+
+.price__list li li {
+  color: $font-color-tracks;
+  background-color: $blue;
+  padding: 20px 0;
+}
+
+.price__list-item {
+  display: block;
+  padding: 25px 0;
+  text-align: center;
+  font-family: 'Open Sans';
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  margin-bottom: -1px;
 }
