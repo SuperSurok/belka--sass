@@ -13,16 +13,19 @@
 }
 
 iframe {
-  width: 50%;
+  width: 100%;
   height: 230px;
   border: none;
+  display: block;
   @media (min-width: $screen-sm) {
     flex-direction: row;
   }
 }
 
-.anv-list {
-  width: 40%;
+.nav-list {
+  width: 50%;
+  display: block;
+  margin-left: 10px;
   @media (min-width: $screen-sm) {
     flex-direction: row;
   }
@@ -79,20 +82,18 @@ iframe {
 
 .footer__line {
   display: flex;
-  align-items:center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0 10px 10px;
 }
 
 .footer__socials {
   display: flex;
+  align-items: center;
 }
 
 .socials__item {
   margin-right: 10px;
 }
 
-.link-toheader {
-  margin-left: auto;
-  margin-bottom: 5px;
+.arrowup {
+  margin-left: 55%;
 }
