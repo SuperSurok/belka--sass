@@ -2,54 +2,93 @@
 <html class="no-js" lang="ru">
 <head>
   <title>belka</title>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="css/style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+   <script>
+     // Маркер работающего javascript
+     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+   </script>
+
+
 </head>
 <body>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-  <script>
-    // Маркер работающего javascript
-    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-  </script>
-
-
   <!-- Хедер -->
-  <div class="header">
-    <div class="container">
-      <div class="header__color"></div>
-      <div class="header__contacts">
-        <div class="header__contacts-wrap contacts"></div>
-        <div class="contacts">
-          <p class="contacts__item">24 часа</p>
-          <a class="contacts__item" href="tel:+78129997788">8(812)999-77-99</a>
-          <p class="contacts__item">Выборгское ш.,220</p>
-        </div>
+  <header class="header" id="header">
+    <div class="header__contacts">
+      <div class="contacts__item-xs header__sprite phone-call"></div>
+      <div class="contacts__item-xs contsacts__phone">
+        <a href="tel:+78129997788">8(812)999-77-99</a>
       </div>
-      <div class="header__line">
-        <a class="logo" href=""><img alt="" class="logo__img" src="img/logo.png"></a>
+      <div class="kebab">
+        <a class="header__burger burger" href="#"></a>
+      </div>
+
+          <nav class="header__nav-xs">
+          <ul class="main-nav__list-xs">
+            <li class="main-nav__item-xs">
+              <a class="main-nav__link-xs" href="#tracks">Трассы</a>
+            </li>
+            <li class="main-nav__item-xs">
+              <a class="main-nav__link-xs" href="#actions">Акции</a>
+            </li>
+            <li class="main-nav__item-xs">
+              <a class="main-nav__link-xs" href="#price">Цены</a>
+            </li>
+            <li class="main-nav__item-xs">
+              <a class="main-nav__link-xs" href="#feedback">Отзывы</a>
+            </li>
+            <li class="main-nav__item-xs">
+              <a class="main-nav__link-xs" href="#footer">Контакты</a>
+            </li>
+          </ul>
+          <div class="social-xs">
+            <a class="social-xs__link" href="#"><div class="twitter"></div></a>
+            <a class="social-xs__link" href="#"><div class="vk"></div></a>
+            <a class="social-xs__link" href="#"><div class="instagram"></div></a>
+          </div>
+          </nav>
+
+  <!-- <div class="header__contacts-wrap contacts"> -->
+  </div>
+    <div class="header__container container">
+        <div class="contacts">
+        <div class="header__sprite time"></div>
+          <div class="contacts__item contacts__time">24 часа</div>
+          <div class="header__sprite phone-call"></div>
+          <div class="contacts__item contacts__phone">
+            <a href="tel:+78129997788">8(812)999-77-99</a>
+          </div>
+          <div class="header__sprite placeholder"></div>
+          <div class="contacts__item contacts__address">Выборгское ш.,220</div>
+        </div>
+        <div class="header__line">
+        <a class="logo" href="#"></a>
         <button class="btn header__btn">Купить билет</button>
-        <nav class="header-nav">
+        <nav class="header__nav">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link" href="">Трассы</a>
+              <a class="main-nav__link" href="#tracks">Трассы</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="">Акции</a>
+              <a class="main-nav__link" href="#actions">Акции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="">Цены</a>
+              <a class="main-nav__link" href="#price">Цены</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="">Отзывы</a>
+              <a class="main-nav__link" href="#feedback">Отзывы</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="">Контакты</a>
+              <a class="main-nav__link" href="#footer">Контакты</a>
             </li>
           </ul>
         </nav>
       </div>
+      </div>
+
       <!-- Секция Скалодром -->
       <section class="mountains">
         <h1 class="mountains__title title">Скалодром</h1>
@@ -61,93 +100,114 @@
         </div>
         <button class="btn header__btn-sm">Купить билет</button>
       </section>
-    </div>
+    </header>
   </div>
 
   <!-- Секция Трассы -->
-  <section class="tracks">
+  <section class="tracks" id="tracks">
     <div class="tracks_main-fon"></div>
-    <div class="container">
+    <div class="tracks__container container">
       <div class="tracks__title">
-        <h2 class="title">Трассы</h2>
+        <h2 class="tracks__title title">Трассы</h2>
       </div>
       <div class="tracks__list">
         <div class="track-card track-card__odd">
+        <div class="track-card-inner">
           <div class="track-card__title">
             <p class="title__item title__item_number">Трасса #1</p>
+            <div class="tracks__sprite mountain"></div>
             <p class="title__item title__item_height">Высота 15 м</p>
+            <div class="tracks__sprite avatar"></div>
             <p class="title__item title__item_age">Возраст 13+</p>
           </div>
-          <div class="track-card__item"><img class="track-card__img" alt="" src="img/track1.jpg">
-            <div class="img-overlay"></div>
+          <div class="track-card__item">
+            <img class="track-card__img" alt="" src="img/track1.jpg">
           </div>
-          <div class="track-card__text">
-              Трасса для опытных скалолазов. Требуется наличие хорошей физ. подготовки.
+          <div class="img-overlay"></div>
+          <div class="track-card__description">
+              <p class="track-card__text">Трасса для опытных скалолазов. Требуется наличие хорошей физ. подготовки.</p>
           </div>
         </div>
+        </div>
         <div class="track-card">
+        <div class="track-card-inner">
           <div class="track-card__title">
             <p class="title__item title__item_number">Трасса #2</p>
+            <div class="tracks__sprite mountain"></div>
             <p class="title__item title__item_height">Высота 4 м</p>
+            <div class="tracks__sprite avatar"></div>
             <p class="title__item title__item_age">Возраст 4+</p>
           </div>
-          <div class="track-card__item"><img class="track-card__img" alt="" src="img/track2.jpg">
-            <div class="img-overlay"></div>
+          <div class="track-card__item">
+            <img class="track-card__img" alt="" src="img/track2.jpg">
           </div>
-          <div class="track-card__text">
-              Для людей с разной физ. подготовкой. Различные зацепы и рельефы стены.
+          <div class="img-overlay"></div>
+          <div class="track-card__description">
+              <p class="track-card__text">Для людей с разной физ. подготовкой. Различные зацепы и рельефы стены.</p>
           </div>
         </div>
+        </div>
         <div class="track-card track-card__odd">
+        <div class="track-card-inner">
           <div class="track-card__title">
             <p class="title__item title__item_number">Трасса #3</p>
+            <div class="tracks__sprite mountain"></div>
             <p class="title__item title__item_height">Высота 10 м</p>
+            <div class="tracks__sprite avatar"></div>
             <p class="title__item title__item_age">Возраст 13+</p>
           </div>
-          <div class="track-card__item"><img class="track-card__img" alt="" src="img/track3.jpg"></div>
-          <div class="track-card__text">
-              Трасса подойтет как для профессионалов,так и для любителей. Необходима хорошая физ. подготовка.
+          <div class="track-card__item">
+            <img class="track-card__img" alt="" src="img/track3.jpg">
           </div>
+          <div class="img-overlay"></div>
+          <div class="track-card__description">
+              <p class="track-card__text">Трасса подойтет как для профессионалов,так и для любителей. Необходима хорошая физ. подготовка.</p>
+          </div>
+        </div>
         </div>
         <div class="track-card">
+        <div class="track-card-inner">
           <div class="track-card__title">
             <p class="title__item title__item_number">Трасса #4</p>
+            <div class="tracks__sprite mountain"></div>
             <p class="title__item title__item_height">Высота 3 м</p>
+            <div class="tracks__sprite avatar"></div>
             <p class="title__item title__item_age">Возраст 4+</p>
           </div>
-          <div class="track-card__item"><img class="track-card__img" alt="" src="img/track4.jpg"></div>
-          <div class="track-card__text">
-              Самая невысокая трасса. Специальные зацепы для детей.
+          <div class="track-card__item">
+            <img class="track-card__img" alt="" src="img/track4.jpg">
           </div>
+          <div class="img-overlay"></div>
+          <div class="track-card__description">
+              <p class="track-card__text">Самая невысокая трасса. Специальные зацепы для детей.</p>
+          </div>
+        </div>
         </div>
         <div class="track-card track-card__odd">
+        <div class="track-card-inner">
           <div class="track-card__title">
             <p class="title__item title__item_number">Трасса #5</p>
+            <div class="tracks__sprite mountain"></div>
             <p class="title__item title__item_height">Высота 8 м</p>
+            <div class="tracks__sprite avatar"></div>
             <p class="title__item title__item_age">Возраст 13+</p>
           </div>
-          <div class="track-card__item"><img class="track-card__img" alt="" src="img/track5.jpg"></div>
-          <div class="track-card__text">
-            Средняя высота и сложность.Физ. подготовка не обязательна.
+          <div class="track-card__item">
+            <img class="track-card__img" alt="" src="img/track5.jpg">
+          </div>
+          <div class="img-overlay"></div>
+          <div class="track-card__description">
+            <p class="track-card__text">Средняя высота и сложность.Физ. подготовка не обязательна.</p>
           </div>
         </div>
+        </div>
       </div>
-
-
-      <!-- Для смартфона -->
-      <!-- <div class="carousel">
-        <p class="carousel__title">Трасса #1</p>
-        <p class="carousel__height"><i class="sprite-mountain"></i> Высота 15 м.</p>
-        <p class="carousel__age"><i class="sprite-man"></i> Возраст 13+</p>
-        <p class="carousel__text">Трасса для опытных скалолазов. Требуется наличие хорошей физ. подготовки</p>
-      </div> -->
     </div>
   </section>
 
 
   <!-- Секция Акции -->
-
-  <section class="actions">
+  <section class="actions" id="actions">
     <div class="container">
       <h2 class="actions__title title">Акции</h2>
       <div class="actions__list">
@@ -227,167 +287,283 @@
 
 
   <!-- Секция У нас -->
-
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <div class="we-have">
         <h2 class="about__title title">У нас</h2>
-        <div class="we-have__block block-equip">
-          <p class="we-have__text">Альпинистское снаряжение и страховочные устройства французской компании Petzl</p>
-        </div>
-        <div class="we-have__block block-tracks">
-          <div class="we-have__img"></div>
-          <p class="we-have__text">Понятная маркировка трасс (ламинированные таблички и зацепки определнного цвета для каждой трассы)</p>
-        </div>
-        <div class="we-have__block block-trainers">
-          <div class="we-have__img"></div>
-          <p class="we-have__text">На территории скалодрома всегда находится инструктор, который готов ответить на любой Ваш вопрос</p>
-        </div>
+          <div class="we-have__block block-equip">
+            <div class="about__img about1"></div>
+            <p class="we-have__text">Альпинистское снаряжение и страховочные устройства французской компании <br>Petzl</p>
+          </div>
+          <div class="we-have__block block-tracks">
+            <div class="about__img about2"></div>
+            <p class="we-have__text">Понятная маркировка трасс (ламинированные таблички и зацепки определнного цвета для каждой трассы)</p>
+          </div>
+          <div class="we-have__block block-trainers">
+            <div class="about__img about3"></div>
+            <p class="we-have__text">У скалодрома всегда находится инструктор, который готов ответить на любой Ваш вопрос!</p>
+          </div>
       </div>
       <div class="about-foto">
-        <div class="about-foto__item"><img alt="" class="we-have__magnifier" src="img/magnifier.png"><img alt="" class="about-foto__img" src="img/aboutfoto1.jpg" width="100%"></div>
-        <div class="about-foto__item"><img alt="" class="we-have__magnifier" src="img/magnifier.png"><img alt="" class="about-foto__img" src="img/aboutfoto2.jpg" width="100%"></div>
-        <div class="about-foto__item"><img alt="" class="we-have__magnifier" src="img/magnifier.png"><img alt="" class="about-foto__img" src="img/aboutfoto3.jpg" width="100%"></div>
-      </div>
-      <div class="caorusel">
-        <div class="about__photo"></div>
+        <div class="about-foto__item">
+          <img alt="" class="we-have__magnifier" src="img/magnifier.png">
+          <img alt="" class="about-foto__img" src="img/aboutfoto1.jpg">
+        </div>
+        <div class="about-foto__item">
+          <img alt="" class="we-have__magnifier" src="img/magnifier.png">
+          <img alt="" class="about-foto__img" src="img/aboutfoto2.jpg">
+        </div>
+        <div class="about-foto__item">
+          <img alt="" class="we-have__magnifier" src="img/magnifier.png">
+          <img alt="" class="about-foto__img" src="img/aboutfoto3.jpg">
+        </div>
       </div>
     </div>
   </section>
+
+
   <!-- Секция Цены -->
-  <section class="price">
+  <section class="price" id="price">
     <div class="container">
       <h2 class="price__title title">Цены</h2>
-      <table class="table">
-        <tr>
-          <th>Детский</th>
-          <th></th>
+    <table class="table">
+        <tr class="table__row">
+          <th class="table__age"></th>
+          <th class="table__age">
+            <p class="age-description">Детский</p>
+            <p>от 4 лет</p>
+          </th>
+          <th class="table__age">
+            <p class="age-description">Взрослый/детский</p>
+            <p>от 7 лет</p>
+          </th>
         </tr>
-        <tr>
-          <td>Прохождение препятсвий парка <strong>3 часа</strong></td>
+        <tr class="table__row">
+          <td class="table__time table__time-3" colspan="3">Прохождение препятствий парка <strong>3 часа</strong></td>
         </tr>
-        <tr>
-          <td>Все трассы Веревочный парк + скалодром</td>
-          <td>2200 ₶</td>
-          <td>2500 ₶</td>
+        <tr class="table__row">
+          <td class="table__trace">
+            <p>Все трассы</p>
+            <p>Веревочный парк + скалодром</p>
+          </td>
+          <td class="table__price">2200 ₽</td>
+          <td class="table__price">2500 ₽</td>
         </tr>
-        <tr>
-          <td>Скалодром</td>
-          <td>1000 ₶</td>
-          <td>1300 ₶</td>
+        <tr class="table__row">
+          <td class="table__trace">Скалодром</td>
+          <td class="table__price">1000 ₽</td>
+          <td class="table__price">1300 ₽</td>
         </tr>
-        <tr>
-          <td>Веревочный парк</td>
-          <td>1200 ₶</td>
-          <td>1500 ₶</td>
+        <tr class="table__row">
+          <td class="table__trace">Веревочный парк</td>
+          <td class="table__price">1200 ₽</td>
+          <td class="table__price">1500 ₽</td>
         </tr>
-        <tr>
-          <td>Нужна ли здесть строка таблицы?</td>
+        <tr class="table__row">
+
         </tr>
-        <tr>
-          <td>Прохождение препятствий парка <strong>12 часов</strong></td>
+        <tr class="table__row">
+          <td class="table__time table__time-12" colspan="3">Прохождение препятствий парка <strong>12 часов</strong></td>
         </tr>
-        <tr>
-          <td>Все трассы Веревочный парк + скалодром</td>
-          <td>5500 ₶</td>
-          <td>6000 ₶</td>
+        <tr class="table__row">
+          <td class="table__trace">
+            <p>Все трассы</p>
+            <p>Веревочный парк + скалодром</p>
+          </td>
+          <td class="table__price">5500 ₽</td>
+          <td class="table__price">6000 ₽</td>
         </tr>
-        <tr>
-          <td>Скалодром</td>
-          <td>3000 ₶</td>
-          <td>3500 ₶</td>
+        <tr class="table__row">
+          <td class="table__trace">Скалодром</td>
+          <td class="table__price">3000 ₽</td>
+          <td class="table__price">3500 ₽</td>
         </tr>
-        <tr>
-          <td>Веревочный парк</td>
-          <td>4000 ₶</td>
-          <td>4500 ₶</td>
+        <tr class="table__row">
+          <td class="table__trace">Веревочный парк</td>
+          <td class="table__price">4000 ₽</td>
+          <td class="table__price">4500 ₽</td>
         </tr>
-        <tr>
-          <td>Каждый дополнительный час 500 ₶</td>
+        <tr class="table__row" colspan="3">
+          <td class="table__time" colspan="3">Каждый дополнительный час + 500 ₽</td>
         </tr>
-        <tr>
-          <td>Персональный оператор парка</td>
-          <td>600 ₶/час</td>
+        <tr class="table__row table__operator">
+          <td class="table__operator">Персональный оператор парка</td>
+          <td></td>
+          <td class="table__operator-cost">600 ₽/час</td>
         </tr>
-      </table><!-- Для смартфона -->
-      <div class="price__age"></div>
-      <div class="price__place"></div>
-      <div class="price__time"></div>
-      <div class="price__total"></div>
-      <p class="price__trainer">Персональный оператор парка 600 ₶/час</p>
-      <p class="price__hour">Каждый дополнительный час 500 ₶</p><button class="btn price__btn">Купить билет</button> <a class="price__safety-link" href="#">Техника безопасности (PDF)</a>
-    </div>
-  </section>
-  <!-- Секция Отзывы -->
-  <section class="feedback">
+      </table>
+
+      <!-- Цены для смартфона -->
+      <ul class="price__list">
+        <li class="price__list-item price__list-item-age"><a href="#">Выберите возраст</a>
+          <ul class="grid grid-age">
+            <li class="grid-cell">Детский от 4 лет</li>
+            <li class="grid-cell">Взрослый от 7 лет</li>
+          </ul>
+        </li>
+        <li class="price__list-item price__list-item-place"><a href="#">Выберите место</a>
+          <ul class="grid grid-place">
+            <li class="grid-cell">
+              <p>Все трассы</p>
+              <p>Веревочный парк + скалодром</p>
+            </li>
+            <li class="grid-cell">Скалодром</li>
+            <li class="grid-cell">Веревочный парк</li>
+          </ul>
+        </li>
+        <li class="price__list-item price__list-item-time"><a href="#">Выберите длительность</a>
+          <ul class="grid grid-time">
+            <li class="grid-cell">Прохождение парка за 3 часа</li>
+            <li class="grid-cell">Прохождение парка за 12 часов</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="price__total row">
+        <div class="total-item col"><p class="total-text">Стоимость абонемента</p></div>
+        <div class="total-item col"><p class="total-sum">0 Р</p></div>
+      </div>
+      <div class="price__trainer row">
+        <div class="trainer-item col">
+          <p>Персональный оператор парка</p>
+        </div>
+        <div class="trainer-item col">
+          <p>600 ₽/час</p>
+        </div>
+      </div>
+      <div class="price__hour row">
+        <div class="col">
+          <p class="hour-item">Каждый дополнительный час</p>
+        </div>
+        <div class="col">
+          <p class="hour-item">500 ₽</p>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="btn price__btn">
+        <p class="btn__text">Купить билет</p>
+      </button>
+      <div class="price__safety">
+        <a class="safety-link" href="#">Техника безопасности (PDF)</a>
+      </div>
+      </div>
+      </div>
+
+      <!-- Секция Отзывы -->
+      <div class="feedback" id="feedback">
+    <h2 class="feedback__title title">Отзывы</h2>
     <div class="carousel">
-      <h2 class="feedback__title title">Отзывы</h2>
       <div class="feedback__item">
-        <img alt="" class="feedback__img" src="">
+        <img alt="" class="feedback__img" src="img/aleksey.jpg">
         <p class="feedback__name">Алексей.</p>
-        <p class="feedback__prof">Скалолаз-любитель.</p><a class="sprite sprite-tw" href=""></a> <a class="sprite sprite-vk" href=""></a>
+        <p class="feedback__prof">Скалолаз-любитель.</p>
+        <div class="feedback__socials">
+          <a class="socials__item instagram-feedback" href="#"></a>
+          <a class="socials__item vk-feedback" href="#"></a>
+        </div>
         <p class="feedback__text">Интересные трассы, вкусная еда и самые приветливые тренера!</p>
       </div>
       <div class="feedback__item">
-        <img alt="" class="feedback__img" src="">
+        <img alt="" class="feedback__img" src="img/maria.jpg">
         <p class="feedback__name">Мария.</p>
-        <p class="feedback__prof">Студентка.</p><a class="sprite sprite-tw" href=""></a> <a class="sprite sprite-vk" href=""></a>
+        <p class="feedback__prof">Студентка.</p>
+        <div class="feedback__socials">
+          <a class="socials__item instagram-feedback" href="#"></a>
+          <a class="socials__item vk-feedback" href="#"></a>
+        </div>
         <p class="feedback__text">Лучший скалодром в городе!</p>
       </div>
       <div class="feedback__item">
-        <img alt="" class="feedback__img" src="">
+        <img alt="" class="feedback__img" src="img/ekaterina.jpg">
         <p class="feedback__name">Екатерина.</p>
-        <p class="feedback__prof">Мама троих детей.</p><a class="sprite sprite-tw" href=""></a> <a class="sprite sprite-vk" href=""></a>
+        <p class="feedback__prof">Мама троих детей.</p>
+        <div class="feedback__socials">
+          <a class="socials__item instagram-feedback" href="#"></a>
+          <a class="socials__item vk-feedback" href="#"></a>
+        </div>
         <p class="feedback__text">Парк "BELKA" - отличная альтернатива наскучившим походам в кино и кафе.</p>
       </div>
-      <!-- Для смартфона -->
-      <div class="carousel"></div>
-    </div>
-  </section>
-  <!-- Футер -->
-  <footer class="footer">
-    <div class="" id="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1990.2731670428054!2d30.268773315908195!3d60.07684465790428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963547d7977ee9%3A0x303e6d5c12d21ac8!2z0JLRi9Cx0L7RgNCz0YHQutC-0LUg0YguLCAyMjAsINCf0LDRgNCz0L7Qu9C-0LLQviwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5NDM2Mg!5e0!3m2!1sru!2sru!4v1497848566364" allowfullscreen>
-      </iframe>
-    </div>
-    <div class="container">
-      <ul class="contacts__list">
-        <li class="list__item footer__addres">Выборгское ш.,220</li>
-        <li class="list__item footer__phone">
-          <a class="phone__link" href="tel:+78129997788">8(812)999-77-88</a></li>
-      </ul>
-      <ul class="nav">
-        <li class="nav__item">
-          <a class="nav__link" href="#">Трассы</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Акции</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Цены</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Отзывы</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Контакты</a>
-        </li>
-      </ul>
-      <div class="footer__line">
-        <ul class="footer__socials">
-        <li class="socials__item">
-          <a class="socials__link sprite sprite-twitter" href="#"></a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link sprite sprite-vk" href="#"></a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link sprite sprite-instagram" href="#"></a>
-        </li>
-      </ul>
-      <a class="link-toheader sprite sprite-buttonup" href="#"></a>
+      <div class="feedback__item">
+        <img alt="" class="feedback__img" src="img/aleksey.jpg">
+        <p class="feedback__name">Алексей.</p>
+        <p class="feedback__prof">Скалолаз-любитель.</p>
+        <div class="feedback__socials">
+          <a class="socials__item instagram-feedback" href="#"></a>
+          <a class="socials__item vk-feedback" href="#"></a>
+        </div>
+        <p class="feedback__text">Интересные трассы, вкусная еда и самые приветливые тренера!</p>
+      </div>
+      <div class="feedback__item">
+        <img alt="" class="feedback__img" src="img/maria.jpg">
+        <p class="feedback__name">Мария.</p>
+        <p class="feedback__prof">Студентка.</p>
+        <div class="feedback__socials">
+          <a class="socials__item instagram-feedback" href="#"></a>
+          <a class="socials__item vk-feedback" href="#"></a>
+        </div>
+        <p class="feedback__text">Лучший скалодром в городе!</p>
+      </div>
+      <div class="feedback__item">
+        <img alt="" class="feedback__img" src="img/ekaterina.jpg">
+        <p class="feedback__name">Екатерина.</p>
+        <p class="feedback__prof">Мама троих детей.</p>
+        <div class="feedback__socials">
+          <a class="socials__item instagram-feedback" href="#"></a>
+          <a class="socials__item vk-feedback" href="#"></a>
+        </div>
+        <p class="feedback__text">Парк "BELKA" - отличная альтернатива наскучившим походам в кино и кафе.</p>
       </div>
     </div>
+  </div>
+  <div class="last"></div>
+    </section>
+
+  <!-- Футер -->
+  <footer class="footer" id="footer">
+      <div class="footer__container container">
+        <div class="" id="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1990.2731670428054!2d30.268773315908195!3d60.07684465790428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963547d7977ee9%3A0x303e6d5c12d21ac8!2z0JLRi9Cx0L7RgNCz0YHQutC-0LUg0YguLCAyMjAsINCf0LDRgNCz0L7Qu9C-0LLQviwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5NDM2Mg!5e0!3m2!1sru!2sru!4v1497848566364" allowfullscreen>
+          </iframe>
+      </div>
+      <div class="footer__contacts">
+        <div class="nav-list">
+        <ul class="contacts__list">
+          <li class="list__item footer__addres">Выборгское ш.,220</li>
+          <li class="list__item footer__phone">
+            <a class="phone__link" href="tel:+78129997788">8(812)999-77-88</a>
+          </li>
+        </ul>
+        <ul class="nav">
+          <li class="nav__item">
+            <a class="nav__link" href="#tracks">Трассы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#actions">Акции</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#price">Цены</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#feedback">Отзывы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#footer">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__line">
+        <a class="socials__item twitter" href="#"></a>
+        <a class="socials__item vk" href="#"></a>
+        <a class="socials__item instagram" href="#"></a>
+        <a class="arrowup" href="#"></a>
+      </div>
+      <a class="arrowup-big" href="#header"></a>
+    </div>
+      </div>
   </footer>
+  <div class="overlay">
+    <div class="overlay__bg"></div>
+    <div class="overlay__wrapper"></div>
+  </div>
+  <script type="text/javascript" src="js/script.min.js"></script>
 </body>
 </html>
