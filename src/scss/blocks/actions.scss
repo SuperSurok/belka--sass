@@ -28,15 +28,11 @@
 }
 
 .actions__list_lg {
-  @media (min-width: $screen-phone) {
-    display: none;
-  }
-  @media (min-width: $screen-sm) {
-    display: none;
-  }
+  display: none;
   @media (min-width: $screen-lg) {
     display: flex;
     justify-content: space-between;
+    margin-top: 71px;
   }
 }
 

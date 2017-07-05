@@ -1,13 +1,26 @@
 .feedback {
-  background: url("../img/feedback-fone.jpg") 0 23% no-repeat;
-  background-size: cover;
+  width: 96%;
+  height: 555px;
+  margin: 0 auto;
+  margin-top: 110px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.feedback__title {
+  padding-top: 24px;
 }
 
 .carousel {
-  position: relative;
-  width: 80%;
-  height: 560px;
+  width: 93%;
+  height: 350px;
   margin: 0 auto;
+  margin-top: 50px;
+  @media (min-width: $screen-sm) {
+    margin-top: 11px;
+  }
+  @media (min-width: $screen-sm) {
+    margin-top: 21px;
+  }
 }
 
 .last {
@@ -16,26 +29,38 @@
 
 .feedback__item {
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 39px;
+  width: 33.33%;
 }
 
 .feedback__img {
   text-align: center;
   border-radius: 50%;
-  z-index: 10;
+  margin: 0 auto;
 }
 
 .feedback__name,
 .feedback__prof {
   text-align: center;
+  padding: 10px 5px 0px 5px;
 }
 
-.footer__img-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(255, 255, 255, 0.5);
-  opacity: 1;
+.feedback__socials {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.feedback__text {
+  width: 77%;
+  margin: 0 auto;
+  margin-top: 13px;
+  @media (min-width: $screen-sm) {
+    padding: 0 17px;
+  }
+  @media (min-width: $screen-lg) {
+    width: 40%;
+  }
+}
+
