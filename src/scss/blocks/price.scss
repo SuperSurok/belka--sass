@@ -147,9 +147,12 @@ td {
 
 .buttons {
   @media (min-width: $screen-sm) {
+    width: 500px;
+    margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    margin-top: 80px;
   }
 }
 

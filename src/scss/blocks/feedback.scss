@@ -2,3 +2,40 @@
   background: url("../img/feedback-fone.jpg") 0 23% no-repeat;
   background-size: cover;
 }
+
+.carousel {
+  position: relative;
+  width: 80%;
+  height: 560px;
+  margin: 0 auto;
+}
+
+.last {
+  height: 40px;
+}
+
+.feedback__item {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.feedback__img {
+  text-align: center;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.feedback__name,
+.feedback__prof {
+  text-align: center;
+}
+
+.footer__img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+}
