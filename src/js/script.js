@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+  // carousel
   $('.tracks__list').slick({
   dots: false,
   infinite: false,
@@ -17,7 +19,7 @@ $(document).ready(function(){
       }
     },
     {
-      breakpoint: 768,
+      breakpoint: 700,
       settings: {
         dots: false,
         infinite: true,
@@ -39,7 +41,7 @@ $(document).ready(function(){
   slidesToScroll: 3,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 700,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
@@ -58,7 +60,7 @@ $(document).ready(function(){
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 700,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
@@ -69,23 +71,50 @@ $(document).ready(function(){
     // instead of a settings object
   ]
   });
+
+  // accordeon header xs
   $('.kebab').click(function(e){
     e.preventDefault();
     $('.header__nav-xs').slideToggle(300);
   });
 
+  // accordeon price
+  $('.price__list-item-age').click(function(e){
+    e.preventDefault();
+    $('.grid-age').slideToggle(300);
+  });
+
+  $('.price__list-item-place').click(function(e){
+    e.preventDefault();
+    $('.grid-place').slideToggle(300);
+  });
+
+  $('.price__list-item-time').click(function(e){
+    e.preventDefault();
+    $('.grid-time').slideToggle(300);
+  })
 
   // modal window
   $('.about-foto__item').click(function(){
     $('.overlay').show();
     $('body').css('overflow-y', 'hidden')
     $(this).find('.about-foto__img').clone().appendTo('.overlay__wrapper');
-  })
+  });
   $('.overlay__bg').click(function(){
     $(this).closest('.overlay').find('.overlay__wrapper img').remove();
-    $('body').css('overflow-y', 'auto')
-    $('.overlay').hide()
+    $('body').css('overflow-y', 'auto');
+    $('.overlay').hide();
+  });
 
+// smooth anchor scroll
+  $('a[href^="#"]').click(function() {
+    $('html, body').animate({
+    scrollTop: $($(this).attr('href')).offset().top + "px"
+    }, {
+        duration: 3000,
+        easing: 'swing'
+    });
+    return false;
   })
 
 });

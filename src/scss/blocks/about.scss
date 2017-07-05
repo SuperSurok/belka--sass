@@ -64,7 +64,8 @@
 
 .about__img {
   position: absolute;
-  top: 5%;
+  top: -5%;
+  left: 5%;
   @media (min-width: $screen-sm) {
     top: -50%;
     left: 0;

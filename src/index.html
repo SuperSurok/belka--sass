@@ -6,7 +6,7 @@
 </head>
 <body>
   <!-- Хедер -->
-  <div class="header">
+  <header class="header" id="header">
     <div class="header__contacts">
       <div class="contacts__item-xs header__sprite phone-call"></div>
       <div class="contacts__item-xs contsacts__phone">
@@ -19,25 +19,25 @@
           <nav class="header__nav-xs">
           <ul class="main-nav__list-xs">
             <li class="main-nav__item-xs">
-              <a class="main-nav__link-xs" href="">Трассы</a>
+              <a class="main-nav__link-xs" href="#tracks">Трассы</a>
             </li>
             <li class="main-nav__item-xs">
-              <a class="main-nav__link-xs" href="">Акции</a>
+              <a class="main-nav__link-xs" href="#actions">Акции</a>
             </li>
             <li class="main-nav__item-xs">
-              <a class="main-nav__link-xs" href="">Цены</a>
+              <a class="main-nav__link-xs" href="#price">Цены</a>
             </li>
             <li class="main-nav__item-xs">
-              <a class="main-nav__link-xs" href="">Отзывы</a>
+              <a class="main-nav__link-xs" href="#feedback">Отзывы</a>
             </li>
             <li class="main-nav__item-xs">
-              <a class="main-nav__link-xs" href="">Контакты</a>
+              <a class="main-nav__link-xs" href="#footer">Контакты</a>
             </li>
           </ul>
           <div class="social-xs">
-            <a class="social-xs__link" href=""><div class="twitter"></div></a>
-            <a class="social-xs__link" href=""><div class="vk"></div></a>
-            <a class="social-xs__link" href=""><div class="instagram"></div></a>
+            <a class="social-xs__link" href="#"><div class="twitter"></div></a>
+            <a class="social-xs__link" href="#"><div class="vk"></div></a>
+            <a class="social-xs__link" href="#"><div class="instagram"></div></a>
           </div>
           </nav>
 
@@ -55,24 +55,24 @@
           <div class="contacts__item contacts__address">Выборгское ш.,220</div>
         </div>
         <div class="header__line">
-        <a class="logo" href=""></a>
+        <a class="logo" href="#"></a>
         <button class="btn header__btn">Купить билет</button>
         <nav class="header__nav">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link" href="">Трассы</a>
+              <a class="main-nav__link" href="#tracks">Трассы</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="">Акции</a>
+              <a class="main-nav__link" href="#actions">Акции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="">Цены</a>
+              <a class="main-nav__link" href="#price">Цены</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="">Отзывы</a>
+              <a class="main-nav__link" href="#feedback">Отзывы</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="">Контакты</a>
+              <a class="main-nav__link" href="#footer">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -90,11 +90,11 @@
         </div>
         <button class="btn header__btn-sm">Купить билет</button>
       </section>
-    </div>
+    </header>
   </div>
 
   <!-- Секция Трассы -->
-  <section class="tracks">
+  <section class="tracks" id="tracks">
     <div class="tracks_main-fon"></div>
     <div class="tracks__container container">
       <div class="tracks__title">
@@ -193,13 +193,13 @@
         </div>
       </div>
     </div>
-    <h2 class="actions__title title">Акции</h2>
   </section>
 
 
   <!-- Секция Акции -->
-  <section class="actions">
+  <section class="actions" id="actions">
     <div class="container">
+      <h2 class="actions__title title">Акции</h2>
       <div class="actions__list">
         <div class="actions__item">
           <img alt="" class="actions__img" src="img/actions1.jpg">
@@ -277,7 +277,7 @@
 
 
   <!-- Секция У нас -->
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <div class="we-have">
         <h2 class="about__title title">У нас</h2>
@@ -313,7 +313,7 @@
 
 
   <!-- Секция Цены -->
-  <section class="price">
+  <section class="price" id="price">
     <div class="container">
       <h2 class="price__title title">Цены</h2>
     <table class="table">
@@ -382,14 +382,16 @@
           <td class="table__operator-cost">600 ₽/час</td>
         </tr>
       </table>
+
+      <!-- Цены для смартфона -->
       <ul class="price__list">
-        <li class="price__list-item"><a href="">Выберите возраст</a>
+        <li class="price__list-item price__list-item-age"><a href="#">Выберите возраст</a>
           <ul class="grid grid-age">
             <li class="grid-cell">Детский от 4 лет</li>
             <li class="grid-cell">Взрослый от 7 лет</li>
           </ul>
         </li>
-        <li class="price__list-item"><a href="">Выберите место</a>
+        <li class="price__list-item price__list-item-place"><a href="#">Выберите место</a>
           <ul class="grid grid-place">
             <li class="grid-cell">
               <p>Все трассы</p>
@@ -399,7 +401,7 @@
             <li class="grid-cell">Веревочный парк</li>
           </ul>
         </li>
-        <li class="price__list-item"><a href="">Выберите длительность</a>
+        <li class="price__list-item price__list-item-time"><a href="#">Выберите длительность</a>
           <ul class="grid grid-time">
             <li class="grid-cell">Прохождение парка за 3 часа</li>
             <li class="grid-cell">Прохождение парка за 12 часов</li>
@@ -435,7 +437,9 @@
       </div>
       </div>
       </div>
-      <div class="feedback">
+
+      <!-- Секция Отзывы -->
+      <div class="feedback" id="feedback">
     <h2 class="feedback__title title">Отзывы</h2>
     <div class="carousel">
       <div class="feedback__item">
@@ -503,12 +507,8 @@
   <div class="last"></div>
     </section>
 
-      <!-- Для смартфона -->
-
-  <!-- Секция Отзывы -->
-
   <!-- Футер -->
-  <footer class="footer">
+  <footer class="footer" id="footer">
       <div class="footer__container container">
         <div class="" id="map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1990.2731670428054!2d30.268773315908195!3d60.07684465790428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963547d7977ee9%3A0x303e6d5c12d21ac8!2z0JLRi9Cx0L7RgNCz0YHQutC-0LUg0YguLCAyMjAsINCf0LDRgNCz0L7Qu9C-0LLQviwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5NDM2Mg!5e0!3m2!1sru!2sru!4v1497848566364" allowfullscreen>
@@ -524,19 +524,19 @@
         </ul>
         <ul class="nav">
           <li class="nav__item">
-            <a class="nav__link" href="#">Трассы</a>
+            <a class="nav__link" href="#tracks">Трассы</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Акции</a>
+            <a class="nav__link" href="#actions">Акции</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Цены</a>
+            <a class="nav__link" href="#price">Цены</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Отзывы</a>
+            <a class="nav__link" href="#feedback">Отзывы</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Контакты</a>
+            <a class="nav__link" href="#footer">Контакты</a>
           </li>
         </ul>
       </div>
@@ -546,7 +546,7 @@
         <a class="socials__item instagram" href="#"></a>
         <a class="arrowup" href="#"></a>
       </div>
-      <a class="arrowup-big" href="#"></a>
+      <a class="arrowup-big" href="#header"></a>
     </div>
       </div>
   </footer>

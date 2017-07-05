@@ -115,6 +115,11 @@ td {
   text-align: center;
 }
 
+tr, th, td {
+  border: 1px solid #000;
+  // border: transparent;
+}
+
 .table__row {
   @media (min-width: $screen-sm) {
     height: 60px;
@@ -181,9 +186,9 @@ td {
   display: none;
 }
 
-.price__list > li:hover .grid{
-  display: block;
-}
+// .price__list > li:hover .grid{
+//   display: block;
+// }
 
 .price__list li li {
   color: $font-color-tracks;
