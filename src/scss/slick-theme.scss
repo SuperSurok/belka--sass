@@ -104,8 +104,11 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
-    left: -15px;
+    left: 0;
     transform: rotate(-45deg);
+    @media (min-width: $screen-sm) {
+    left: -15px;
+    }
     [dir="rtl"] & {
         left: auto;
         right: -35px;
@@ -119,8 +122,11 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
-    right: -15px;
+    right: 0;
     transform: rotate(135deg);
+    @media (min-width: $screen-sm) {
+    right: -15px;
+    }
     [dir="rtl"] & {
         left: -35px;
         right: auto;

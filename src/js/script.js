@@ -95,16 +95,20 @@ $(document).ready(function(){
   })
 
   // modal window
+
   $('.about-foto__item').click(function(){
+    if($(window).width() > 768){
     $('.overlay').show();
     $('body').css('overflow-y', 'hidden')
     $(this).find('.about-foto__img').clone().appendTo('.overlay__wrapper');
+    }
   });
   $('.overlay__bg').click(function(){
     $(this).closest('.overlay').find('.overlay__wrapper img').remove();
     $('body').css('overflow-y', 'auto');
     $('.overlay').hide();
   });
+
 
 // smooth anchor scroll
   $('a[href^="#"]').click(function() {
