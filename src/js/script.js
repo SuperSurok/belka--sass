@@ -32,7 +32,6 @@ $(document).ready(function(){
     // instead of a settings object
   ]
   });
-
   $('.about-foto').slick({
   dots: false,
   infinite: true,
@@ -74,33 +73,35 @@ $(document).ready(function(){
 
   // accordeon header xs
   $('.kebab').click(function(e){
-    e.preventDefault();
-    $('.header__nav-xs').slideToggle(300);
+  e.preventDefault();
+  $('.header__nav-xs').slideToggle(300);
   });
 
   // accordeon price
   $('.price__list-item-age').click(function(e){
     e.preventDefault();
     $('.grid-age').slideToggle(300);
+    $( ".price__list-item-age").toggleClass('active');
   });
 
   $('.price__list-item-place').click(function(e){
     e.preventDefault();
     $('.grid-place').slideToggle(300);
+    $( ".price__list-item-place").toggleClass('active');
   });
 
   $('.price__list-item-time').click(function(e){
     e.preventDefault();
     $('.grid-time').slideToggle(300);
+    $( ".price__list-item-time").toggleClass('active');
   })
 
   // modal window
-
   $('.about-foto__item').click(function(){
     if($(window).width() > 768){
-    $('.overlay').show();
-    $('body').css('overflow-y', 'hidden')
-    $(this).find('.about-foto__img').clone().appendTo('.overlay__wrapper');
+      $('.overlay').show();
+      $('body').css('overflow-y', 'hidden')
+      $(this).find('.about-foto__img').clone().appendTo('.overlay__wrapper');
     }
   });
   $('.overlay__bg').click(function(){
@@ -108,8 +109,6 @@ $(document).ready(function(){
     $('body').css('overflow-y', 'auto');
     $('.overlay').hide();
   });
-
-
 // smooth anchor scroll
   $('a[href^="#"]').click(function() {
     $('html, body').animate({

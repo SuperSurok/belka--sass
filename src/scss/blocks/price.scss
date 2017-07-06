@@ -3,7 +3,7 @@
   background-size: cover;
 }
 .price__title {
-  margin-top: 30px;
+  margin-top: 14px;
 }
 
 .price__age {
@@ -40,21 +40,31 @@
 }
 
 .price__trainer {
-  letter-spacing: 1.05px
+  letter-spacing: 1.05px;
+  padding-left: 15px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-family: 'Open Sans';
+  margin-top: 5px;
 }
 
 .price__hour {
   letter-spacing: 1.2px;
+  padding-left: 15px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-family: 'Open Sans';
 }
 
 .price__btn {
   color: $white;
   background-color: $red-button;
-  padding: 16px 39px;
+  padding: 16px 37px;
   border: none;
   display: block;
   margin: 0 auto;
-  margin-top: 15px;
+  margin-top: 30px;
+  text-transform: uppercase;
   @media (min-width: $screen-sm) {
     margin: 0;
   }
@@ -109,6 +119,13 @@
 
 .table__operator {
   background-color: #f1f1f1;
+  letter-spacing: 3px;
+  padding-left: 40px;
+  font-weight: 400;
+}
+
+.table__operator-cost {
+  font-weight: 200;
 }
 
 td {
@@ -116,7 +133,7 @@ td {
 }
 
 tr, th, td {
-  border: 1px solid #000;
+  // border: 1px solid #000;
   // border: transparent;
 }
 
@@ -197,11 +214,43 @@ tr, th, td {
 }
 
 .price__list-item {
+  position: relative;
   display: block;
-  padding: 25px 0;
+  padding: 20px 0;
   text-align: center;
   font-family: 'Open Sans';
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
   margin-bottom: -1px;
+}
+
+.price__list-item:after {
+  content:'';
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  @include sprite($arrowprice);
+
+  // &:active {
+  //   transform: rotate(90deg);
+  // }
+}
+
+.price__list-item .active:after {
+  transform: rotate(90deg);
+}
+
+// .price__list-item:after:active {
+//   content:'';
+//     position: absolute;
+//     top: 20px;
+//     right: 10px;
+//   @include sprite($arrowprice);
+// }
+
+
+.total-text {
+  padding-left: 15px;
+  font-size: 16px;
+  font-family: 'Open Sans';
 }

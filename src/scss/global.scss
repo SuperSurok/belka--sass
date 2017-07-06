@@ -5,21 +5,22 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 92%;
   margin: 0 auto;
   @media (min-width: $screen-sm) {
-    width: 100%;
+    width: 96%;
   }
   @media (min-width: $screen-lg) {
-    width: 1200px;
+    width: 1188px;
   }
 }
 
 .title {
   font-family: 'ProximaNova';
-  font-size: $font-size + 24px;
+  font-size: $font-size + 20px;
   text-align: center;
   font-weight: 800;
+  text-transform: uppercase;
 }
 
 .title:after {

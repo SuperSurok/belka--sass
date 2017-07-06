@@ -50,10 +50,11 @@
 }
 
 .we-have__text {
-  width: 66%;
+  width: 69%;
   float: right;
-  margin-right: 10px;
-  text-shadow: 0 3px 3px #111;
+  margin-right: 14px;
+  text-shadow: 0 2px 1px #111;
+  font-size: 14px;
   @media (min-width: $screen-sm) {
     width: auto;
   }
@@ -64,14 +65,21 @@
 
 .about__img {
   position: absolute;
-  top: -5%;
-  left: 5%;
+  top: 8%;
+  left: 6%;
   @media (min-width: $screen-sm) {
     top: -50%;
     left: 0;
     right: 0;
     bottom: 0;
     margin: 0 auto;
+  }
+}
+
+.about__sm {
+  display: none;
+  @media (min-width: $screen-sm) {
+    display: block;
   }
 }
 

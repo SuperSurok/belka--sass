@@ -39,6 +39,8 @@
 .actions__item {
   width: 100%;
   position: relative;
+  height: 255px;
+  margin-top: 10px;
 
    @media (min-width: $screen-sm) {
     height: 250px;
@@ -76,12 +78,13 @@
 .actions__text {
   text-align: left;
   color: $white;
-  font-size: $font-size + 14px;
-  font-family: $font-family;
+  font-size: $font-size + 8px;
+  font-family: 'ProximaNova';
   font-weight: 600;
   position: absolute;
   bottom: 5%;
-  left: 5%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .actions__link {

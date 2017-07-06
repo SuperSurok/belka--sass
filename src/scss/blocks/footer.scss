@@ -53,12 +53,15 @@ iframe {
 
 .contacts__list {
   color: $footer-text-gray;
-  margin-top: 20px;
-  font-family: $font-family;
+  margin-top: 4px;
+  font-family: 'Open Sans';
+  font-weight: 200;
 }
 
 .list__item {
-  margin-bottom: 15px;
+  margin-bottom: 8px;
+  font-weight: 200;
+  font-size: 14px;
 }
 
 .list__item:before {
@@ -85,6 +88,7 @@ iframe {
 
 .phone__link {
   color: $footer-text-gray;
+  font-weight: 200;
 }
 
 .footer__phone:before {
@@ -102,16 +106,19 @@ iframe {
 }
 
 .nav__item {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .nav__link {
   color: $footer-text-gray;
+  text-transform: uppercase;
+  font-family: 'Open Sans';
+  font-weight: 200;
 }
 
 .footer__line {
   display: flex;
-  margin: 20px 0 10px 10px;
+  margin: 14px 0 10px 10px;
 }
 
 .footer__socials {

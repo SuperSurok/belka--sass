@@ -2,8 +2,8 @@
   width: 96%;
   height: 555px;
   margin: 0 auto;
-  margin-top: 110px;
-  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 48px;
+  background-color: rgba(255, 255, 255, 0.79);
 }
 
 .feedback__title {
@@ -11,10 +11,10 @@
 }
 
 .carousel {
-  width: 93%;
+  width: 76%;
   height: 350px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 27px;
   @media (min-width: $screen-sm) {
     margin-top: 11px;
   }
@@ -28,7 +28,6 @@
 }
 
 .feedback__item {
-  margin: 0 auto;
   margin-top: 39px;
   width: 33.33%;
 }
@@ -42,7 +41,7 @@
 .feedback__name,
 .feedback__prof {
   text-align: center;
-  padding: 10px 5px 0px 5px;
+  padding: 6px 5px 0px 5px;
 }
 
 .feedback__socials {
