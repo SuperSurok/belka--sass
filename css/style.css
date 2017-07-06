@@ -623,7 +623,7 @@ li {
     -moz-osx-font-smoothing: grayscale; }
 
 .slick-prev {
-  left: -15px;
+  left: 0;
   transform: rotate(-45deg); }
   [dir="rtl"] .slick-prev {
     left: auto;
@@ -632,7 +632,7 @@ li {
     content: "→"; }
 
 .slick-next {
-  right: -15px;
+  right: 0;
   transform: rotate(135deg); }
   [dir="rtl"] .slick-next {
     left: -35px;
@@ -1505,193 +1505,193 @@ iframe {
   display: none; }
 
 .about1 {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: -91px 0px;
   width: 75px;
   height: 76px; }
 
 .about2 {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: 0px -93px;
   width: 75px;
   height: 76px; }
 
 .about3 {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: -170px 0px;
   width: 75px;
   height: 76px; }
 
 .arrownext {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: -317px 0px;
   width: 23px;
   height: 41px; }
 
 .arrowprev {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: -317px -45px;
   width: 21px;
   height: 41px; }
 
 .arrowup-big {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: -122px -241px;
   width: 42px;
   height: 42px; }
 
 .arrowup {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: -249px -198px;
   width: 33px;
   height: 33px; }
 
 .avatar {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: -286px -198px;
   width: 24px;
   height: 27px; }
 
 .burger {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: -317px -247px;
   width: 4px;
   height: 20px; }
 
 .buttonup {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: -168px -241px;
   width: 33px;
   height: 33px; }
 
 .chrome {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: 0px -173px;
   width: 64px;
   height: 64px; }
 
 .cross {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: -204px -173px;
   width: 41px;
   height: 43px; }
 
 .github-logo {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: -136px -173px;
   width: 64px;
   height: 64px; }
 
 .instagram-feedback {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: -317px -90px;
   width: 21px;
   height: 21px; }
 
 .instagram {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: -317px -160px;
   width: 19px;
   height: 19px; }
 
 .kraken {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: -249px -68px;
   width: 64px;
   height: 64px; }
 
 .logo {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: -79px -93px;
   width: 88px;
   height: 64px; }
 
 .magnifier {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: 0px 0px;
   width: 87px;
   height: 89px; }
 
 .male-and-female {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: -171px -93px;
   width: 64px;
   height: 64px; }
 
 .mountain {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: -205px -241px;
   width: 35px;
   height: 22px; }
 
 .musica-searcher {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: -249px 0px;
   width: 64px;
   height: 64px; }
 
 .phone-call {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: -317px -183px;
   width: 16px;
   height: 16px; }
 
 .placeholder -header {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: -317px -225px;
   width: 13px;
   height: 18px; }
 
 .placeholder-red {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: -68px -173px;
   width: 64px;
   height: 64px; }
 
 .placeholder {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: -317px -203px;
   width: 13px;
   height: 18px; }
 
 .question {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: -61px -241px;
   width: 57px;
   height: 58px; }
 
 .rope {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: 0px -241px;
   width: 57px;
   height: 58px; }
 
 .sign {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: -249px -136px;
   width: 57px;
   height: 58px; }
 
 .time {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: -317px -137px;
   width: 19px;
   height: 19px; }
 
 .twitter {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: -317px -115px;
   width: 22px;
   height: 18px; }
 
 .vk-feedback {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: -244px -241px;
   width: 30px;
   height: 18px; }
 
 .vk {
-  background-image: url(../img/sprite-025932996031537847.png);
+  background-image: url(../img/sprite-04937654700864724.png);
   background-position: -204px -220px;
   width: 25px;
   height: 15px; }
@@ -1726,7 +1726,7 @@ iframe {
     top: 0;
     right: -10px;
     transform: translateX(100%);
-    background-image: url(../img/sprite-025932996031537847.png);
+    background-image: url(../img/sprite-04937654700864724.png);
     background-position: -204px -173px;
     width: 41px;
     height: 43px; }
@@ -1743,6 +1743,10 @@ iframe {
   @media (min-width: 768px){
   .container{
     width: 100%; }
+  .slick-prev{
+    left: -15px; }
+  .slick-next{
+    right: -15px; }
   .header{
     height: 820px; }
   .contacts__item-xs{
