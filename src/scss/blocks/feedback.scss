@@ -4,10 +4,17 @@
   margin: 0 auto;
   margin-top: 48px;
   background-color: rgba(255, 255, 255, 0.79);
+  @media (min-width: $screen-lg) {
+    width: 93%;
+    margin-top: 106px;
+  }
 }
 
 .feedback__title {
   padding-top: 24px;
+  @media (min-width: $screen-lg) {
+    padding-top: 37px;
+  }
 }
 
 .carousel {
@@ -29,11 +36,16 @@
   @media (min-width: $screen-sm) {
     height: 76px;
   }
+  @media (min-width: $screen-lg) {
+    height: 95px;
+  }
 }
 
 .feedback__item {
   margin-top: 39px;
   width: 33.33%;
+  font-family: 'Open Sans';
+  font-size: $font-size + 2px;
 }
 
 .feedback__img {
@@ -63,7 +75,7 @@
     padding: 0 17px;
   }
   @media (min-width: $screen-lg) {
-    width: 40%;
+    width: 50%;
   }
 }
 

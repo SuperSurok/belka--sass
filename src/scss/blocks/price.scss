@@ -3,7 +3,7 @@
   background-size: cover;
 }
 .price__title {
-  margin-top: 44px;
+  margin-top: 115px;
 }
 
 .price__age {
@@ -97,7 +97,7 @@
   }
   @media (min-width: $screen-lg) {
     display: table;
-    margin-top: 40px;
+    margin-top: 34px;
   }
 }
 
@@ -149,6 +149,7 @@
 
 td {
   text-align: center;
+  vertical-align: middle;
 }
 
 tr, th, td {
@@ -161,7 +162,7 @@ tr, th, td {
     height: 60px;
   }
   @media (min-width: $screen-lg) {
-    height: 56px;
+    height: 59px;
   }
 }
 
@@ -213,7 +214,7 @@ tr, th, td {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 75px;
   }
 }
 

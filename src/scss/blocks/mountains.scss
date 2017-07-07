@@ -23,6 +23,10 @@
   margin-top: 96px;
   padding-left: 15px;
   }
+  @media (min-width: $screen-lg) {
+  margin-top: 94px;
+  padding-left: 44px;
+  }
 }
 
 .mountains__description {
@@ -36,6 +40,9 @@
     display: block;
     padding-left: 15px;
     line-height: 1.9;
+  }
+  @media (min-width: $screen-lg) {
+    padding-left: 44px;
   }
 }
 

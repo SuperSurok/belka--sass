@@ -33,6 +33,13 @@
 .contacts__item {
   padding-top: 5px;
   margin-right: 3px;
+  @media (min-width: $screen-sm) {
+
+  }
+  @media (min-width: $screen-lg) {
+  padding-top: 8px;
+  margin-right: 5px;
+  }
 }
 
 .header__sprite {
@@ -42,6 +49,9 @@
   margin-left: 50px;
   margin-right: 9px;
   margin-top: 3px;
+  }
+  @media (min-width: $screen-sm) {
+  margin-top: 5px;
   }
 }
 
@@ -74,11 +84,11 @@
 
 .header__btn {
   display: none;
-  margin-top: 10px;
-  padding: 6px 27px;
+  margin-top: 0px;
+  margin-left: 19px;
+  padding: 6px 25px;
   border: 1px solid #111;
   background-color: #eeeef4;
-  margin-left: 25px;
   @media (min-width: $screen-sm) {
    display: none;
   }
