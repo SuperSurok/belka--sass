@@ -1,5 +1,5 @@
 .feedback {
-  width: 96%;
+  width: 94%;
   height: 555px;
   margin: 0 auto;
   margin-top: 48px;
@@ -16,7 +16,8 @@
   margin: 0 auto;
   margin-top: 27px;
   @media (min-width: $screen-sm) {
-    margin-top: 11px;
+    width: 91%;
+    margin-top: 38px;
   }
   @media (min-width: $screen-sm) {
     margin-top: 21px;
@@ -25,6 +26,9 @@
 
 .last {
   height: 40px;
+  @media (min-width: $screen-sm) {
+    height: 76px;
+  }
 }
 
 .feedback__item {

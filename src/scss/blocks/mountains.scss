@@ -1,17 +1,8 @@
-// .page-header {
-//   background-color: #ff0;
-
-  // @media (min-width: $screen-sm) and (max-width: ($screen-md - 1)) {
-  //   background-color: #f00;
-  // }
-
-  // @media (min-width: $screen-md) {
-  //   background-color: #00f;
-  // }
-//}
-
 .mountains__title {
-  margin-top: 76px;
+  margin-top: 97px;
+  @media (min-width: $screen-sm) {
+    font-size: $font-size + 24px;
+  }
 }
 
 .mountains__title:after {
@@ -27,6 +18,11 @@
   width: 58%;
   margin-top: 77px;
   font-size: 18px;
+  font-family: 'Open Sans';
+  @media (min-width: $screen-sm) {
+  margin-top: 96px;
+  padding-left: 15px;
+  }
 }
 
 .mountains__description {
@@ -35,8 +31,11 @@
   margin-top: 0;
   line-height: 1.7;
   letter-spacing: 1.1;
+  font-family: 'Open Sans';
   @media (min-width: $screen-sm) {
     display: block;
+    padding-left: 15px;
+    line-height: 1.9;
   }
 }
 

@@ -30,11 +30,18 @@
   }
 }
 
+.contacts__item {
+  padding-top: 5px;
+  margin-right: 3px;
+}
+
 .header__sprite {
   margin-left: 0;
   margin-right: 10px;
   @media (min-width: $screen-sm) {
   margin-left: 50px;
+  margin-right: 9px;
+  margin-top: 3px;
   }
 }
 
@@ -83,9 +90,9 @@
 .header__btn-sm {
   @media (min-width: $screen-phone) {
     display: block;
-    margin-top: 33px;
-    border: 1px solid #111;
-    padding: 5px 22px;
+    margin-top: 40px;
+    margin-left: 15px;
+    padding: 5px 24px;
     background-color: inherit;
   }
   @media (min-width: $screen-sm) {
@@ -123,7 +130,7 @@
     font-size: ($font-size + 2);
   }
   @media (min-width: $screen-sm) {
-    margin-right: 50px;
+    margin-right: 39px;
   }
 }
 

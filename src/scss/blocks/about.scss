@@ -43,9 +43,12 @@
   min-height: 76px;
   margin-top: 26px;
   position: relative;
+  font-family: 'Open Sans';
+  font-weight: 200;
   @media (min-width: $screen-sm) {
-    width: 27%;
+    width: 30%;
     margin: 0 auto;
+    margin-bottom: 30px;
   }
 }
 
@@ -73,6 +76,12 @@
     right: 0;
     bottom: 0;
     margin: 0 auto;
+  }
+}
+
+.about__xs {
+  @media (min-width: $screen-sm) {
+    display: none;
   }
 }
 

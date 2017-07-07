@@ -54,14 +54,21 @@ iframe {
 .contacts__list {
   color: $footer-text-gray;
   margin-top: 4px;
-  font-family: 'Open Sans';
-  font-weight: 200;
+  @media (min-width: $screen-sm) {
+    margin-top: 16px;
+  }
 }
 
 .list__item {
   margin-bottom: 8px;
   font-weight: 200;
   font-size: 14px;
+  @media (min-width: $screen-sm) {
+    font-family: 'ProximaNova';
+    font-weight: 200;
+    font-size: $font-size + 2px;
+    margin-bottom: 12px;
+  }
 }
 
 .list__item:before {
@@ -72,7 +79,7 @@ iframe {
   font-family: 'OpenSans';
   padding: 3px 0;
   @media (min-width: $screen-sm) {
-    padding: 4px 0;
+    padding: 6px 0;
   }
 }
 
@@ -119,6 +126,10 @@ iframe {
 .footer__line {
   display: flex;
   margin: 14px 0 10px 10px;
+  @media (min-width: $screen-sm) {
+    width: 76%;
+    margin-top: 31px;
+  }
 }
 
 .footer__socials {
@@ -142,5 +153,19 @@ iframe {
   @media (min-width: $screen-sm) {
   display: block;
   margin-top: 30px;
+  }
+}
+
+.twitter, .vk, .instagram {
+  display: block;
+  @media (min-width: $screen-sm) {
+  display: none;
+  }
+}
+
+.twitter-sm-ft, .vk-sm-ft, .instagram-sm-ft {
+  display: none;
+  @media (min-width: $screen-sm) {
+  display: block;
   }
 }
