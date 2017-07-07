@@ -3,7 +3,7 @@
   background-size: cover;
 }
 .price__title {
-  margin-top: 115px;
+  margin-top: 42px;
 }
 
 .price__age {
@@ -122,6 +122,15 @@
   }
 }
 
+.table__row {
+  @media (min-width: $screen-sm) {
+    height: 60px;
+  }
+  @media (min-width: $screen-lg) {
+    height: 59px;
+  }
+}
+
 .table__row-3 {
   background-color: $three-hours;
 }
@@ -155,15 +164,6 @@ td {
 tr, th, td {
   // border: 1px solid #000;
   // border: transparent;
-}
-
-.table__row {
-  @media (min-width: $screen-sm) {
-    height: 60px;
-  }
-  @media (min-width: $screen-lg) {
-    height: 59px;
-  }
 }
 
 .age-description {
@@ -237,6 +237,7 @@ tr, th, td {
   position: absolute;
   width: 100%;
   display: none;
+  z-index: 10;
 }
 
 // .price__list > li:hover .grid{
@@ -266,24 +267,11 @@ tr, th, td {
     top: 20px;
     right: 10px;
   @include sprite($arrowprice);
-
-  // &:active {
-  //   transform: rotate(90deg);
-  // }
 }
 
-.price__list-item .active:after {
-  transform: rotate(90deg);
+.price__list-item:hover:after {
+  transform: rotate(-90deg);
 }
-
-// .price__list-item:after:active {
-//   content:'';
-//     position: absolute;
-//     top: 20px;
-//     right: 10px;
-//   @include sprite($arrowprice);
-// }
-
 
 .total-text {
   padding-left: 15px;

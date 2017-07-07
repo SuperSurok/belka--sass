@@ -15,11 +15,11 @@ $(document).ready(function(){
         dots: false,
         infinite: true,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
       }
     },
     {
-      breakpoint: 700,
+      breakpoint: 768,
       settings: {
         dots: false,
         infinite: true,

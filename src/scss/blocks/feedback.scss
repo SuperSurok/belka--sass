@@ -12,6 +12,9 @@
 
 .feedback__title {
   padding-top: 24px;
+  @media (min-width: $screen-sm) {
+    padding-top: 44px;
+  }
   @media (min-width: $screen-lg) {
     padding-top: 37px;
   }
@@ -72,6 +75,7 @@
   margin: 0 auto;
   margin-top: 13px;
   @media (min-width: $screen-sm) {
+    width: 83%;
     padding: 0 17px;
   }
   @media (min-width: $screen-lg) {

@@ -43,19 +43,16 @@
 }
 
 .header__sprite {
-  margin-left: 0;
+  margin-left: 15px;
   margin-right: 10px;
   @media (min-width: $screen-sm) {
   margin-left: 50px;
   margin-right: 9px;
   margin-top: 3px;
   }
-  @media (min-width: $screen-sm) {
+  @media (min-width: $screen-lg) {
   margin-top: 5px;
   }
-}
-
-.contacts__item {
 }
 
 .header__contacts-wrap {
@@ -100,7 +97,7 @@
 .header__btn-sm {
   @media (min-width: $screen-phone) {
     display: block;
-    margin-top: 40px;
+    margin-top: 37px;
     margin-left: 15px;
     padding: 5px 24px;
     background-color: inherit;

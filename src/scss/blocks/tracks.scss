@@ -23,7 +23,7 @@
 }
 
 .tracks__list {
-  width: 73%;
+  width: 70%;
   margin: 0 auto;
   margin-bottom: 70px;
   margin-top: 36px;
@@ -46,11 +46,11 @@
   color: $font-color-tracks;
     @media (min-width: $screen-sm) {
       vertical-align: top;
-      width: 27%;
+      // width: 27%;
       margin-left: 10px;
       margin-right: 10px;
       &:last-child {
-        margin-right: 1px;
+        // margin-right: 1px;
       }
     }
     @media (min-width: $screen-lg) {
@@ -89,14 +89,18 @@
 .track-card-inner {
   margin: 0 auto;
   @media (min-width: $screen-sm) {
-  width: 214px;
+  width: 211px;
   }
 }
 
 .mountain {
   position: absolute;
-  top: 60%;
-  left: 14.6%;
+  top: 57%;
+  left: 9.6%;
+  @media (min-width: $screen-xs) {
+  top: 59.3%;
+  left: 26%;
+  }
   @media (min-width: $screen-sm) {
   top: 12.3%;
   left: 14%;
@@ -114,7 +118,11 @@
 .avatar {
   position: absolute;
   top: 79%;
-  left: 17%;
+  left: 12%;
+  @media (min-width: $screen-xs) {
+  top: 59.3%;
+  left: 26%;
+  }
   @media (min-width: $screen-sm) {
   top: 15.8%;
   left: 17.7%;
@@ -182,7 +190,7 @@
 
 .track-card__description {
   position: absolute;
-  bottom: 5%;
+  bottom: 15%;
   left: 0;
   right: 0;
   text-align: center;

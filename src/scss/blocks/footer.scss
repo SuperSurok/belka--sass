@@ -13,6 +13,7 @@
 }
 
 .footer__container {
+  width: 100%;
   @media (min-width: $screen-sm) {
     display: flex;
     flex-direction: row-reverse;

@@ -1,5 +1,5 @@
 .mountains__title {
-  margin-top: 97px;
+  margin-top: 80px;
   @media (min-width: $screen-sm) {
     font-size: $font-size + 24px;
   }
@@ -15,10 +15,11 @@
 
 .description__xs {
   line-height: 1.7;
-  width: 58%;
-  margin-top: 77px;
+  width: 62%;
+  margin-top: 70px;
   font-size: 18px;
   font-family: 'Open Sans';
+  padding-left: 15px;
   @media (min-width: $screen-sm) {
   margin-top: 96px;
   padding-left: 15px;
