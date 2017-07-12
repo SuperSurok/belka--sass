@@ -1,21 +1,21 @@
 .price {
   background: url("../img/feedback-fone.jpg") 0 23% no-repeat;
   background-size: cover;
-}
-.price__title {
-  margin-top: 42px;
-}
-
-.price__age {
+    &__title {
+    margin-top: 42px;
+  }
+    &__age {
   margin-top: 55px;
+  }
+
 }
 
 .row {
   display: flex;
   justify-content: space-between;
-  @media (min-width: $screen-sm) {
-    display: none;
-  }
+    @media (min-width: $screen-sm) {
+      display: none;
+    }
 }
 
 .col {
@@ -26,9 +26,9 @@
   height: 53px;
   background-color: $gray-price;
   align-items: center;
-  @media (min-width: $screen-sm) {
-    display: none;
-  }
+    @media (min-width: $screen-sm) {
+      display: none;
+    }
 }
 
 .total-sum {
@@ -65,9 +65,9 @@
   margin: 0 auto;
   margin-top: 30px;
   text-transform: uppercase;
-  @media (min-width: $screen-sm) {
-    margin: 0;
-  }
+    @media (min-width: $screen-sm) {
+      margin: 0;
+    }
 }
 
 .btn__text {
@@ -90,15 +90,14 @@
   font-family: 'Open Sans';
   font-size: $font-size + 2px;
   font-weight: 200;
-  // opacity: 0.8;
-  @media (min-width: $screen-sm) {
-    display: table;
-    margin-top: 55px;
-  }
-  @media (min-width: $screen-lg) {
-    display: table;
-    margin-top: 34px;
-  }
+    @media (min-width: $screen-sm) {
+      display: table;
+      margin-top: 55px;
+    }
+    @media (min-width: $screen-lg) {
+      display: table;
+      margin-top: 34px;
+    }
 }
 
 .table__age {
@@ -107,19 +106,19 @@
   color: $font-color-tracks;
   background-color: $shuttle-gray;
   font-weight: 200;
-  @media (min-width: $screen-lg) {
-    font-size: $font-size + 2px;
-  }
+    @media (min-width: $screen-lg) {
+      font-size: $font-size + 2px;
+    }
 }
 
 .table__time {
   padding: 17px 0;
-  @media (min-width: $screen-sm) {
-    font-size: $font-size;
-  }
-  @media (min-width: $screen-lg) {
-    font-size: $font-size + 2px;
-  }
+    @media (min-width: $screen-sm) {
+      font-size: $font-size;
+    }
+    @media (min-width: $screen-lg) {
+      font-size: $font-size + 2px;
+    }
 }
 
 .table__row {
@@ -146,7 +145,6 @@
 
 .table__operator {
   background-color: #f1f1f1;
-  // letter-spacing: 3px;
   padding-left: 40px;
   font-weight: 400;
   text-transform: uppercase;
@@ -161,10 +159,6 @@ td {
   vertical-align: middle;
 }
 
-tr, th, td {
-  // border: 1px solid #000;
-  // border: transparent;
-}
 
 .age-description {
   text-transform: uppercase;
@@ -239,10 +233,6 @@ tr, th, td {
   display: none;
   z-index: 10;
 }
-
-// .price__list > li:hover .grid{
-//   display: block;
-// }
 
 .price__list li li {
   color: $font-color-tracks;
