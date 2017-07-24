@@ -4,6 +4,9 @@
 
 .actions__title {
   margin-top: 83px;
+  @media (min-width: $screen-sm) {
+    margin-top: 45px;
+  }
 }
 
 .actions__foto {

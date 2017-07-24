@@ -6,7 +6,11 @@
     background-position: center center;
     min-height: 420px;
     @media (min-width: $screen-sm) {
+      background-image: url("../img/track-fone768.jpg");
      min-height: 730px;
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
   @media (min-width: $screen-lg) {
      min-height: 800px;
@@ -16,6 +20,9 @@
 .tracks__title {
   color: $white;
   padding-top: 25px;
+  @media (min-width: $screen-sm) {
+     padding-top: 11px;
+  }
 }
 
 .tracks__title:after {
@@ -28,9 +35,9 @@
   margin-bottom: 70px;
   margin-top: 36px;
   @media (min-width: $screen-sm) {
-    width: 90%;
+    width: 91%;
     margin: 0 auto;
-    margin-top: 38px;
+    margin-top: 54px;
   }
   @media (min-width: $screen-lg) {
     width: 1160px;
@@ -48,7 +55,7 @@
       vertical-align: top;
       // width: 27%;
       margin-left: 10px;
-      margin-right: 10px;
+      margin-right: 9px;
       &:last-child {
         // margin-right: 1px;
       }
@@ -143,6 +150,7 @@
   @media (min-width: $screen-sm) {
     margin-top: -1px;
     margin-bottom: -3px;
+    height: 327px;
   }
 }
 
@@ -203,7 +211,7 @@
     position: relative;
   }
   @media (min-width: $screen-sm) {
-    min-height: 144px;
+    min-height: 140px;
     padding-top: 15px;
   }
 }

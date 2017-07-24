@@ -1,11 +1,9 @@
-
 .header {
   min-height: 420px;
   margin: 0 auto;
   background-image: url("../img/header-img.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center 30px;
+  background-position: -270px -5px;
   width: 100%;
   background-color: $athens-gray;
   @media (min-width: $screen-sm) {
@@ -40,6 +38,10 @@
   padding-top: 8px;
   margin-right: 5px;
   }
+}
+
+.contacts__phone {
+  margin-left: 3px;
 }
 
 .header__sprite {
@@ -104,9 +106,9 @@
   }
   @media (min-width: $screen-sm) {
     display: block;
-    margin-top: 40px;
+    margin-top: 41px;
     border: 1px solid #111;
-    padding: 5px 25px;
+    padding: 6px 25px;
     background-color: inherit;
   }
   @media (min-width: $screen-lg) {
