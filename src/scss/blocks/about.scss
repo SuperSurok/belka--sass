@@ -6,8 +6,9 @@
   background: url("../img/aboutfone.jpg") center center no-repeat;
   background-size: cover;
   @media (min-width: $screen-sm) {
+    background: url("../img/aboutfone768.jpg") center center no-repeat;
     min-height: 385px;
-    margin-top: 65px;
+    margin-top: 55px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -24,6 +25,7 @@
 @media (min-width: $screen-sm) {
     width: 100%;
     height: 55px;
+    padding-top: 42px;
   }
 }
 
@@ -31,8 +33,8 @@
   content: '';
   border: 1px solid #fff;
   width: 20px;
-  margin: 0 auto;
   width: 95px;
+  margin-top: 1px;
 }
 
 .we-have__block {
@@ -46,9 +48,27 @@
   font-family: 'Open Sans';
   font-weight: 200;
   @media (min-width: $screen-sm) {
-    width: 30%;
+    width: 27%;
     margin: 0 auto;
     margin-bottom: 30px;
+  }
+}
+
+.we-have__block-equip {
+  @media (min-width: $screen-sm) {
+    margin-left: 20px;
+  }
+}
+
+.we-have__block-tracks {
+  @media (min-width: $screen-sm) {
+    margin-left: 61px;
+  }
+}
+
+.we-have__block-trainers {
+  @media (min-width: $screen-sm) {
+    margin-left: 59px;
   }
 }
 
@@ -71,13 +91,9 @@
   top: 8%;
   left: 6%;
   @media (min-width: $screen-sm) {
-    top: -50%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0 auto;
+    top: -57%;
   }
-  @media (min-width: $screen-sm) {
+  @media (min-width: $screen-lg) {
     top: -56%;
     left: 4%;
   }
@@ -94,6 +110,18 @@
   @media (min-width: $screen-sm) {
     display: block;
   }
+}
+
+.about1{
+  left: 26%;
+}
+
+.about2{
+  left: 25%;
+}
+
+.about3{
+  left: 25%;
 }
 
 .about-foto {
@@ -120,7 +148,6 @@
 
 .about-foto__item {
   position: relative;
-  //min-height: 400px;
   width: 70%;
   margin: 0 auto;
   @media (min-width: $screen-sm) {

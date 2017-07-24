@@ -1,13 +1,21 @@
 .price {
   background: url("../img/feedback-fone.jpg") 0 23% no-repeat;
   background-size: cover;
+  @media (min-width: $screen-sm) {
+    background: url("../img/feedback-fone.jpg") 52% -50% no-repeat;
+    background-size: auto;
+  }
     &__title {
-    margin-top: 42px;
+    margin-top: 43px;
   }
     &__age {
   margin-top: 55px;
   }
 
+}
+
+.price__title:after {
+  margin-top: 0px;
 }
 
 .row {
@@ -59,14 +67,15 @@
 .price__btn {
   color: $white;
   background-color: $red-button;
-  padding: 16px 37px;
+  padding: 16px 35px;
   border: none;
   display: block;
   margin: 0 auto;
   margin-top: 30px;
   text-transform: uppercase;
     @media (min-width: $screen-sm) {
-      margin: 0;
+      margin: 0 0 0 20px;
+      align-self: baseline;
     }
 }
 
@@ -80,6 +89,13 @@
   margin-top: 10px;
   text-decoration: underline;
   text-align: center;
+  @media (min-width: $screen-sm) {
+      align-self: baseline;
+      margin-left: 88px;
+    }
+  @media (min-width: $screen-lg) {
+      margin-left: 0;
+    }
 }
 
 .table {
@@ -92,7 +108,7 @@
   font-weight: 200;
     @media (min-width: $screen-sm) {
       display: table;
-      margin-top: 55px;
+      margin-top: 54px;
     }
     @media (min-width: $screen-lg) {
       display: table;
@@ -115,6 +131,9 @@
   padding: 17px 0;
     @media (min-width: $screen-sm) {
       font-size: $font-size;
+      text-align: right;
+      padding: 0 15px 0 0;
+      height: 53px;
     }
     @media (min-width: $screen-lg) {
       font-size: $font-size + 2px;
@@ -141,22 +160,28 @@
 .trainer-time {
   text-transform: uppercase;
   letter-spacing: 1px;
+  @media (min-width: $screen-sm) {
+    text-align: center;
+  }
 }
 
 .table__operator {
   background-color: #f1f1f1;
   padding-left: 40px;
   font-weight: 400;
+  text-align: left;
   text-transform: uppercase;
+  opacity: 0.9;
 }
 
 .table__operator-cost {
+  background-color: #f1f1f1;
   font-weight: 200;
 }
 
 td {
   text-align: center;
-  vertical-align: middle;
+  padding-bottom: 7px;
 }
 
 
@@ -193,6 +218,13 @@ td {
   }
 }
 
+.table__row-operator {
+  @media (min-width: $screen-sm) {
+    padding-bottom: 0;
+    height: 54px;
+  }
+}
+
 .table__price:hover {
   border: 2px solid #000;
 }
@@ -203,12 +235,12 @@ td {
 
 .buttons {
   @media (min-width: $screen-sm) {
-    width: 500px;
+    width: 520px;
     margin: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 75px;
+    margin-top: 78px;
   }
 }
 

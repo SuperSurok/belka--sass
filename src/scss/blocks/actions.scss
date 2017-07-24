@@ -5,8 +5,13 @@
 .actions__title {
   margin-top: 83px;
   @media (min-width: $screen-sm) {
-    margin-top: 45px;
+    margin-top: 41px;
   }
+}
+
+.actions__title:after {
+    margin-top: 1px;
+    width: 95px;
 }
 
 .actions__foto {
@@ -28,7 +33,7 @@
   display: none;
   @media (min-width: $screen-sm) {
     display: block;
-    margin-top: 50px;
+    margin-top: 55px;
   }
   @media (min-width: $screen-lg) {
     display: none;
@@ -51,7 +56,7 @@
   margin-top: 10px;
 
    @media (min-width: $screen-sm) {
-    height: 250px;
+    height: 253px;
     margin-bottom: 10px;
   }
 
@@ -91,7 +96,7 @@
   font-family: 'ProximaNova';
   font-weight: 600;
   position: absolute;
-  bottom: 5%;
+  bottom: 6%;
   padding-left: 15px;
   padding-right: 15px;
   @media (min-width: $screen-sm) {

@@ -20,8 +20,8 @@
     justify-content: space-between;
     margin-top: 45px;
   }
-  @media (min-width: $screen-sm) {
-    margin-top: 27px;
+  @media (min-width: $screen-lg) {
+    margin-top: 44px;
   }
 }
 
@@ -51,6 +51,7 @@ iframe {
 
 .footer__contacts {
   @media (min-width: $screen-sm) {
+    position: relative;
     width: 50%;
     font-size: $font-size + 2px;
   }
@@ -81,6 +82,7 @@ iframe {
     font-family: 'ProximaNova';
     font-weight: 200;
     font-size: $font-size + 2px;
+    margin-left: 18px;
     margin-bottom: 12px;
   }
 }
@@ -98,13 +100,14 @@ iframe {
 }
 
 .footer__addres:before {
+  position: absolute;
   content: '';
-  display: inline-block;
+  // display: inline-block;
   background: url("../img/spritesheet.png") 0 0 no-repeat;
   width: 11px;
   height: 16px;
   background-position: -106px -37px;
-  margin-right: 1%;
+  left: 1px;
   @media (min-width: $screen-lg) {
   margin-right: 0;
   }
@@ -122,17 +125,20 @@ iframe {
 }
 
 .footer__phone:before {
+  position: absolute;
   content: '';
   display: inline-block;
   background: url("../img/spritesheet.png") 0 0 no-repeat;
   width: 14px;
   height: 14px;
   background-position: -82px -37px;
+  left: 1px;
 }
 
 .nav {
   color: $footer-text-gray;
   margin-top: 20px;
+  margin-left: -8px;
 }
 
 .nav__item {
@@ -151,7 +157,8 @@ iframe {
   margin: 14px 0 10px 10px;
   @media (min-width: $screen-sm) {
     width: 76%;
-    margin-top: 31px;
+    margin-top: 27px;
+    margin-left: 3px;
   }
 }
 
@@ -161,7 +168,7 @@ iframe {
 }
 
 .socials__item {
-  margin-right: 10px;
+  margin-right: 14px;
 }
 
 .arrowup {
@@ -175,7 +182,7 @@ iframe {
   display: none;
   @media (min-width: $screen-sm) {
   display: block;
-  margin-top: 70px;
+  margin-top: 31px;
   }
 }
 

@@ -32,11 +32,11 @@
   padding-top: 5px;
   margin-right: 3px;
   @media (min-width: $screen-sm) {
-
+    padding-top: 10px;
   }
   @media (min-width: $screen-lg) {
-  padding-top: 8px;
-  margin-right: 5px;
+    padding-top: 8px;
+    margin-right: 5px;
   }
 }
 
@@ -49,8 +49,8 @@
   margin-right: 10px;
   @media (min-width: $screen-sm) {
   margin-left: 50px;
-  margin-right: 9px;
-  margin-top: 3px;
+  margin-right: 8px;
+  margin-top: 8px;
   }
   @media (min-width: $screen-lg) {
   margin-top: 5px;

@@ -4,6 +4,9 @@
   margin: 0 auto;
   margin-top: 48px;
   background-color: rgba(255, 255, 255, 0.79);
+  @media (min-width: $screen-sm) {
+    margin-top: 61px;
+  }
   @media (min-width: $screen-lg) {
     width: 93%;
     margin-top: 106px;
@@ -13,11 +16,15 @@
 .feedback__title {
   padding-top: 24px;
   @media (min-width: $screen-sm) {
-    padding-top: 44px;
+    padding-top: 35px;
   }
   @media (min-width: $screen-lg) {
     padding-top: 37px;
   }
+}
+
+.feedback__title:after {
+  margin-top: 2px;
 }
 
 .carousel {
@@ -45,7 +52,7 @@
 }
 
 .feedback__item {
-  margin-top: 39px;
+  margin-top: 43px;
   width: 33.33%;
   font-family: 'Open Sans';
   font-size: $font-size + 2px;

@@ -6,11 +6,7 @@
     background-position: center center;
     min-height: 420px;
     @media (min-width: $screen-sm) {
-      background-image: url("../img/track-fone768.jpg");
      min-height: 730px;
-     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
   }
   @media (min-width: $screen-lg) {
      min-height: 800px;
@@ -21,7 +17,7 @@
   color: $white;
   padding-top: 25px;
   @media (min-width: $screen-sm) {
-     padding-top: 11px;
+     padding-top: 13px;
   }
 }
 
@@ -37,7 +33,7 @@
   @media (min-width: $screen-sm) {
     width: 91%;
     margin: 0 auto;
-    margin-top: 54px;
+    margin-top: 57px;
   }
   @media (min-width: $screen-lg) {
     width: 1160px;
