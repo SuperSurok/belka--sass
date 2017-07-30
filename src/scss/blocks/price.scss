@@ -6,7 +6,7 @@
     background-size: auto;
   }
     &__title {
-    margin-top: 43px;
+    margin-top: 114px;
   }
     &__age {
   margin-top: 55px;
@@ -16,6 +16,26 @@
 
 .price__title:after {
   margin-top: 0px;
+}
+
+.table {
+  display: none;
+  margin: 0 auto;
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Open Sans';
+  font-size: $font-size + 2px;
+  font-weight: 200;
+    @media (min-width: $screen-sm) {
+      display: table;
+      margin-top: 54px;
+    }
+    @media (min-width: $screen-lg) {
+      display: table;
+      margin-top: 35px;
+      width: 1188px;
+      margin-right: 7px;
+    }
 }
 
 .row {
@@ -77,6 +97,9 @@
       margin: 0 0 0 20px;
       align-self: baseline;
     }
+    @media (min-width: $screen-sm) {
+      margin-right: 88px;
+    }
 }
 
 .btn__text {
@@ -98,24 +121,6 @@
     }
 }
 
-.table {
-  display: none;
-  margin: 0 auto;
-  width: 100%;
-  border-collapse: collapse;
-  font-family: 'Open Sans';
-  font-size: $font-size + 2px;
-  font-weight: 200;
-    @media (min-width: $screen-sm) {
-      display: table;
-      margin-top: 54px;
-    }
-    @media (min-width: $screen-lg) {
-      display: table;
-      margin-top: 34px;
-    }
-}
-
 .table__age {
   width: 25%;
   text-align: center;
@@ -124,6 +129,7 @@
   font-weight: 200;
     @media (min-width: $screen-lg) {
       font-size: $font-size + 2px;
+      height: 60px;
     }
 }
 
@@ -133,10 +139,11 @@
       font-size: $font-size;
       text-align: right;
       padding: 0 15px 0 0;
-      height: 53px;
+      height: 52px;
     }
     @media (min-width: $screen-lg) {
       font-size: $font-size + 2px;
+      text-align: center;
     }
 }
 
@@ -145,9 +152,25 @@
     height: 60px;
   }
   @media (min-width: $screen-lg) {
-    height: 59px;
+    height: 65px;
   }
 }
+
+.table__row-empty {
+  @media (min-width: $screen-lg) {
+    height: 60px;
+  }
+}
+
+.table__row-header {
+  @media (min-width: $screen-lg) {
+    height: 60px;
+  }
+}
+
+.table__age:first-child {
+    background-color: inherit;
+  }
 
 .table__row-3 {
   background-color: $three-hours;
@@ -162,6 +185,10 @@
   letter-spacing: 1px;
   @media (min-width: $screen-sm) {
     text-align: center;
+    height: 50px;
+  }
+  @media (min-width: $screen-sm) {
+    letter-spacing: 0em;
   }
 }
 
@@ -174,14 +201,28 @@
   opacity: 0.9;
 }
 
+.table__row-trainer {
+  @media (min-width: $screen-lg) {
+    height: 58px;
+  }
+}
+
+.table__row-operator {
+  @media (min-width: $screen-lg) {
+    height: 52px;
+  }
+}
+
 .table__operator-cost {
   background-color: #f1f1f1;
   font-weight: 200;
+  text-align: left;
+  padding-left: 10px;
 }
 
 td {
   text-align: center;
-  padding-bottom: 7px;
+  //padding-bottom: 7px;
 }
 
 
@@ -201,6 +242,7 @@ td {
   }
   @media (min-width: $screen-lg) {
     display: block;
+    text-transform: uppercase;
   }
 }
 
@@ -211,10 +253,11 @@ td {
   text-transform: uppercase;
   @media (min-width: $screen-sm) {
     width: 50%;
-    padding: 17px 0;
+    padding: 13px 0;
   }
   @media (min-width: $screen-lg) {
-    width: 33.333%;
+    width: 25%;
+    padding: 12px 0;
   }
 }
 
@@ -240,7 +283,7 @@ td {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 78px;
+    margin-top: 81px;
   }
 }
 

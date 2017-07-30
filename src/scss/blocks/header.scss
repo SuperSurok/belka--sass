@@ -3,14 +3,19 @@
   margin: 0 auto;
   background-image: url("../img/header-img.jpg");
   background-repeat: no-repeat;
-  background-position: -270px -5px;
+  background-position: center center;
   width: 100%;
   background-color: $athens-gray;
   @media (min-width: $screen-sm) {
     height: 820px;
+    background-position: -270px -5px;
   }
   @media (min-width: $screen-lg) {
+    background-image: url("../img/header-img-main.jpg");
     height: 810px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
   }
 }
 
@@ -24,7 +29,7 @@
 
 .contacts__item-xs {
   @media (min-width: $screen-sm) {
-  display: none;
+    display: none;
   }
 }
 
@@ -48,12 +53,12 @@
   margin-left: 15px;
   margin-right: 10px;
   @media (min-width: $screen-sm) {
-  margin-left: 50px;
-  margin-right: 8px;
-  margin-top: 8px;
+    margin-left: 50px;
+    margin-right: 8px;
+    margin-top: 8px;
   }
   @media (min-width: $screen-lg) {
-  margin-top: 5px;
+    margin-top: 5px;
   }
 }
 
@@ -64,9 +69,14 @@
 .contacts {
   display: none;
   @media (min-width: $screen-sm) {
-  display: flex;
-  margin-left: auto;
-  justify-content: flex-end;
+    background-color: $header-menu-bgc-xs;
+    display: flex;
+    margin-left: auto;
+    justify-content: flex-end;
+  }
+  @media (min-width: $screen-lg) {
+    margin-right: 3px;
+    padding-top: 3px;
   }
 }
 
@@ -89,10 +99,12 @@
   border: 1px solid #111;
   background-color: #eeeef4;
   @media (min-width: $screen-sm) {
-   display: none;
+    display: none;
   }
   @media (min-width: $screen-lg) {
-   display: block;
+    display: block;
+    margin-left: 19px;
+    margin-top: 1px;
   }
 }
 
@@ -118,17 +130,23 @@
 
 .header__line {
   display: none;
-
   @media (min-width: $screen-sm) {
     margin-top: 10px;
     display: flex;
     width: 100%;
     align-items: center;
   }
+  @media (min-width: $screen-lg) {
+    margin-top: 4px;
+  }
 }
 
 .header__nav {
   margin-left: auto;
+  margin-right: 3px;
+  @media (min-width: $screen-lg) {
+    margin-right: 8px;
+  }
 }
 
 .main-nav__item {
@@ -151,3 +169,9 @@
   background: center center no-repeat;
 }
 
+.logo {
+  @media (min-width: $screen-lg) {
+    margin-left: 6px;
+    margin-top: 2px;
+  }
+}

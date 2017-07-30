@@ -1,4 +1,3 @@
-
 .we-have {
   min-height: 450px;
   margin: 0 auto;
@@ -13,7 +12,9 @@
     flex-wrap: wrap;
   }
   @media (min-width: $screen-lg) {
-    margin-top: 100px;
+    margin-top: 101px;
+    margin-right: 4px;
+    background: url("../img/aboutfone.jpg") center center no-repeat;
   }
 
 }
@@ -27,6 +28,11 @@
     height: 55px;
     padding-top: 42px;
   }
+@media (min-width: $screen-lg) {
+    margin-left: 6px;
+    padding-top: 42px;
+    letter-spacing: 0.03em;
+  }
 }
 
 .about__title:after {
@@ -34,14 +40,14 @@
   border: 1px solid #fff;
   width: 20px;
   width: 95px;
-  margin-top: 1px;
+  margin: 0 auto;
+  margin-top: 3px;
 }
 
 .we-have__block {
   font-size: $font-size - 2px;
   color: $white;
-  line-height: 1.4;
-  letter-spacing: 1.2;
+  line-height: 1.5;
   min-height: 76px;
   margin-top: 26px;
   position: relative;
@@ -82,7 +88,45 @@
     width: auto;
   }
   @media (min-width: $screen-lg) {
-    padding-left: 55px;
+    font-size: $font-size;
+    line-height: 1.5;
+    float: none;
+    margin-top: 17px;
+  }
+}
+
+.we-have__text-equip {
+  @media (min-width: $screen-lg) {
+    padding-left: 66px;
+    letter-spacing: 0.05em;
+  }
+}
+
+.we-have__text-tracks {
+  @media (min-width: $screen-lg) {
+    padding-left: 45px;
+    letter-spacing: 0.06em;
+  }
+}
+.we-have__text-trainers {
+  @media (min-width: $screen-lg) {
+    padding-left: 28px;
+    letter-spacing: 0.052em;
+  }
+}
+
+.we-have__text-768 {
+  @media (min-width: $screen-lg) {
+    display: none;
+  }
+}
+
+.we-have__text-1200 {
+  @media (min-width: $screen-phone) {
+    display: none;
+  }
+  @media (min-width: $screen-lg) {
+    display: block;
   }
 }
 
@@ -94,8 +138,7 @@
     top: -57%;
   }
   @media (min-width: $screen-lg) {
-    top: -56%;
-    left: 4%;
+    top: -40%;
   }
 }
 
@@ -113,15 +156,30 @@
 }
 
 .about1{
-  left: 26%;
+  @media (min-width: $screen-sm) {
+    left: 26%;
+  }
+  @media (min-width: $screen-lg) {
+    left: 46%;
+  }
 }
 
 .about2{
-  left: 25%;
+  @media (min-width: $screen-sm) {
+    left: 25%;
+  }
+  @media (min-width: $screen-lg) {
+    left: 40%;
+  }
 }
 
 .about3{
-  left: 25%;
+  @media (min-width: $screen-sm) {
+    left: 25%;
+  }
+  @media (min-width: $screen-lg) {
+    left: 32%;
+  }
 }
 
 .about-foto {
@@ -135,7 +193,8 @@
     min-height: 400px;
   }
   @media (min-width: $screen-lg) {
-    margin-top: 115px;
+    width: 1190px;
+    margin-top: 113px;
     min-height: 485px;
   }
 }
@@ -164,7 +223,7 @@
   @media (min-width: $screen-lg) {
     min-height: 485px;
     margin-left: 4.5%;
-    width: 30.3% !important;
+    width: 360px !important;
   }
     &:hover {
       filter: brightness(60%);

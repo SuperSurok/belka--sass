@@ -8,7 +8,8 @@
     margin-top: 61px;
   }
   @media (min-width: $screen-lg) {
-    width: 93%;
+    width: 1190px;
+    height: 570px;
     margin-top: 106px;
   }
 }
@@ -20,6 +21,7 @@
   }
   @media (min-width: $screen-lg) {
     padding-top: 37px;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -36,8 +38,10 @@
     width: 91%;
     margin-top: 38px;
   }
-  @media (min-width: $screen-sm) {
-    margin-top: 21px;
+  @media (min-width: $screen-lg) {
+    width: 1061px;
+    height: 400px;
+    margin-top: 22px;
   }
 }
 
@@ -67,7 +71,7 @@
 .feedback__name,
 .feedback__prof {
   text-align: center;
-  padding: 6px 5px 0px 5px;
+  padding: 5px 5px 0px 5px;
 }
 
 .feedback__socials {
@@ -75,6 +79,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (min-width: $screen-lg) {
+    position: relative;
+  }
+}
+
+.instagram-feedback {
+  position: absolute;
+  left: 41%;
+  top: -2%;
+}
+
+.vk-feedback {
+  position: absolute;
+  left: 49%;
+  top: -5%;
+}
+
+.feedback__prof {
+  padding-left: 10px;
 }
 
 .feedback__text {
@@ -86,7 +109,11 @@
     padding: 0 17px;
   }
   @media (min-width: $screen-lg) {
-    width: 50%;
+    width: 57%;
+    margin-top: 32px;
+    padding: 0;
+    padding-left: 22px;
+    letter-spacing: 0.059em;
+    line-height: 1.23;
   }
 }
-

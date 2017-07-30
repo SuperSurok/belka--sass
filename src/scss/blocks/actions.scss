@@ -7,6 +7,10 @@
   @media (min-width: $screen-sm) {
     margin-top: 41px;
   }
+  @media (min-width: $screen-lg) {
+    margin-top: 91px;
+    letter-spacing: 0.02em;
+  }
 }
 
 .actions__title:after {
@@ -43,9 +47,11 @@
 .actions__list_lg {
   display: none;
   @media (min-width: $screen-lg) {
+    width: 1190px;
     display: flex;
     justify-content: space-between;
-    margin-top: 63px;
+    margin: 0 auto;
+    margin-top: 76px;
   }
 }
 
@@ -61,8 +67,10 @@
   }
 
   @media (min-width: $screen-lg) {
-    width: 30%;
-    height: 340px;
+    width: 360px;
+    height: 343px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   &:hover {
@@ -104,6 +112,31 @@
    padding-left: 40px;
    width: 50%;
   }
+  @media (min-width: $screen-lg) {
+    width: 100%;
+    font-size: 30px;
+  }
+}
+
+.actions__item:nth-child(1) .actions__text {
+  padding-left: 19px;
+  line-height: 1;
+  padding-bottom: 17px;
+  letter-spacing: 0.045em;
+}
+
+.actions__item:nth-child(2) .actions__text {
+  padding-left: 15px;
+  line-height: 1.17;
+  padding-bottom: 9px;
+  letter-spacing: 0.035em;
+}
+
+.actions__item:nth-child(3) .actions__text {
+  padding-left: 18px;
+  line-height: 1.2;
+  padding-bottom: 8px;
+  letter-spacing: 0.04em;
 }
 
 .actions__link {
