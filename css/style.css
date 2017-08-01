@@ -926,6 +926,9 @@ li {
 .header__contacts-wrap {
   background-color: #e6e6ef; }
 
+.contacts__fone {
+  display: none; }
+
 .contacts {
   display: none; }
 
@@ -1017,11 +1020,13 @@ li {
 
 .mountains__description {
   display: none;
-  width: 70%;
+  width: 80%;
   margin-top: 0;
   line-height: 1.7;
-  letter-spacing: 1.1;
   font-family: 'Open Sans'; }
+
+.description__lg-down {
+  width: 90%; }
 
 .tracks {
   background-image: url("../img/track-fone.jpg");
@@ -1289,7 +1294,8 @@ li {
     margin-top: 55px; }
 
 .price__title:after {
-  margin-top: 0px; }
+  margin-top: 1px;
+  width: 76px; }
 
 .table {
   display: none;
@@ -1448,7 +1454,7 @@ td {
   position: absolute;
   top: 20px;
   right: 10px;
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -344px -167px;
   width: 14px;
   height: 25px; }
@@ -1633,253 +1639,253 @@ iframe {
   display: none; }
 
 .about1-xs {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -183px -241px;
   width: 57px;
   height: 58px; }
 
 .about1 {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: 0px -93px;
   width: 75px;
   height: 76px; }
 
 .about2-xs {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -249px -136px;
   width: 57px;
   height: 58px; }
 
 .about2 {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -170px 0px;
   width: 75px;
   height: 76px; }
 
 .about3-xs {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -244px -241px;
   width: 57px;
   height: 58px; }
 
 .about3 {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -91px 0px;
   width: 75px;
   height: 76px; }
 
 .arrownext {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -317px -167px;
   width: 23px;
   height: 41px; }
 
 .arrowprev {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -317px -212px;
   width: 21px;
   height: 41px; }
 
 .arrowprice {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -344px -167px;
   width: 14px;
   height: 25px; }
 
 .arrowup-big {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -317px 0px;
   width: 42px;
   height: 42px; }
 
 .arrowup {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -317px -93px;
   width: 33px;
   height: 33px; }
 
 .arrwoprice {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -342px -212px;
   width: 14px;
   height: 25px; }
 
 .avatar {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -204px -173px;
   width: 24px;
   height: 27px; }
 
 .burger {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -363px -68px;
   width: 4px;
   height: 20px; }
 
 .buttonup {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -317px -130px;
   width: 33px;
   height: 33px; }
 
 .chrome {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -249px 0px;
   width: 64px;
   height: 64px; }
 
 .cross {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -317px -46px;
   width: 41px;
   height: 43px; }
 
 .github-logo {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -249px -68px;
   width: 64px;
   height: 64px; }
 
 .instagram-feedback {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: 0px -325px;
   width: 21px;
   height: 21px; }
 
 .instagram-sm-ft {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -204px -204px;
   width: 24px;
   height: 24px; }
 
 .instagram {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -48px -325px;
   width: 19px;
   height: 19px; }
 
 .kraken {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -136px -173px;
   width: 64px;
   height: 64px; }
 
 .logo {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -79px -93px;
   width: 88px;
   height: 64px; }
 
 .magnifier {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: 0px 0px;
   width: 87px;
   height: 89px; }
 
 .male-and-female {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -171px -93px;
   width: 64px;
   height: 64px; }
 
 .mountain {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -317px -257px;
   width: 35px;
   height: 22px; }
 
 .musica-searcher {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -68px -173px;
   width: 64px;
   height: 64px; }
 
 .phone-call-footer {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -60px -303px;
   width: 18px;
   height: 18px; }
 
 .phone-call {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -82px -303px;
   width: 16px;
   height: 16px; }
 
 .placeholder -header {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -363px -46px;
   width: 13px;
   height: 18px; }
 
 .placeholder-footer {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -363px 0px;
   width: 14px;
   height: 20px; }
 
 .placeholder-red {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: 0px -173px;
   width: 64px;
   height: 64px; }
 
 .placeholder {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -363px -24px;
   width: 13px;
   height: 18px; }
 
 .question {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -122px -241px;
   width: 57px;
   height: 58px; }
 
 .rope {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -61px -241px;
   width: 57px;
   height: 58px; }
 
 .sign {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: 0px -241px;
   width: 57px;
   height: 58px; }
 
 .time {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -25px -325px;
   width: 19px;
   height: 19px; }
 
 .twitter-sm-ft {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -249px -198px;
   width: 28px;
   height: 24px; }
 
 .twitter {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -34px -303px;
   width: 22px;
   height: 18px; }
 
 .vk-feedback {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: 0px -303px;
   width: 30px;
   height: 18px; }
 
 .vk-sm-ft {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -281px -198px;
   width: 32px;
   height: 19px; }
 
 .vk {
-  background-image: url(../img/sprite-04633647851796441.png);
+  background-image: url(../img/sprite-006555737027354591.png);
   background-position: -317px -283px;
   width: 25px;
   height: 15px; }
@@ -1914,7 +1920,7 @@ iframe {
     top: 0;
     right: -10px;
     transform: translateX(100%);
-    background-image: url(../img/sprite-04633647851796441.png);
+    background-image: url(../img/sprite-006555737027354591.png);
     background-position: -317px -46px;
     width: 41px;
     height: 43px; }
@@ -1952,16 +1958,21 @@ iframe {
     right: -19px; }
   .header{
     height: 820px;
-    background-position: -270px -5px; }
+    background-position: -272px 0px; }
   .contacts__item-xs{
     display: none; }
   .contacts__item{
     padding-top: 10px; }
   .header__sprite{
-    margin-left: 50px;
+    margin-left: 51px;
     margin-right: 8px;
     margin-top: 8px; }
+  .contacts__fone{
+    display: block;
+    height: 29px;
+    background-color: #e9e9f1; }
   .contacts{
+    margin-top: -29px;
     background-color: #e9e9f1;
     display: -ms-flexbox;
     display: flex;
@@ -1975,8 +1986,9 @@ iframe {
   .header__btn-sm{
     display: block;
     margin-top: 41px;
+    margin-left: 0;
     border: 1px solid #111;
-    padding: 6px 25px;
+    padding: 6px 24px;
     background-color: inherit; }
   .header__line{
     margin-top: 10px;
@@ -1992,6 +2004,9 @@ iframe {
     font-size: 18px; }
   .main-nav__item{
     margin-right: 39px; }
+  .logo{
+    margin-top: 1px;
+    margin-left: 1px; }
   .header__contacts{
     display: none; }
   .mountains__title{
@@ -2003,14 +2018,14 @@ iframe {
     margin-top: 93px;
     letter-spacing: 0.043em; }
   .mountains__title:after{
-    margin-top: 2px; }
+    margin-top: 3px; }
   .description__xs{
     margin-top: 94px;
-    padding-left: 15px; }
+    padding-left: 0; }
   .mountains__description{
     display: block;
-    padding-left: 15px;
-    line-height: 1.9; }
+    line-height: 1.9;
+    letter-spacing: 0.028em; }
   .description__lg{
     display: block;
     margin-top: 0;
@@ -2018,17 +2033,18 @@ iframe {
   .tracks{
     min-height: 730px; }
   .tracks__title{
-    padding-top: 25px; }
+    padding-top: 13px;
+    letter-spacing: 0.14em; }
   .tracks__list{
-    width: 91%;
+    width: 655px;
     margin: 0 auto;
-    margin-top: 57px; }
+    margin-top: 55px; }
   .track-card{
     vertical-align: top;
-    margin-left: 10px;
-    margin-right: 9px; }
+    margin-left: 0px;
+    margin-right: 19px; }
   .track-card-inner{
-    width: 211px; }
+    width: 213px; }
   .track-card-inner{
     width: 213px; }
   .mountain{
@@ -2062,6 +2078,9 @@ iframe {
     line-height: 1.3; }
   .track-card__text{
     padding: 12px 11px 0; }
+  .track-card:nth-child(even) .track-card__text{
+    padding-top: 34px;
+    letter-spacing: 0.03em; }
   .img-overlay{
     display: none; }
   .actions__title{
@@ -2276,12 +2295,13 @@ iframe {
   .header__sprite{
     margin-top: 5px; }
   .contacts{
+    margin-top: -29px;
     margin-right: 3px;
     padding-top: 3px; }
   .header__btn{
     display: block;
     margin-left: 19px;
-    margin-top: 1px; }
+    margin-top: 5px; }
   .header__btn-sm{
     display: none; }
   .header__line{
@@ -2290,11 +2310,11 @@ iframe {
     margin-right: 8px; }
   .logo{
     margin-left: 6px;
-    margin-top: 2px; }
+    margin-top: 6px; }
   .mountains__title:after{
     margin-top: 4px; }
   .description__xs{
-    margin-top: 96px;
+    margin-top: 94px;
     padding-left: 3px;
     letter-spacing: 0.026em; }
   .mountains__description{
@@ -2308,7 +2328,7 @@ iframe {
   .tracks{
     min-height: 800px; }
   .tracks__title{
-    padding-top: 24px;
+    padding-top: 26px;
     letter-spacing: 0.14em;
     margin-left: 2px; }
   .tracks__list{
@@ -2343,11 +2363,11 @@ iframe {
   .avatar{
     top: 17%;
     left: 16%; }
-  .track-card:nth-child(even) .track-card__text{
-    padding-top: 34px;
-    letter-spacing: 0.03em; }
   .track-card:nth-child(odd) .track-card__text{
     padding-top: 24px;
+    letter-spacing: 0.03em; }
+  .track-card:nth-child(even) .track-card__text{
+    padding-top: 34px;
     letter-spacing: 0.03em; }
   .mountain_1{
     top: 21%;
@@ -2380,7 +2400,7 @@ iframe {
     top: 15.2%;
     left: 16%; }
   .actions__title{
-    margin-top: 91px;
+    margin-top: 90px;
     letter-spacing: 0.02em; }
   .actions__list{
     display: none; }
@@ -2487,7 +2507,7 @@ iframe {
     height: 400px;
     margin-top: 22px; }
   .last{
-    height: 95px; }
+    height: 93px; }
   .feedback__socials{
     position: relative; }
   .feedback__text{
@@ -2500,7 +2520,7 @@ iframe {
   .footer{
     min-height: 470px; }
   .footer__container{
-    margin-top: 23px;
+    margin-top: 24px;
     width: 1190px; }
   #map{
     width: 83%;
@@ -2539,7 +2559,7 @@ iframe {
     top: 6%; }
   .nav{
     margin-left: 0;
-    margin-top: 22px; }
+    margin-top: 21px; }
   .nav__item{
     margin-bottom: 0; } }
 
