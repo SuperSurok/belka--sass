@@ -21,7 +21,7 @@
     <div class="header__contacts">
       <div class="contacts__item-xs header__sprite phone-call"></div>
       <div class="contacts__item-xs contsacts__phone">
-        <a href="tel:+78129997788">8(812)999-77-99</a>
+        <a href="tel:+78129997788">8 (812) 999-77-88</a>
       </div>
       <div class="kebab">
         <a class="header__burger burger" href="#"></a>
@@ -65,7 +65,7 @@
       </div>
       <div class="header__line">
         <a class="logo" href="#"></a>
-        <button class="btn header__btn">Купить билет</button>
+        <button type="" class="btn header__btn">Купить билет</button>
         <nav class="header__nav">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
@@ -96,7 +96,7 @@
         <div class="mountains__description">
           <p class="description__lg description__lg-up">Скалодром BELKA для всех, кто желает впервые попробовать себя в скалолазании, а так же для спортсменов разного уровня.</p>
           <p class="description__lg description__lg-middle">Bключает в себя 2 детские трассы и 3 взрослые.</p>
-          <p class="description__lg description__lg-down">Cкалолазы смогут найти подробную схему <br>всех подготовленных трасс, посмотреть категорию сложности.</p>
+          <p class="description__lg description__lg-down">Cкалолазы смогут найти подробную схему всех подготовленных трасс, посмотреть категорию сложности.</p>
         </div>
         <button class="btn header__btn-sm">Купить билет</button>
       </div>
@@ -106,9 +106,7 @@
   <!-- Секция Трассы -->
   <section class="tracks" id="tracks">
     <div class="tracks__container container">
-      <div class="tracks__title">
         <h2 class="tracks__title title">Трассы</h2>
-      </div>
       <div class="tracks__list">
         <div class="track-card track-card__odd">
         <div class="track-card-inner">
@@ -290,7 +288,8 @@
     <div class="container">
       <div class="we-have">
         <h2 class="about__title title">У нас</h2>
-          <div class="we-have__block we-have__block-equip">
+          <div class="we-have__all">
+            <div class="we-have__block we-have__block-equip">
             <div class="about__img about__xs about1-xs"></div>
             <div class="about__img about__sm about1"></div>
             <p class="we-have__text we-have__text-equip">Альпинистское снаряжение и страховочные устройства французской компании Petzl</p>
@@ -298,7 +297,7 @@
           <div class="we-have__block we-have__block-tracks">
             <div class="about__img about__xs about2-xs"></div>
             <div class="about__img about__sm about2"></div>
-            <p class="we-have__text we-have__text-tracks">Понятная маркировка трасс (ламинированные таблички <br>и зацепки определенного цвета для каждой трассы)</p>
+            <p class="we-have__text we-have__text-tracks">Понятная маркировка трасс (ламинированные таблички и зацепки определенного цвета для каждой трассы)</p>
           </div>
           <div class="we-have__block we-have__block-trainers">
             <div class="about__img about__xs about3-xs"></div>
@@ -306,17 +305,18 @@
             <p class="we-have__text we-have__text-768 we-have__text-trainers">У скалодрома всегда находится инструктор, который готов ответить на любой Ваш вопрос!</p>
             <p class="we-have__text we-have__text-1200 we-have__text-trainers">На территории скалодрома всегда находится инструктор, который готов ответить на любой Ваш вопрос!</p>
           </div>
+          </div>
       </div>
       <div class="about-foto">
-        <div class="about-foto__item">
+        <div class="about-foto__item about-foto__item-1">
           <img alt="" class="we-have__magnifier" src="img/magnifier.png">
           <img alt="" class="about-foto__img" src="img/aboutfoto1.jpg">
         </div>
-        <div class="about-foto__item">
+        <div class="about-foto__item about-foto__item-2">
           <img alt="" class="we-have__magnifier" src="img/magnifier.png">
           <img alt="" class="about-foto__img" src="img/aboutfoto2.jpg">
         </div>
-        <div class="about-foto__item">
+        <div class="about-foto__item about-foto__item-3">
           <img alt="" class="we-have__magnifier" src="img/magnifier.png">
           <img alt="" class="about-foto__img" src="img/aboutfoto3.jpg">
         </div>
@@ -384,7 +384,7 @@
           <td class="table__price">4000 ₽</td>
           <td class="table__price">4500 ₽</td>
         </tr>
-        <tr class="table__row table__row-trainer" colspan="3">
+        <tr class="table__row table__row-trainer">
           <td class="table__time trainer-time" colspan="3">Каждый дополнительный час + 500 ₽</td>
         </tr>
         <tr class="table__row table__row-operator">
@@ -421,27 +421,27 @@
     </ul>
     <div class="price__total row">
       <div class="total-item col"><p class="total-text">Стоимость абонемента</p></div>
-      <div class="total-item col"><p class="total-sum">0 Р</p></div>
+      <div class="total-item col"><p class="total-sum">0 ₽</p></div>
     </div>
     <div class="price__trainer row">
       <div class="trainer-item col">
         <p>Персональный оператор парка</p>
       </div>
       <div class="trainer-item col">
-        <p>600 ₽/час</p>
+        <p class="trainer-item__price">600 ₽ /час</p>
       </div>
     </div>
     <div class="price__hour row">
       <div class="col">
-        <p class="hour-item">Каждый дополнительный час</p>
+        <p class="hour-item__text">Каждый дополнительный час</p>
       </div>
       <div class="col">
-        <p class="hour-item">500 ₽</p>
+        <p class="hour-item__price">500₽</p>
       </div>
     </div>
     <div class="buttons">
-      <button class="btn price__btn">
-        <p class="btn__text">Купить билет</p>
+      <button type="submit" formmethod="post" class="btn price__btn btn__text">
+        Купить билет
       </button>
       <div class="price__safety">
         <a class="safety-link" href="#">Техника безопасности (PDF)</a>
@@ -459,6 +459,14 @@
         <div class="feedback__socials">
           <a class="instagram-feedback" href="#"></a>
           <a class="vk-feedback" href="#"></a>
+          <!-- <ul class="list-links">
+            <li class="list-links__item">
+              <a class="instagram-feedback" href="#"></a>
+            </li>
+            <li class="list-links__item">
+              <a class="vk-feedback" href="#"></a>
+            </li>
+          </ul> -->
         </div>
         <p class="feedback__text">Интересные трассы, вкусная еда и самые приветливые тренера!</p>
       </div>
@@ -531,10 +539,10 @@
         <ul class="contacts__list">
           <li class="list__item footer__addres">Выборгское ш.,220</li>
           <li class="list__item footer__phone">
-            <a class="phone__link" href="tel:+78129997788">8(812)999-77-88</a>
+            <a class="phone__link" href="tel:+78129997788">8 (812) 999-77-88</a>
           </li>
         </ul>
-        <ul class="nav">
+        <ul class="footer__nav">
           <li class="nav__item">
             <a class="nav__link" href="#tracks">Трассы</a>
           </li>
@@ -559,7 +567,7 @@
         <a class="socials__item vk-sm-ft" href="#"></a>
         <a class="socials__item instagram" href="#"></a>
         <a class="socials__item instagram-sm-ft" href="#"></a>
-        <a class="arrowup" href="#header"></a>
+        <!-- <a class="arrowup" href="#header"></a> -->
       </div>
       <a class="arrowup-big" href="#header"></a>
     </div>
