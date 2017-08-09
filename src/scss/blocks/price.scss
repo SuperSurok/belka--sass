@@ -6,16 +6,29 @@
     background-size: auto;
   }
     &__title {
-    margin-top: 114px;
-  }
+      @media (min-width: $screen-sm) {
+        margin-top: 45px;
+        letter-spacing: 0.031em;
+        margin-left: 2px;
+      }
+      @media (min-width: $screen-sm) {
+        margin-top: 115px;
+      }
+    }
     &__age {
-  margin-top: 55px;
-  }
+      @media (min-width: $screen-lg) {
+        margin-top: 55px;
+      }
+    }
+}
 
+.price__title {
+  margin-top: 21px;
 }
 
 .price__title:after {
-  margin-top: 0px;
+  margin-top: 1px;
+  width: 76px;
 }
 
 .table {
@@ -60,7 +73,8 @@
 }
 
 .total-sum {
-  text-align: center;
+  font-size: 18px;
+  padding-left: 29px;
 }
 
 .price__trainer, .price__hour {
@@ -68,12 +82,12 @@
 }
 
 .price__trainer {
-  letter-spacing: 1.05px;
-  padding-left: 15px;
+  letter-spacing: 0.03em;
+  padding-left: 13px;
   text-transform: uppercase;
   font-size: 10px;
   font-family: 'Open Sans';
-  margin-top: 5px;
+  margin-top: 7px;
 }
 
 .price__hour {
@@ -91,15 +105,19 @@
   border: none;
   display: block;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 26px;
   text-transform: uppercase;
-    @media (min-width: $screen-sm) {
-      margin: 0 0 0 20px;
-      align-self: baseline;
-    }
-    @media (min-width: $screen-sm) {
-      margin-right: 88px;
-    }
+  @media (min-width: $screen-sm) {
+    margin: 0 0 0 20px;
+    align-self: baseline;
+    padding: 16px 35px;
+  }
+  @media (min-width: $screen-sm) {
+    margin-right: 148px;
+  }
+  @media (min-width: $screen-lg) {
+    margin-right: 88px;
+  }
 }
 
 .btn__text {
@@ -113,12 +131,12 @@
   text-decoration: underline;
   text-align: center;
   @media (min-width: $screen-sm) {
-      align-self: baseline;
-      margin-left: 88px;
-    }
+    align-self: baseline;
+    margin-left: -61px;
+  }
   @media (min-width: $screen-lg) {
-      margin-left: 0;
-    }
+    margin-left: 0;
+  }
 }
 
 .table__age {
@@ -127,24 +145,25 @@
   color: $font-color-tracks;
   background-color: $shuttle-gray;
   font-weight: 200;
-    @media (min-width: $screen-lg) {
-      font-size: $font-size + 2px;
-      height: 60px;
-    }
+  @media (min-width: $screen-lg) {
+    font-size: $font-size + 2px;
+    height: 60px;
+  }
 }
 
 .table__time {
   padding: 17px 0;
-    @media (min-width: $screen-sm) {
-      font-size: $font-size;
-      text-align: right;
-      padding: 0 15px 0 0;
-      height: 52px;
-    }
-    @media (min-width: $screen-lg) {
-      font-size: $font-size + 2px;
-      text-align: center;
-    }
+  @media (min-width: $screen-sm) {
+    font-size: 16px;
+    text-align: right;
+    padding: 0px 21px 0 0;
+    height: 52px;
+    letter-spacing: 0.05em;
+  }
+  @media (min-width: $screen-lg) {
+    font-size: $font-size + 2px;
+    text-align: center;
+  }
 }
 
 .table__row {
@@ -169,8 +188,10 @@
 }
 
 .table__age:first-child {
+  @media (min-width: $screen-lg) {
     background-color: inherit;
   }
+}
 
 .table__row-3 {
   background-color: $three-hours;
@@ -222,15 +243,14 @@
 
 td {
   text-align: center;
-  //padding-bottom: 7px;
 }
-
 
 .age-description {
   text-transform: uppercase;
 }
 
 .age-description-sm {
+  text-transform: uppercase;
   @media (min-width: $screen-lg) {
     display: none;
   }
@@ -253,7 +273,7 @@ td {
   text-transform: uppercase;
   @media (min-width: $screen-sm) {
     width: 50%;
-    padding: 13px 0;
+    padding: 17px 0;
   }
   @media (min-width: $screen-lg) {
     width: 25%;
@@ -283,6 +303,9 @@ td {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 78px;
+  }
+  @media (min-width: $screen-lg) {
     margin-top: 81px;
   }
 }
@@ -318,19 +341,24 @@ td {
 .price__list-item {
   position: relative;
   display: block;
-  padding: 20px 0;
+  height: 39px;
+  padding-top: 18px;
   text-align: center;
   font-family: 'Open Sans';
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
-  margin-bottom: -1px;
+  letter-spacing: 0.05em;
+}
+
+.price__list-item:nth-child(-n+2) {
+  border-bottom: none;
 }
 
 .price__list-item:after {
   content:'';
     position: absolute;
-    top: 20px;
-    right: 10px;
+    top: 16px;
+    right: 27px;
   @include sprite($arrowprice);
 }
 
@@ -339,7 +367,30 @@ td {
 }
 
 .total-text {
-  padding-left: 15px;
+  padding-left: 14px;
   font-size: 16px;
   font-family: 'Open Sans';
+  letter-spacing: 0.04em;
+}
+
+.table-trace [p] {
+  vertical-align: middle;
+}
+
+.trainer-item__price {
+  font-size: $font-size - 4px;
+  text-transform: uppercase;
+  margin-top: -3px;
+  margin-left: 11px;
+}
+
+.hour-item__text {
+  margin-top: 2px;
+  margin-left: -1px;
+  letter-spacing: 0.054em;
+}
+
+.hour-item__price {
+  font-size: $font-size - 4px;
+  margin-left: -25px;
 }

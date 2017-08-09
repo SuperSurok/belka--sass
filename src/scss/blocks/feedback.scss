@@ -1,11 +1,13 @@
 .feedback {
-  width: 94%;
-  height: 555px;
+  width: 91%;
+  height: 537px;
   margin: 0 auto;
   margin-top: 48px;
   background-color: rgba(255, 255, 255, 0.79);
   @media (min-width: $screen-sm) {
+    height: 557px;
     margin-top: 61px;
+    width: 740px;
   }
   @media (min-width: $screen-lg) {
     width: 1190px;
@@ -15,18 +17,19 @@
 }
 
 .feedback__title {
-  padding-top: 24px;
+  padding-top: 15px;
+  letter-spacing: 0.04em;
   @media (min-width: $screen-sm) {
     padding-top: 35px;
   }
   @media (min-width: $screen-lg) {
     padding-top: 37px;
-    letter-spacing: 0.04em;
   }
 }
 
 .feedback__title:after {
-  margin-top: 2px;
+  width: 78px;
+  margin-top: 3px;
 }
 
 .carousel {
@@ -36,7 +39,7 @@
   margin-top: 27px;
   @media (min-width: $screen-sm) {
     width: 91%;
-    margin-top: 38px;
+    margin-top: 28px;
   }
   @media (min-width: $screen-lg) {
     width: 1061px;
@@ -51,15 +54,22 @@
     height: 76px;
   }
   @media (min-width: $screen-lg) {
-    height: 95px;
+    height: 93px;
   }
 }
 
 .feedback__item {
-  margin-top: 43px;
+  margin-top: 37px;
+  margin-right: -1px;
   width: 33.33%;
   font-family: 'Open Sans';
-  font-size: $font-size + 2px;
+  @media (min-width: $screen-sm) {
+    font-size: $font-size;
+    line-height: 1.5;
+  }
+  @media (min-width: $screen-lg) {
+    font-size: $font-size + 2px;
+  }
 }
 
 .feedback__img {
@@ -68,10 +78,28 @@
   margin: 0 auto;
 }
 
+.feedback__name {
+  font-weight: 600;
+  @media (min-width: $screen-sm) {
+    margin-top: 5px;
+  }
+}
+
+.feedback__prof {
+  font-weight: 300;
+  @media (min-width: $screen-sm) {
+
+  }
+}
+
 .feedback__name,
 .feedback__prof {
   text-align: center;
-  padding: 5px 5px 0px 5px;
+  // padding: 8px 5px 0px 5px;
+  letter-spacing: 0.05em;
+  @media (min-width: $screen-sm) {
+    // padding: 8px 5px 0px 5px;
+  }
 }
 
 .feedback__socials {
@@ -79,15 +107,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (min-width: $screen-lg) {
+  position: relative;
+  @media (min-width: $screen-sm) {
     position: relative;
   }
 }
 
 .instagram-feedback {
+  @media (min-width: $screen-phone) {
   position: absolute;
-  left: 41%;
-  top: -2%;
+  left: 35.5%;
+  top: 0%;
+  }
+  position: absolute;
+  left: 27.5%;
+  bottom: 32.4%;
 }
 
 .vk-feedback {
@@ -105,8 +139,9 @@
   margin: 0 auto;
   margin-top: 13px;
   @media (min-width: $screen-sm) {
+    text-align: left;
     width: 83%;
-    padding: 0 17px;
+    margin-top: 31px;
   }
   @media (min-width: $screen-lg) {
     width: 57%;
@@ -116,4 +151,8 @@
     letter-spacing: 0.059em;
     line-height: 1.23;
   }
+}
+
+.list-links {
+  display: inline-block;
 }

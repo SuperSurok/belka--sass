@@ -109,6 +109,11 @@ $(document).ready(function(){
     $('body').css('overflow-y', 'auto');
     $('.overlay').hide();
   });
+  $('.overlay__wrapper').click(function(){
+    $(this).closest('.overlay').find('.overlay__wrapper img').remove();
+    $('body').css('overflow-y', 'auto');
+    $('.overlay').hide();
+  });
 // smooth anchor scroll
   $('a[href^="#"]').click(function() {
     $('html, body').animate({

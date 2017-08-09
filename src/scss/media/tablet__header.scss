@@ -1,0 +1,67 @@
+@media (min-width: $screen-sm) {
+  .header {
+    background-image: url("../img/header-img.jpg");
+    background-position: center center;
+    height: 820px;
+  }
+
+  .contacts__item {
+    padding-top: 10px;
+  }
+
+  .header__sprite {
+    margin-left: 51px;
+    margin-right: 8px;
+    margin-top: 8px;
+  }
+
+  .contacts__fone {
+    display: block;
+    height: 29px;
+    background-color: $header-menu-bgc-xs;
+  }
+
+  .contacts {
+    margin-top: -29px;
+    background-color: $header-menu-bgc-xs;
+    display: flex;
+    margin-left: auto;
+    justify-content: flex-end;
+  }
+
+  .contacts li:nth-child(odd) {
+    display: block;
+  }
+
+  .header__btn {
+    display: none;
+  }
+
+  .header__btn-sm {
+    display: block;
+    margin-top: 41px;
+    margin-left: 0;
+    border: 1px solid #111;
+    padding: 6px 24px;
+    background-color: inherit;
+  }
+
+  .header__line {
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+
+  .main-nav__item {
+    display: inline-block;
+    margin-right: 39px;
+    font-family: $font-family;
+    font-size: ($font-size + 2);
+  }
+
+  .logo {
+    margin-top: 1px;
+    margin-left: 1px;
+  }
+}

@@ -15,31 +15,36 @@
 
 .tracks__title {
   color: $white;
-  padding-top: 25px;
+  margin-top: -4px;
+  margin-left: 4px;
+  letter-spacing: 0.05em;
   @media (min-width: $screen-sm) {
-     padding-top: 25px;
+    margin-top: 0;
+    margin-left: 3px;
+    padding-top: 24px;
+    font-size: 40px;
+    letter-spacing: 0.054em;
+    font-size: $font-size + 24px;
   }
   @media (min-width: $screen-lg) {
-     padding-top: 24px;
-     letter-spacing: 0.14em;
-     margin-left: 2px;
+    padding-top: 49px;
+    letter-spacing: 0.04em;
+    margin-left: 2px;
   }
 }
 
 .tracks__title:after {
   border: 1px solid #fff;
-  margin-top: 5px;
+  margin-top: 3px;
 }
 
 .tracks__list {
-  width: 70%;
+  width: 210px;
   margin: 0 auto;
-  margin-bottom: 70px;
-  margin-top: 36px;
+  margin-top: 48px;
   @media (min-width: $screen-sm) {
-    width: 91%;
-    margin: 0 auto;
-    margin-top: 57px;
+    width: 655px;
+    margin-top: 55px;
   }
   @media (min-width: $screen-lg) {
     width: 1160px;
@@ -53,55 +58,51 @@
   font-family: 'OpenSans';
   font-size: $font-size;
   color: $font-color-tracks;
-    @media (min-width: $screen-sm) {
-      vertical-align: top;
-      // width: 27%;
-      margin-left: 10px;
-      margin-right: 9px;
-      &:last-child {
-        // margin-right: 1px;
+  @media (min-width: $screen-sm) {
+    vertical-align: top;
+    margin-left: 0px;
+    margin-right: 19px;
+  }
+  @media (min-width: $screen-lg) {
+    width: 215px;
+    margin-right: 20px;
+      &:first-child {
+        margin-left: 3px;
+        height: 322px;
       }
-    }
-    @media (min-width: $screen-lg) {
-      width: 215px;
-      margin-right: 20px;
-        &:first-child {
-          margin-left: 3px;
-          height: 322px;
-        }
-        &:nth-child(2) {
-          margin-left: 8px;
-        }
-        &:nth-child(3) {
-          margin-left: 5px;
-        }
-        &:nth-child(4) {
-          margin-left: 5px;
-        }
-        &:last-child {
-          margin-left: 5px;
-          margin-right: 0;
-        }
-        &:hover {
-          box-shadow: 0px 0px 20px 1px #111;
-          transition: 300ms;
-        }
-    }
+      &:nth-child(2) {
+        margin-left: 8px;
+      }
+      &:nth-child(3) {
+        margin-left: 5px;
+      }
+      &:nth-child(4) {
+        margin-left: 5px;
+      }
+      &:last-child {
+        margin-left: 5px;
+        margin-right: 0;
+      }
+      &:hover {
+        box-shadow: 0px 0px 20px 1px #111;
+        transition: 300ms;
+      }
+  }
 }
 
 @media (min-width: $screen-lg) {
-    .track-card:nth-child(even) {
+  .track-card:nth-child(even) {
       margin-top: 82px;
-    }
-    .track-card:nth-child(odd) {
-      margin-top: 7px;
-    }
   }
+  .track-card:nth-child(odd) {
+      margin-top: 7px;
+  }
+}
 
 .track-card-inner {
   margin: 0 auto;
   @media (min-width: $screen-sm) {
-    width: 211px;
+    width: 213px;
   }
   @media (min-width: $screen-sm) {
     width: 213px;
@@ -111,7 +112,7 @@
 .mountain {
   position: absolute;
   top: 57%;
-  left: 9.6%;
+  left: 11.6%;
   @media (min-width: $screen-xs) {
     top: 59.3%;
     left: 33%;
@@ -133,7 +134,7 @@
 .avatar {
   position: absolute;
   top: 79%;
-  left: 12%;
+  left: 13%;
   @media (min-width: $screen-xs) {
     top: 77.3%;
     left: 35%;
@@ -210,6 +211,14 @@
 .title__item {
   text-align: center;
   text-shadow: 0 3px 3px #000;
+  @media (min-width: $screen-phone) {
+    letter-spacing: 0.04em;
+    margin-left: 5px;
+  }
+  @media ($screen-sm) {
+    letter-spacing: 0;
+    margin-left: 0;
+  }
 }
 
 .track-card__description {
@@ -247,17 +256,20 @@
   }
 }
 
-
-.track-card:nth-child(even) .track-card__text {
+.track-card:nth-child(odd) .track-card__text {
   @media (min-width: $screen-lg){
-    padding-top: 34px;
+    padding-top: 24px;
     letter-spacing: 0.03em;
   }
 }
 
-.track-card:nth-child(odd) .track-card__text {
+.track-card:nth-child(even) .track-card__text {
+  @media (min-width: $screen-sm){
+    padding-top: 34px;
+    letter-spacing: 0.03em;
+  }
   @media (min-width: $screen-lg){
-    padding-top: 24px;
+    padding-top: 34px;
     letter-spacing: 0.03em;
   }
 }

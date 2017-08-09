@@ -1,13 +1,10 @@
 .mountains__title {
-  margin-top: 80px;
+  margin-top: 76px;
+  letter-spacing: 0.04em;
   @media (min-width: $screen-sm) {
     font-size: $font-size + 24px;
     margin-top: 93px;
-  }
-  @media (min-width: $screen-sm) {
-    font-size: $font-size + 24px;
-    margin: 0 auto;
-    margin-top: 93px;
+    margin-left: 3px;
     letter-spacing: 0.043em;
   }
 }
@@ -16,10 +13,10 @@
   content: '';
   border: 1px solid #111;
   width: 20px;
-  margin: 0 auto;
   width: 95px;
   @media (min-width: $screen-sm) {
-    margin-top: 2px;
+    margin: 0 auto;
+    margin-top: 3px;
   }
   @media (min-width: $screen-lg) {
     margin-top: 4px;
@@ -28,17 +25,16 @@
 
 .description__xs {
   line-height: 1.7;
-  width: 62%;
+  width: 77%;
   margin-top: 70px;
   font-size: 18px;
   font-family: 'Open Sans';
-  padding-left: 15px;
+  letter-spacing: 0.03em;
   @media (min-width: $screen-sm) {
     margin-top: 94px;
-    padding-left: 15px;
   }
   @media (min-width: $screen-lg) {
-    margin-top: 96px;
+    margin-top: 94px;
     padding-left: 3px;
     letter-spacing: 0.026em;
   }
@@ -46,15 +42,14 @@
 
 .mountains__description {
   display: none;
-  width: 70%;
+  width: 80%;
   margin-top: 0;
   line-height: 1.7;
-  letter-spacing: 1.1;
   font-family: 'Open Sans';
   @media (min-width: $screen-sm) {
     display: block;
-    padding-left: 15px;
     line-height: 1.9;
+    letter-spacing: 0.028em;
   }
   @media (min-width: $screen-lg) {
     font-size: $font-size + 2px;
@@ -75,7 +70,11 @@
     line-height: 1,5;
   }
   @media (min-width: $screen-lg) {
-    width: 71%;
+    width: 63%;
     display: block;
   }
+}
+
+.description__lg-down {
+  width: 90%;
 }

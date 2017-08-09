@@ -63,10 +63,14 @@ $slick-opacity-not-active: 0.25 !default;
 .slick-prev,
 .slick-next {
     @media (min-width: $screen-phone) {
-      top: 43%;
+      top: 42.5%;
+      height: 30px;
+      width: 30px;
     }
-    @media (min-width: $screen-phone) {
+    @media (min-width: $screen-sm) {
       top: 45%;
+      height: 29px;
+      width: 29px;
     }
     @media (min-width: $screen-lg) {
       top: 43.6%;
@@ -113,7 +117,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
-    left: -29px;
+    left: -31px;
     transform: rotate(-45deg);
     @media (min-width: $screen-sm) {
       left: -17px;
@@ -134,10 +138,10 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
-    right: -29px;
+    right: -31px;
     transform: rotate(135deg);
     @media (min-width: $screen-sm) {
-      right: -19px;
+      right: -17px;
     }
     @media (min-width: $screen-lg) {
       right: -16px;

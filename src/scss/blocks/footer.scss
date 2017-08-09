@@ -21,7 +21,7 @@
     margin-top: 45px;
   }
   @media (min-width: $screen-lg) {
-    margin-top: 23px;
+    margin-top: 24px;
     width: 1190px;
   }
 }
@@ -60,6 +60,7 @@ iframe {
 }
 
 .nav-list {
+  position: relative;
   display: block;
   margin-left: 10px;
   @media (min-width: $screen-lg) {
@@ -71,9 +72,9 @@ iframe {
 
 .contacts__list {
   color: $footer-text-gray;
-  margin-top: 4px;
+  margin-top: 7px;
   @media (min-width: $screen-sm) {
-    margin-top: 16px;
+    margin-top: 17px;
   }
   @media (min-width: $screen-lg) {
     display: flex;
@@ -82,9 +83,9 @@ iframe {
 }
 
 .list__item {
-  margin-bottom: 8px;
   font-weight: 200;
   font-size: 14px;
+  margin-left: 21px;
   @media (min-width: $screen-sm) {
     font-family: 'ProximaNova';
     font-weight: 200;
@@ -93,11 +94,12 @@ iframe {
     margin-bottom: 12px;
   }
   @media (min-width: $screen-sm) {
-    margin-left: 21px;
+    margin-left: 11px;
     letter-spacing: 0.02em;
   }
   @media (min-width: $screen-lg) {
     margin-top: 18px;
+    margin-left: 21px;
     margin-bottom: 11px;
   }
 }
@@ -106,28 +108,22 @@ iframe {
   content: '';
 }
 
-.nav__item {
-  font-family: 'OpenSans';
-  padding: 3px 0;
-  @media (min-width: $screen-sm) {
-    padding: 6px 0;
-  }
-  @media (min-width: $screen-lg) {
-    padding: 8px 0;
-    letter-spacing: 0.03em;
-  }
+.footer__phone {
+  letter-spacing: 0.04em;
+  margin-top: 9px;
 }
+
 
 .footer__addres:before {
   position: absolute;
   content: '';
-  // display: inline-block;
   background: url("../img/spritesheet.png") 0 0 no-repeat;
   width: 11px;
   height: 16px;
   background-position: -106px -37px;
-  left: 1px;
-  @media (min-width: $screen-lg) {
+  left: 5px;
+  top: -3px;
+  @media (min-width: $screen-sm) {
     display: none;
   }
 }
@@ -152,17 +148,22 @@ iframe {
   width: 14px;
   height: 14px;
   background-position: -82px -37px;
-  left: 1px;
-  @media (min-width: $screen-lg) {
+  left: 5px;
+  top: 26px;
+  @media (min-width: $screen-sm) {
     display: none;
   }
 }
 
 .phone-call-footer {
   display: none;
-  @media (min-width: $screen-lg) {
+  @media (min-width: $screen-sm) {
     display: block;
     position: absolute;
+    left: -11px;
+    top: 13.8%;
+  }
+  @media (min-width: $screen-lg) {
     left: 51.5%;
     top: 7.7%;
   }
@@ -170,28 +171,44 @@ iframe {
 
 .placeholder-footer {
   display: none;
-  @media (min-width: $screen-lg) {
+  @media (min-width: $screen-sm) {
     display: block;
     position: absolute;
+    left: -4%;
+    top: -1%;
+  }
+  @media (min-width: $screen-lg) {
     left: 0;
     top: 6%;
   }
 }
 
-.nav {
+.footer__nav {
   color: $footer-text-gray;
-  margin-top: 20px;
-  margin-left: -8px;
+  margin-top: 23px;
+  margin-left: 5px;
+  letter-spacing: 0.04em;
+  @media (min-width: $screen-sm) {
+    margin-top: 29px;
+    margin-left: -11px;
+    letter-spacing: 0.04em;
+  }
   @media (min-width: $screen-lg) {
     margin-left: 0;
-    margin-top: 22px;
+    margin-top: 21px;
   }
 }
 
 .nav__item {
-  margin-bottom: 4px;
+  margin-bottom: 12px;
+  font-family: 'OpenSans';
+  @media (min-width: $screen-sm) {
+    margin-bottom: 17px;
+  }
   @media (min-width: $screen-lg) {
     margin-bottom: 0;
+    padding: 8px 0;
+    letter-spacing: 0.03em;
   }
 }
 
@@ -204,13 +221,13 @@ iframe {
 
 .footer__line {
   display: flex;
-  margin: 14px 0 10px 10px;
+  margin: 20px 0 10px 17px;
   @media (min-width: $screen-sm) {
     width: 76%;
-    margin-top: 27px;
+    margin-top: 33px;
     margin-left: 3px;
   }
-  @media (min-width: $screen-sm) {
+  @media (min-width: $screen-lg) {
     margin-top: 33px;
     margin-left: 0;
   }
@@ -222,7 +239,10 @@ iframe {
 }
 
 .socials__item {
+  margin-right: 10px;
+  @media (min-width: $screen-sm) {
   margin-right: 14px;
+  }
 }
 
 .arrowup {
@@ -235,11 +255,12 @@ iframe {
 .arrowup-big {
   display: none;
   @media (min-width: $screen-sm) {
-  display: block;
-  margin-top: 31px;
+    display: block;
+    margin-top: 32px;
+    margin-left: -1px;
   }
-  @media (min-width: $screen-sm) {
-  margin-top: 68px;
+  @media (min-width: $screen-lg) {
+    margin-top: 68px;
   }
 }
 
